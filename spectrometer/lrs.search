@@ -1,0 +1,56 @@
+search_DS
+n, time, n_dups, n_dup_tries 
+10 3 6 13
+last try reported
+0
+tries from best on down for n_tries 
+4
+search_try_DS 0
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+3 0 7 7 -3.10056456e+05 19 200
+n_dups
+5
+search_try_DS 0 dup_try_DS 0
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+4 0 7 7 -3.10056457e+05 19 200
+search_try_DS 0 dup_try_DS 1
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+5 0 7 7 -3.10056457e+05 19 200
+search_try_DS 0 dup_try_DS 2
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+6 0 7 7 -3.10056457e+05 19 200
+search_try_DS 0 dup_try_DS 3
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+7 0 7 7 -3.10056457e+05 19 200
+search_try_DS 0 dup_try_DS 4
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+8 1 7 7 -3.10056457e+05 19 200
+search_try_DS 1
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+9 0 7 7 -3.10145403e+05 29 200
+n_dups
+1
+search_try_DS 1 dup_try_DS 0
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+10 0 7 7 -3.10145403e+05 29 200
+search_try_DS 2
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+2 1 7 7 -3.11920320e+05 25 200
+n_dups
+0
+search_try_DS 3
+n, time, j_in, j_out, ln_p, num_cycles, max_cycles
+1 0 7 7 -3.13063574e+05 65 200
+n_dups
+0
+start_j_list
+2
+3
+5
+7
+10
+15
+25
+-999
+n_final_summary, n_save
+10 2

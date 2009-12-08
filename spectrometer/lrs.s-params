@@ -1,0 +1,27 @@
+
+#!#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;
+# OVERRIDE PARAMETERS
+#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;#!;
+
+;; cbc notes: comment out start_fn_type line to do "random" instead of "block
+;; -- runs will not be repeatable with "random", but are with "block"
+;; next two lines for repeatable results -- not true random
+;;start_fn_type   "block"
+;;randomize_random_p = false
+start_fn_type = "random"
+randomize_random_p = true
+
+force_new_search_p = true
+
+;; converge_print_p = true
+;; min_report_period = 0
+;; try_fn_type = "converge_search_4"
+
+;; specify different numbers of clusters to look for (alternative to fixed_j)
+;;start_j_list = 2, 3
+
+;; set number of tries to do before stopping
+max_n_tries = 10
+
+;; set number of clusters expected
+fixed_j = 7

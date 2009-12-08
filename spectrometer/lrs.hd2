@@ -1,0 +1,112 @@
+!#; AutoClass C header file -- extension .hd2
+!#; the following chars in column 1 make the line a comment:
+!#; '!', '#', ';', ' ', and '\n' (empty line)
+
+;;; Zoo data (from Winston)
+;;; 531 Data, 93 attributes
+
+;#! num_db2_format_defs <num of def lines -- min 1, max 4>
+num_db2_format_defs 2
+;; required
+number_of_attributes 94
+;; optional - default values are specified 
+separator_char  ' '
+;; comment_char    ';'
+;; unknown_token   '?'
+;;separator_char     ','
+
+;; <zero-based att#>  <att_type>  <att_sub_type>  <att_description>  <att_param_pairs>
+0  dummy nil "frequency"
+1  real scalar something zero_point 0.0 rel_error 0.001
+2  real scalar something zero_point 0.0 rel_error 0.001
+3  real scalar something zero_point 0.0 rel_error 0.001
+4  real scalar something zero_point 0.0 rel_error 0.001
+5  real scalar something zero_point 0.0 rel_error 0.001
+6  real scalar something zero_point 0.0 rel_error 0.001
+7  real scalar something zero_point 0.0 rel_error 0.001
+8  real scalar something zero_point 0.0 rel_error 0.001
+9  real scalar something zero_point 0.0 rel_error 0.001
+10 real scalar something zero_point 0.0 rel_error 0.001
+11 real scalar something zero_point 0.0 rel_error 0.001
+12 real scalar something zero_point 0.0 rel_error 0.001
+13 real scalar something zero_point 0.0 rel_error 0.001
+14 real scalar something zero_point 0.0 rel_error 0.001
+15 real scalar something zero_point 0.0 rel_error 0.001
+16 real scalar something zero_point 0.0 rel_error 0.001
+17 real scalar something zero_point 0.0 rel_error 0.001
+18 real scalar something zero_point 0.0 rel_error 0.001
+19 real scalar something zero_point 0.0 rel_error 0.001
+20 real scalar something zero_point 0.0 rel_error 0.001
+21 real scalar something zero_point 0.0 rel_error 0.001
+22 real scalar something zero_point 0.0 rel_error 0.001
+23 real scalar something zero_point 0.0 rel_error 0.001
+24 real scalar something zero_point 0.0 rel_error 0.001
+25 real scalar something zero_point 0.0 rel_error 0.001
+26 real scalar something zero_point 0.0 rel_error 0.001
+27 real scalar something zero_point 0.0 rel_error 0.001
+28 real scalar something zero_point 0.0 rel_error 0.001
+29 real scalar something zero_point 0.0 rel_error 0.001
+30 real scalar something zero_point 0.0 rel_error 0.001
+31 real scalar something zero_point 0.0 rel_error 0.001
+32 real scalar something zero_point 0.0 rel_error 0.001
+33 real scalar something zero_point 0.0 rel_error 0.001
+34 real scalar something zero_point 0.0 rel_error 0.001
+35 real scalar something zero_point 0.0 rel_error 0.001
+36 real scalar something zero_point 0.0 rel_error 0.001
+37 real scalar something zero_point 0.0 rel_error 0.001
+38 real scalar something zero_point 0.0 rel_error 0.001
+39 real scalar something zero_point 0.0 rel_error 0.001
+40 real scalar something zero_point 0.0 rel_error 0.001
+41 real scalar something zero_point 0.0 rel_error 0.001
+42 real scalar something zero_point 0.0 rel_error 0.001
+43 real scalar something zero_point 0.0 rel_error 0.001
+44 real scalar something zero_point 0.0 rel_error 0.001
+45 real scalar something zero_point 0.0 rel_error 0.001
+46 real scalar something zero_point 0.0 rel_error 0.001
+47 real scalar something zero_point 0.0 rel_error 0.001
+48 real scalar something zero_point 0.0 rel_error 0.001
+49 real scalar something zero_point 0.0 rel_error 0.001
+50 real scalar something zero_point 0.0 rel_error 0.001
+51 real scalar something zero_point 0.0 rel_error 0.001
+52 real scalar something zero_point 0.0 rel_error 0.001
+53 real scalar something zero_point 0.0 rel_error 0.001
+54 real scalar something zero_point 0.0 rel_error 0.001
+55 real scalar something zero_point 0.0 rel_error 0.001
+56 real scalar something zero_point 0.0 rel_error 0.001
+57 real scalar something zero_point 0.0 rel_error 0.001
+58 real scalar something zero_point 0.0 rel_error 0.001
+59 real scalar something zero_point 0.0 rel_error 0.001
+60 real scalar something zero_point 0.0 rel_error 0.001
+61 real scalar something zero_point 0.0 rel_error 0.001
+62 real scalar something zero_point 0.0 rel_error 0.001
+63 real scalar something zero_point 0.0 rel_error 0.001
+64 real scalar something zero_point 0.0 rel_error 0.001
+65 real scalar something zero_point 0.0 rel_error 0.001
+66 real scalar something zero_point 0.0 rel_error 0.001
+67 real scalar something zero_point 0.0 rel_error 0.001
+68 real scalar something zero_point 0.0 rel_error 0.001
+69 real scalar something zero_point 0.0 rel_error 0.001
+70 real scalar something zero_point 0.0 rel_error 0.001
+71 real scalar something zero_point 0.0 rel_error 0.001
+72 real scalar something zero_point 0.0 rel_error 0.001
+73 real scalar something zero_point 0.0 rel_error 0.001
+74 real scalar something zero_point 0.0 rel_error 0.001
+75 real scalar something zero_point 0.0 rel_error 0.001
+76 real scalar something zero_point 0.0 rel_error 0.001
+77 real scalar something zero_point 0.0 rel_error 0.001
+78 real scalar something zero_point 0.0 rel_error 0.001
+79 real scalar something zero_point 0.0 rel_error 0.001
+80 real scalar something zero_point 0.0 rel_error 0.001
+81 real scalar something zero_point 0.0 rel_error 0.001
+82 real scalar something zero_point 0.0 rel_error 0.001
+83 real scalar something zero_point 0.0 rel_error 0.001
+84 real scalar something zero_point 0.0 rel_error 0.001
+85 real scalar something zero_point 0.0 rel_error 0.001
+86 real scalar something zero_point 0.0 rel_error 0.001
+87 real scalar something zero_point 0.0 rel_error 0.001
+88 real scalar something zero_point 0.0 rel_error 0.001
+89 real scalar something zero_point 0.0 rel_error 0.001
+90 real scalar something zero_point 0.0 rel_error 0.001
+91 real scalar something zero_point 0.0 rel_error 0.001
+92 real scalar something zero_point 0.0 rel_error 0.001
+93 real scalar something zero_point 0.0 rel_error 0.001
