@@ -1,0 +1,23 @@
+#! /bin/csh
+# file: asave
+# author: Clare Congdon, Mon Mar 19 14:55:28 2001
+# to save autoclass output files into a new folder
+
+if (x$1 == x) then
+  echo "  Usage: asave <directory>"
+  echo "  (will create a new directory if need be)"
+  exit
+endif
+
+echo "creating directory $1"
+mkdir $1
+
+echo "moving files to directory $1"
+mv -i lrs*.case-text-* $1
+mv -i lrs*.class-text-* $1
+mv -i lrs*.influ-o-text-* $1
+mv -i lrs*.log $1
+mv -i lrs*.rlog $1
+mv -i lrs*.results-bin $1
+
+echo "done moving files to directory $1"
