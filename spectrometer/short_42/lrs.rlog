@@ -1,0 +1,81 @@
+
+
+AUTOCLASS C (version 3.3.5unx) STARTING at Wed Dec 16 15:41:11 2009 
+
+AUTOCLASS -REPORTS default parameters:
+n_clsfs=1; clsf_n_list=(); report_type="all"; report_mode="text"; comment_data_headers_p=false; num_atts_to_list=999; xref_class_report_att_list=(); order_attributes_by_influence_p=true; break_on_warnings_p=true; free_storage_p=true; max_num_xref_class_probs=5; sigma_contours_att_list=()
+
+USER supplied parameters which override the defaults:
+xref_class_report_att_list=(1)
+
+ADVISORY[2]: read 94 attribute defs from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.hd2
+ADVISORY[1]: read 531 datum from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.db2
+
+** Error & Warning Messages from READING & EXPANDING Model Index = 0 **
+
+WARNING[3]: attribute #1: "b01"
+log transform of attribute# 1 using mn -460.896454 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #14: "b14"
+log transform of attribute# 14 using mn -151.769104 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #15: "b15"
+log transform of attribute# 15 using mn -141.959290 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #16: "b16"
+log transform of attribute# 16 using mn -297.138641 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #17: "b17"
+log transform of attribute# 17 using mn -209.158966 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #18: "b18"
+log transform of attribute# 18 using mn -158.964264 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #19: "b19"
+log transform of attribute# 19 using mn -679.262085 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #20: "b20"
+log transform of attribute# 20 using mn -221.810852 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #23: "b23"
+log transform of attribute# 23 using mn -89.443962 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #25: "b25"
+log transform of attribute# 25 using mn -470.577850 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #45: "r41"
+log transform of attribute# 45 using mn -13.090636 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #88: "r34"
+log transform of attribute# 88 using mn -15.282752 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #92: "r38"
+log transform of attribute# 92 using mn -17.147625 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+
+*******  SUMMARY OF ALL ERROR AND WARNING MESSAGES *******
+
+13 WARNING message(s) occured:
+  0 due to unspecified attribute type set to dummy
+  0 due to excess type = discrete range(s)
+  0 due to unspecified model term type set to ignore
+  0 due to single valued attribute(s)
+  13 due to model term type expansion
+
+Do you want to EXIT - {y/n}? 
+ADVISORY: loaded 2 classifications from 
+          /home/clr/cos472/cos472-final-project/spectrometer/lrs.results-bin
+ADVISORY: read 10 search trials from 
+          /home/clr/cos472/cos472-final-project/spectrometer/lrs.search
+
+File written: /home/clr/cos472/cos472-final-project/spectrometer/lrs.influ-o-text-1
+
+File written: /home/clr/cos472/cos472-final-project/spectrometer/lrs.case-text-1
+
+File written: /home/clr/cos472/cos472-final-project/spectrometer/lrs.class-text-1
+
+
+AUTOCLASS C (version 3.3.5unx) STOPPING at Wed Dec 16 15:41:12 2009 
+

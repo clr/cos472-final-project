@@ -1,9 +1,0 @@
-------------------  SUMMARY OF 10 BEST RESULTS  ------------------
-PROBABILITY  exp(-508820.778) N_CLASSES   2 FOUND ON TRY   23 DUPS  32 *SAVED*
-PROBABILITY  exp(-509123.116) N_CLASSES   2 FOUND ON TRY    1 DUPS  4 *SAVED*
-PROBABILITY  exp(-509126.603) N_CLASSES   2 FOUND ON TRY    6 DUPS  61
-
-------------------  SUMMARY OF TRY CONVERGENCE  ------------------
-try   23    num_cycles   10    max_cycles  200    convergent
-try    1    num_cycles   15    max_cycles  200    convergent
-try    6    num_cycles   16    max_cycles  200    convergent

@@ -21,7 +21,7 @@ force_new_search_p = true
 ;;start_j_list = 2, 3
 
 ;; set number of tries to do before stopping
-max_n_tries = 100
+max_n_tries = 10
 
 ;; set number of clusters expected
-fixed_j = 100
+fixed_j = 50
