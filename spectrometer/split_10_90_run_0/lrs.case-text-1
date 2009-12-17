@@ -1,0 +1,38 @@
+
+
+
+      CROSS REFERENCE   CASE NUMBER => MOST PROBABLE CLASS
+
+
+      AutoClass CLASSIFICATION for the 54 cases in
+        /home/clr/cos472/cos472-final-project/spectrometer/lrs.training.db2
+        /home/clr/cos472/cos472-final-project/spectrometer/lrs.hd2
+      with log-A<X/H> (approximate marginal likelihood) = -57623.565
+      from classification results file
+        /home/clr/cos472/cos472-final-project/spectrometer/lrs.results-bin
+      and using models
+        /home/clr/cos472/cos472-final-project/spectrometer/lrs.model - index = 0
+
+
+
+     Case #  Class  Prob         Case #  Class  Prob         Case #  Class  Prob 
+------------------------------------------------------------------------------------------
+          1    0   1.000             19    6   1.000             37    1   1.000
+          2    2   1.000             20    1   1.000             38    4   1.000
+          3    1   1.000             21    0   1.000             39    2   1.000
+          4    1   1.000             22    1   1.000             40    0   1.000
+          5    0   1.000             23    3   1.000             41    2   1.000
+          6    0   1.000             24    2   1.000             42    1   1.000
+          7    0   1.000             25    1   1.000             43    1   1.000
+          8    0   1.000             26    2   1.000             44    7   1.000
+          9    2   1.000             27    1   1.000             45    2   1.000
+         10    7   1.000             28    6   1.000             46    2   1.000
+         11    3   1.000             29    2   1.000             47    3   1.000
+         12    4   1.000             30    4   1.000             48    0   1.000
+         13    3   1.000             31    0   1.000             49    4   1.000
+         14    1   1.000             32    3   1.000             50    7   1.000
+         15    0   1.000             33    6   1.000             51    5   1.000
+         16    1   1.000             34    3   1.000             52    5   1.000
+         17    5   1.000             35    4   1.000             53    5   1.000
+         18    4   1.000             36    5   1.000             54    0   1.000
+

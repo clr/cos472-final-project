@@ -1,0 +1,948 @@
+
+
+AUTOCLASS C (version 3.3.5unx) STARTING at Wed Dec 16 19:51:11 2009 
+
+AUTOCLASS -SEARCH default parameters:
+rel_error=1.000000e-02; start_j_list=(2,3,5,7,10,15,25); n_classes_fn_type="random_ln_normal"; fixed_j=0; min_report_period=30; max_duration=0; max_n_tries=0; n_save=2; log_file_p=true; search_file_p=true; results_file_p=true; min_save_period=1800; max_n_store=10; n_final_summary=10; start_fn_type="random"; try_fn_type="converge_search_3"; initial_cycles_p=true; save_compact_p=true; read_compact_p=true; randomize_random_p=true; n_data=0; halt_range=5.000000e-01; halt_factor=1.000000e-04; rel_delta_range=2.500000e-03; n_average=3; cs4_delta_range=2.500000e-03; sigma_beta_n_values=6; max_cycles=200; converge_print_p=false; force_new_search_p=true; checkpoint_p=false; min_checkpoint_period=10800; reconverge_type=""; screen_output_p=true; interactive_p=true; break_on_warnings_p=true; free_storage_p=true
+
+USER supplied parameters which override the defaults:
+fixed_j=12; max_n_tries=100; start_fn_type="random"; randomize_random_p=true; force_new_search_p=true
+
+
+##############  Starting Input Check  ###############
+
+To log file: 
+   /home/clr/cos472/cos472-final-project/spectrometer/lrs.log
+During loading of: 
+   [1] /home/clr/cos472/cos472-final-project/spectrometer/lrs.training.db2,
+   [2] /home/clr/cos472/cos472-final-project/spectrometer/lrs.hd2,
+   [3] /home/clr/cos472/cos472-final-project/spectrometer/lrs.model.
+
+   [Attribute #, value #, and datum # are zero based.]
+
+ADVISORY[2]: data_file_format settings:
+             separator_char = ' ', comment_char = ';', unknown_token = '?'
+ADVISORY[2]: read 94 attribute defs from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.hd2
+ADVISORY[1]: read 107 datum from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.training.db2
+ADVISORY[1]: real statistics [ min < (mean : variance) < max ] built 
+             from input data --
+   Attribute #1, "b01":
+      [ -4.6090e+02 < ( 1.2808e+04 : 2.3078e+07) <  2.6643e+04 ]
+   Attribute #2, "b02":
+      [  7.9886e+02 < ( 1.2568e+04 : 1.8969e+07) <  2.4243e+04 ]
+   Attribute #3, "b03":
+      [  1.6667e+03 < ( 1.2402e+04 : 1.5463e+07) <  2.2845e+04 ]
+   Attribute #4, "b04":
+      [  5.9976e+02 < ( 1.2025e+04 : 1.2111e+07) <  2.1262e+04 ]
+   Attribute #5, "b05":
+      [  1.5618e+03 < ( 1.1562e+04 : 8.8573e+06) <  2.0173e+04 ]
+   Attribute #6, "b06":
+      [  1.6800e+03 < ( 1.1180e+04 : 6.5447e+06) <  1.8706e+04 ]
+   Attribute #7, "b07":
+      [  2.1693e+03 < ( 1.0694e+04 : 4.7099e+06) <  1.6815e+04 ]
+   Attribute #8, "b08":
+      [  2.1258e+03 < ( 1.0472e+04 : 3.5231e+06) <  1.5617e+04 ]
+   Attribute #9, "b09":
+      [  1.5107e+03 < ( 1.0116e+04 : 3.1717e+06) <  1.4489e+04 ]
+   Attribute #10, "b10":
+      [  2.1131e+03 < ( 9.8576e+03 : 3.4756e+06) <  1.3568e+04 ]
+   Attribute #11, "b11":
+      [  2.0810e+03 < ( 9.6345e+03 : 4.5458e+06) <  1.3234e+04 ]
+   Attribute #12, "b12":
+      [  1.9024e+03 < ( 9.5240e+03 : 5.2527e+06) <  1.3570e+04 ]
+   Attribute #13, "b13":
+      [  2.2345e+03 < ( 9.3511e+03 : 5.8432e+06) <  1.3470e+04 ]
+   Attribute #14, "b14":
+      [  2.0986e+03 < ( 9.0644e+03 : 6.0709e+06) <  1.3587e+04 ]
+   Attribute #15, "b15":
+      [  2.0724e+03 < ( 8.8572e+03 : 5.8502e+06) <  1.3442e+04 ]
+   Attribute #16, "b16":
+      [  2.0091e+03 < ( 8.5369e+03 : 5.1135e+06) <  1.3299e+04 ]
+   Attribute #17, "b17":
+      [  2.2257e+03 < ( 8.3556e+03 : 4.4411e+06) <  1.3033e+04 ]
+   Attribute #18, "b18":
+      [  2.4006e+03 < ( 8.2059e+03 : 3.9277e+06) <  1.2602e+04 ]
+   Attribute #19, "b19":
+      [  2.3450e+03 < ( 8.0221e+03 : 3.4282e+06) <  1.2035e+04 ]
+   Attribute #20, "b20":
+      [  2.4515e+03 < ( 7.8461e+03 : 2.8985e+06) <  1.1306e+04 ]
+   Attribute #21, "b21":
+      [  2.7579e+03 < ( 7.7672e+03 : 2.4202e+06) <  1.0756e+04 ]
+   Attribute #22, "b22":
+      [  2.4802e+03 < ( 7.5466e+03 : 1.9510e+06) <  1.0162e+04 ]
+   Attribute #23, "b23":
+      [  2.9453e+03 < ( 7.3683e+03 : 1.5932e+06) <  1.0094e+04 ]
+   Attribute #24, "b24":
+      [  2.9689e+03 < ( 7.1913e+03 : 1.3248e+06) <  9.3309e+03 ]
+   Attribute #25, "b25":
+      [  3.4970e+03 < ( 6.9307e+03 : 9.0668e+05) <  8.5841e+03 ]
+   Attribute #26, "b26":
+      [  3.8913e+03 < ( 6.8048e+03 : 6.7603e+05) <  8.1085e+03 ]
+   Attribute #27, "b27":
+      [  4.0789e+03 < ( 6.5421e+03 : 5.2122e+05) <  7.8032e+03 ]
+   Attribute #28, "b28":
+      [  4.1355e+03 < ( 6.3725e+03 : 4.0405e+05) <  7.4200e+03 ]
+   Attribute #29, "b29":
+      [  4.6580e+03 < ( 6.1356e+03 : 3.1383e+05) <  7.1395e+03 ]
+   Attribute #30, "b30":
+      [  4.5024e+03 < ( 5.9519e+03 : 2.2001e+05) <  7.2727e+03 ]
+   Attribute #31, "b31":
+      [  4.3715e+03 < ( 5.6907e+03 : 1.8103e+05) <  6.5869e+03 ]
+   Attribute #32, "b32":
+      [  4.2208e+03 < ( 5.4918e+03 : 2.1734e+05) <  6.5202e+03 ]
+   Attribute #33, "b33":
+      [  3.9788e+03 < ( 5.1871e+03 : 2.7253e+05) <  6.1934e+03 ]
+   Attribute #34, "b34":
+      [  3.8380e+03 < ( 5.0145e+03 : 3.2602e+05) <  6.4065e+03 ]
+   Attribute #35, "b35":
+      [  3.7145e+03 < ( 4.8028e+03 : 3.9302e+05) <  6.7463e+03 ]
+   Attribute #36, "b36":
+      [  3.5191e+03 < ( 4.6579e+03 : 4.2646e+05) <  6.6332e+03 ]
+   Attribute #37, "b37":
+      [  3.3588e+03 < ( 4.5673e+03 : 4.7066e+05) <  6.7289e+03 ]
+   Attribute #38, "b38":
+      [  2.9239e+03 < ( 4.4018e+03 : 5.0887e+05) <  6.7100e+03 ]
+   Attribute #39, "b39":
+      [  3.1834e+03 < ( 4.2978e+03 : 5.5171e+05) <  6.6943e+03 ]
+   Attribute #40, "b40":
+      [  3.0005e+03 < ( 4.2151e+03 : 6.0575e+05) <  6.7558e+03 ]
+   Attribute #41, "b41":
+      [  2.8858e+03 < ( 4.0868e+03 : 5.9903e+05) <  6.6457e+03 ]
+   Attribute #42, "b42":
+      [  2.5758e+03 < ( 3.9691e+03 : 6.0477e+05) <  6.5944e+03 ]
+   Attribute #43, "b43":
+      [  2.5807e+03 < ( 3.8772e+03 : 6.0020e+05) <  6.5229e+03 ]
+   Attribute #44, "b44":
+      [  2.3386e+03 < ( 3.7479e+03 : 5.4981e+05) <  6.4622e+03 ]
+   Attribute #45, "r41":
+      [  2.6013e+03 < ( 7.6382e+03 : 2.0582e+06) <  1.0274e+04 ]
+   Attribute #46, "r42":
+      [  2.9124e+03 < ( 7.1897e+03 : 1.4340e+06) <  9.2413e+03 ]
+   Attribute #47, "r43":
+      [  3.6212e+03 < ( 6.7281e+03 : 7.0308e+05) <  8.2630e+03 ]
+   Attribute #48, "r44":
+      [  4.5792e+03 < ( 6.2221e+03 : 2.9431e+05) <  7.4152e+03 ]
+   Attribute #49, "r45":
+      [  4.3215e+03 < ( 5.5874e+03 : 2.2229e+05) <  6.7051e+03 ]
+   Attribute #50, "r46":
+      [  3.8611e+03 < ( 5.0216e+03 : 3.4146e+05) <  6.4571e+03 ]
+   Attribute #51, "r47":
+      [  3.4071e+03 < ( 4.5727e+03 : 5.2928e+05) <  6.9021e+03 ]
+   Attribute #52, "r48":
+      [  3.1265e+03 < ( 4.1974e+03 : 5.7963e+05) <  7.1709e+03 ]
+   Attribute #53, "r49":
+      [  2.7414e+03 < ( 3.8680e+03 : 6.3048e+05) <  7.1350e+03 ]
+   Attribute #54, "r40":
+      [  2.5194e+03 < ( 3.6370e+03 : 6.1931e+05) <  6.8905e+03 ]
+   Attribute #55, "r01":
+      [  2.3077e+03 < ( 3.3912e+03 : 6.9798e+05) <  6.7158e+03 ]
+   Attribute #56, "r02":
+      [  1.9350e+03 < ( 3.2328e+03 : 7.5261e+05) <  6.5751e+03 ]
+   Attribute #57, "r03":
+      [  1.9128e+03 < ( 3.0518e+03 : 7.1758e+05) <  6.4217e+03 ]
+   Attribute #58, "r04":
+      [  1.8137e+03 < ( 2.9255e+03 : 7.0416e+05) <  6.0295e+03 ]
+   Attribute #59, "r05":
+      [  1.6783e+03 < ( 2.7986e+03 : 7.1961e+05) <  6.4744e+03 ]
+   Attribute #60, "r06":
+      [  1.6143e+03 < ( 2.7500e+03 : 6.8580e+05) <  6.0919e+03 ]
+   Attribute #61, "r07":
+      [  1.3341e+03 < ( 2.6491e+03 : 6.4890e+05) <  6.0966e+03 ]
+   Attribute #62, "r08":
+      [  1.1826e+03 < ( 2.5737e+03 : 6.2340e+05) <  5.6381e+03 ]
+   Attribute #63, "r09":
+      [  1.2690e+03 < ( 2.4895e+03 : 6.5424e+05) <  6.3411e+03 ]
+   Attribute #64, "r10":
+      [  1.1054e+03 < ( 2.4229e+03 : 6.6083e+05) <  6.2927e+03 ]
+   Attribute #65, "r11":
+      [  1.0831e+03 < ( 2.3909e+03 : 6.2927e+05) <  6.0512e+03 ]
+   Attribute #66, "r12":
+      [  1.0235e+03 < ( 2.3329e+03 : 6.8507e+05) <  6.4652e+03 ]
+   Attribute #67, "r13":
+      [  9.7633e+02 < ( 2.2775e+03 : 7.0527e+05) <  6.8479e+03 ]
+   Attribute #68, "r14":
+      [  9.0829e+02 < ( 2.2147e+03 : 6.1112e+05) <  5.8923e+03 ]
+   Attribute #69, "r15":
+      [  8.4440e+02 < ( 2.1546e+03 : 6.0892e+05) <  5.6254e+03 ]
+   Attribute #70, "r16":
+      [  8.0510e+02 < ( 2.0891e+03 : 6.5132e+05) <  6.1242e+03 ]
+   Attribute #71, "r17":
+      [  7.4556e+02 < ( 2.0338e+03 : 6.3172e+05) <  6.1808e+03 ]
+   Attribute #72, "r18":
+      [  7.5140e+02 < ( 1.9710e+03 : 6.5450e+05) <  6.0044e+03 ]
+   Attribute #73, "r19":
+      [  1.7280e+02 < ( 1.9378e+03 : 6.5248e+05) <  6.2732e+03 ]
+   Attribute #74, "r20":
+      [  4.0749e+02 < ( 1.8685e+03 : 6.0453e+05) <  6.0654e+03 ]
+   Attribute #75, "r21":
+      [  6.5312e+02 < ( 1.8208e+03 : 6.1844e+05) <  6.1716e+03 ]
+   Attribute #76, "r22":
+      [  5.7005e+02 < ( 1.7700e+03 : 6.7179e+05) <  6.8458e+03 ]
+   Attribute #77, "r23":
+      [  4.0501e+02 < ( 1.7137e+03 : 6.2159e+05) <  6.3280e+03 ]
+   Attribute #78, "r24":
+      [  5.3556e+02 < ( 1.6785e+03 : 6.0009e+05) <  5.9055e+03 ]
+   Attribute #79, "r25":
+      [  5.4592e+02 < ( 1.6059e+03 : 6.5324e+05) <  6.4256e+03 ]
+   Attribute #80, "r26":
+      [  2.3280e+02 < ( 1.5527e+03 : 6.2566e+05) <  6.5453e+03 ]
+   Attribute #81, "r27":
+      [  3.2240e+02 < ( 1.5528e+03 : 6.8021e+05) <  6.6061e+03 ]
+   Attribute #82, "r28":
+      [  1.4634e+02 < ( 1.4993e+03 : 6.1316e+05) <  6.2340e+03 ]
+   Attribute #83, "r29":
+      [  2.0856e+02 < ( 1.4168e+03 : 6.0611e+05) <  6.4413e+03 ]
+   Attribute #84, "r30":
+      [  4.2135e+02 < ( 1.4201e+03 : 6.5444e+05) <  6.5145e+03 ]
+   Attribute #85, "r31":
+      [  3.6316e+02 < ( 1.4083e+03 : 6.4465e+05) <  6.3252e+03 ]
+   Attribute #86, "r32":
+      [  3.8618e+02 < ( 1.3031e+03 : 5.9960e+05) <  6.0627e+03 ]
+   Attribute #87, "r33":
+      [  3.5339e+02 < ( 1.2686e+03 : 6.2839e+05) <  6.3072e+03 ]
+   Attribute #88, "r34":
+      [  2.9789e+02 < ( 1.2906e+03 : 6.4076e+05) <  6.1998e+03 ]
+   Attribute #89, "r35":
+      [  2.6983e+02 < ( 1.2599e+03 : 6.6300e+05) <  6.4976e+03 ]
+   Attribute #90, "r36":
+      [  3.1287e+02 < ( 1.1976e+03 : 5.6730e+05) <  5.7881e+03 ]
+   Attribute #91, "r37":
+      [  1.6432e+02 < ( 1.1654e+03 : 6.2703e+05) <  5.9157e+03 ]
+   Attribute #92, "r38":
+      [ -1.7148e+01 < ( 1.1422e+03 : 5.6197e+05) <  5.7580e+03 ]
+   Attribute #93, "r39":
+      [  1.1087e+02 < ( 1.0138e+03 : 4.5802e+05) <  5.4196e+03 ]
+ADVISORY[3]: read 1 model def from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.model
+ADVISORY[2]: log_transform is being applied to attribute #1:
+             "b01" and will be stored as attribute #94.
+   Attribute #94, "Log b01":
+      [ -2.0197e+00 < ( 9.3354e+00 : 1.3374e+00) <  1.0207e+01 ]
+ADVISORY[2]: log_transform is being applied to attribute #2:
+             "b02" and will be stored as attribute #95.
+   Attribute #95, "Log b02":
+      [  6.6832e+00 < ( 9.3648e+00 : 1.8582e-01) <  1.0096e+01 ]
+ADVISORY[2]: log_transform is being applied to attribute #3:
+             "b03" and will be stored as attribute #96.
+   Attribute #96, "Log b03":
+      [  7.4186e+00 < ( 9.3668e+00 : 1.3559e-01) <  1.0036e+01 ]
+ADVISORY[2]: log_transform is being applied to attribute #4:
+             "b04" and will be stored as attribute #97.
+   Attribute #97, "Log b04":
+      [  6.3965e+00 < ( 9.3365e+00 : 1.6292e-01) <  9.9647e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #5:
+             "b05" and will be stored as attribute #98.
+   Attribute #98, "Log b05":
+      [  7.3536e+00 < ( 9.3147e+00 : 9.8366e-02) <  9.9121e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #6:
+             "b06" and will be stored as attribute #99.
+   Attribute #99, "Log b06":
+      [  7.4266e+00 < ( 9.2894e+00 : 7.9150e-02) <  9.8366e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #7:
+             "b07" and will be stored as attribute #100.
+   Attribute #100, "Log b07":
+      [  7.6821e+00 < ( 9.2526e+00 : 5.8236e-02) <  9.7300e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #8:
+             "b08" and will be stored as attribute #101.
+   Attribute #101, "Log b08":
+      [  7.6619e+00 < ( 9.2359e+00 : 5.0142e-02) <  9.6561e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #9:
+             "b09" and will be stored as attribute #102.
+   Attribute #102, "Log b09":
+      [  7.3203e+00 < ( 9.1988e+00 : 6.1470e-02) <  9.5811e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #10:
+             "b10" and will be stored as attribute #103.
+   Attribute #103, "Log b10":
+      [  7.6559e+00 < ( 9.1703e+00 : 6.4554e-02) <  9.5155e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #11:
+             "b11" and will be stored as attribute #104.
+   Attribute #104, "Log b11":
+      [  7.6406e+00 < ( 9.1369e+00 : 9.1760e-02) <  9.4906e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #12:
+             "b12" and will be stored as attribute #105.
+   Attribute #105, "Log b12":
+      [  7.5509e+00 < ( 9.1189e+00 : 1.0835e-01) <  9.5157e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #13:
+             "b13" and will be stored as attribute #106.
+   Attribute #106, "Log b13":
+      [  7.7118e+00 < ( 9.0967e+00 : 1.1446e-01) <  9.5083e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #14:
+             "b14" and will be stored as attribute #107.
+   Attribute #107, "Log b14":
+      [  7.6490e+00 < ( 9.0611e+00 : 1.2549e-01) <  9.5169e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #15:
+             "b15" and will be stored as attribute #108.
+   Attribute #108, "Log b15":
+      [  7.6365e+00 < ( 9.0382e+00 : 1.2391e-01) <  9.5062e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #16:
+             "b16" and will be stored as attribute #109.
+   Attribute #109, "Log b16":
+      [  7.6054e+00 < ( 9.0049e+00 : 1.1472e-01) <  9.4954e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #17:
+             "b17" and will be stored as attribute #110.
+   Attribute #110, "Log b17":
+      [  7.7078e+00 < ( 8.9896e+00 : 9.7124e-02) <  9.4753e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #18:
+             "b18" and will be stored as attribute #111.
+   Attribute #111, "Log b18":
+      [  7.7835e+00 < ( 8.9755e+00 : 8.6653e-02) <  9.4416e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #19:
+             "b19" and will be stored as attribute #112.
+   Attribute #112, "Log b19":
+      [  7.7601e+00 < ( 8.9561e+00 : 7.9136e-02) <  9.3955e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #20:
+             "b20" and will be stored as attribute #113.
+   Attribute #113, "Log b20":
+      [  7.8044e+00 < ( 8.9378e+00 : 6.9800e-02) <  9.3331e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #21:
+             "b21" and will be stored as attribute #114.
+   Attribute #114, "Log b21":
+      [  7.9222e+00 < ( 8.9326e+00 : 5.7531e-02) <  9.2832e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #22:
+             "b22" and will be stored as attribute #115.
+   Attribute #115, "Log b22":
+      [  7.8161e+00 < ( 8.9071e+00 : 5.0349e-02) <  9.2264e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #23:
+             "b23" and will be stored as attribute #116.
+   Attribute #116, "Log b23":
+      [  7.9880e+00 < ( 8.8869e+00 : 4.0750e-02) <  9.2197e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #24:
+             "b24" and will be stored as attribute #117.
+   Attribute #117, "Log b24":
+      [  7.9959e+00 < ( 8.8652e+00 : 3.4510e-02) <  9.1411e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #25:
+             "b25" and will be stored as attribute #118.
+   Attribute #118, "Log b25":
+      [  8.1597e+00 < ( 8.8328e+00 : 2.3649e-02) <  9.0577e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #26:
+             "b26" and will be stored as attribute #119.
+   Attribute #119, "Log b26":
+      [  8.2665e+00 < ( 8.8172e+00 : 1.7487e-02) <  9.0007e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #27:
+             "b27" and will be stored as attribute #120.
+   Attribute #120, "Log b27":
+      [  8.3136e+00 < ( 8.7793e+00 : 1.4050e-02) <  8.9623e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #28:
+             "b28" and will be stored as attribute #121.
+   Attribute #121, "Log b28":
+      [  8.3274e+00 < ( 8.7544e+00 : 1.1268e-02) <  8.9119e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #29:
+             "b29" and will be stored as attribute #122.
+   Attribute #122, "Log b29":
+      [  8.4463e+00 < ( 8.7175e+00 : 8.9364e-03) <  8.8734e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #30:
+             "b30" and will be stored as attribute #123.
+   Attribute #123, "Log b30":
+      [  8.4124e+00 < ( 8.6883e+00 : 6.5588e-03) <  8.8919e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #31:
+             "b31" and will be stored as attribute #124.
+   Attribute #124, "Log b31":
+      [  8.3829e+00 < ( 8.6437e+00 : 5.9379e-03) <  8.7928e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #32:
+             "b32" and will be stored as attribute #125.
+   Attribute #125, "Log b32":
+      [  8.3478e+00 < ( 8.6073e+00 : 7.4440e-03) <  8.7827e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #33:
+             "b33" and will be stored as attribute #126.
+   Attribute #126, "Log b33":
+      [  8.2887e+00 < ( 8.5487e+00 : 1.0512e-02) <  8.7312e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #34:
+             "b34" and will be stored as attribute #127.
+   Attribute #127, "Log b34":
+      [  8.2527e+00 < ( 8.5136e+00 : 1.2857e-02) <  8.7651e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #35:
+             "b35" and will be stored as attribute #128.
+   Attribute #128, "Log b35":
+      [  8.2200e+00 < ( 8.4687e+00 : 1.6276e-02) <  8.8167e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #36:
+             "b36" and will be stored as attribute #129.
+   Attribute #129, "Log b36":
+      [  8.1660e+00 < ( 8.4368e+00 : 1.8684e-02) <  8.7998e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #37:
+             "b37" and will be stored as attribute #130.
+   Attribute #130, "Log b37":
+      [  8.1193e+00 < ( 8.4159e+00 : 2.1288e-02) <  8.8142e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #38:
+             "b38" and will be stored as attribute #131.
+   Attribute #131, "Log b38":
+      [  7.9807e+00 < ( 8.3771e+00 : 2.4942e-02) <  8.8114e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #39:
+             "b39" and will be stored as attribute #132.
+   Attribute #132, "Log b39":
+      [  8.0657e+00 < ( 8.3517e+00 : 2.7604e-02) <  8.8090e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #40:
+             "b40" and will be stored as attribute #133.
+   Attribute #133, "Log b40":
+      [  8.0065e+00 < ( 8.3300e+00 : 3.2331e-02) <  8.8182e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #41:
+             "b41" and will be stored as attribute #134.
+   Attribute #134, "Log b41":
+      [  7.9676e+00 < ( 8.2983e+00 : 3.3931e-02) <  8.8017e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #42:
+             "b42" and will be stored as attribute #135.
+   Attribute #135, "Log b42":
+      [  7.8539e+00 < ( 8.2681e+00 : 3.5581e-02) <  8.7940e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #43:
+             "b43" and will be stored as attribute #136.
+   Attribute #136, "Log b43":
+      [  7.8558e+00 < ( 8.2442e+00 : 3.6443e-02) <  8.7831e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #44:
+             "b44" and will be stored as attribute #137.
+   Attribute #137, "Log b44":
+      [  7.7573e+00 < ( 8.2103e+00 : 3.6747e-02) <  8.7737e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #45:
+             "r41" and will be stored as attribute #138.
+   Attribute #138, "Log r41":
+      [  7.8638e+00 < ( 8.9186e+00 : 5.1235e-02) <  9.2374e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #46:
+             "r42" and will be stored as attribute #139.
+   Attribute #139, "Log r42":
+      [  7.9767e+00 < ( 8.8637e+00 : 3.7204e-02) <  9.1314e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #47:
+             "r43" and will be stored as attribute #140.
+   Attribute #140, "Log r43":
+      [  8.1946e+00 < ( 8.8053e+00 : 1.8828e-02) <  9.0195e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #48:
+             "r44" and will be stored as attribute #141.
+   Attribute #141, "Log r44":
+      [  8.4293e+00 < ( 8.7319e+00 : 8.1261e-03) <  8.9113e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #49:
+             "r45" and will be stored as attribute #142.
+   Attribute #142, "Log r45":
+      [  8.3714e+00 < ( 8.6246e+00 : 7.4703e-03) <  8.8106e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #50:
+             "r46" and will be stored as attribute #143.
+   Attribute #143, "Log r46":
+      [  8.2587e+00 < ( 8.5148e+00 : 1.3434e-02) <  8.7729e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #51:
+             "r47" and will be stored as attribute #144.
+   Attribute #144, "Log r47":
+      [  8.1336e+00 < ( 8.4158e+00 : 2.3519e-02) <  8.8396e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #52:
+             "r48" and will be stored as attribute #145.
+   Attribute #145, "Log r48":
+      [  8.0477e+00 < ( 8.3267e+00 : 3.0174e-02) <  8.8778e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #53:
+             "r49" and will be stored as attribute #146.
+   Attribute #146, "Log r49":
+      [  7.9162e+00 < ( 8.2413e+00 : 3.7067e-02) <  8.8728e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #54:
+             "r40" and will be stored as attribute #147.
+   Attribute #147, "Log r40":
+      [  7.8318e+00 < ( 8.1778e+00 : 4.0530e-02) <  8.8379e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #55:
+             "r01" and will be stored as attribute #148.
+   Attribute #148, "Log r01":
+      [  7.7440e+00 < ( 8.1025e+00 : 4.9935e-02) <  8.8122e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #56:
+             "r02" and will be stored as attribute #149.
+   Attribute #149, "Log r02":
+      [  7.5679e+00 < ( 8.0500e+00 : 5.8482e-02) <  8.7910e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #57:
+             "r03" and will be stored as attribute #150.
+   Attribute #150, "Log r03":
+      [  7.5563e+00 < ( 7.9910e+00 : 6.0494e-02) <  8.7674e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #58:
+             "r04" and will be stored as attribute #151.
+   Attribute #151, "Log r04":
+      [  7.5031e+00 < ( 7.9462e+00 : 6.5330e-02) <  8.7044e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #59:
+             "r05" and will be stored as attribute #152.
+   Attribute #152, "Log r05":
+      [  7.4255e+00 < ( 7.8986e+00 : 7.0856e-02) <  8.7756e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #60:
+             "r06" and will be stored as attribute #153.
+   Attribute #153, "Log r06":
+      [  7.3866e+00 < ( 7.8809e+00 : 7.1685e-02) <  8.7147e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #61:
+             "r07" and will be stored as attribute #154.
+   Attribute #154, "Log r07":
+      [  7.1960e+00 < ( 7.8418e+00 : 7.6478e-02) <  8.7155e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #62:
+             "r08" and will be stored as attribute #155.
+   Attribute #155, "Log r08":
+      [  7.0754e+00 < ( 7.8104e+00 : 8.2839e-02) <  8.6373e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #63:
+             "r09" and will be stored as attribute #156.
+   Attribute #156, "Log r09":
+      [  7.1460e+00 < ( 7.7735e+00 : 8.8825e-02) <  8.7548e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #64:
+             "r10" and will be stored as attribute #157.
+   Attribute #157, "Log r10":
+      [  7.0080e+00 < ( 7.7425e+00 : 9.7629e-02) <  8.7471e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #65:
+             "r11" and will be stored as attribute #158.
+   Attribute #158, "Log r11":
+      [  6.9876e+00 < ( 7.7294e+00 : 9.7815e-02) <  8.7080e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #66:
+             "r12" and will be stored as attribute #159.
+   Attribute #159, "Log r12":
+      [  6.9310e+00 < ( 7.6993e+00 : 1.0783e-01) <  8.7742e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #67:
+             "r13" and will be stored as attribute #160.
+   Attribute #160, "Log r13":
+      [  6.8838e+00 < ( 7.6717e+00 : 1.1487e-01) <  8.8317e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #68:
+             "r14" and will be stored as attribute #161.
+   Attribute #161, "Log r14":
+      [  6.8116e+00 < ( 7.6443e+00 : 1.1717e-01) <  8.6814e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #69:
+             "r15" and will be stored as attribute #162.
+   Attribute #162, "Log r15":
+      [  6.7386e+00 < ( 7.6134e+00 : 1.2398e-01) <  8.6350e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #70:
+             "r16" and will be stored as attribute #163.
+   Attribute #163, "Log r16":
+      [  6.6910e+00 < ( 7.5769e+00 : 1.3361e-01) <  8.7200e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #71:
+             "r17" and will be stored as attribute #164.
+   Attribute #164, "Log r17":
+      [  6.6141e+00 < ( 7.5486e+00 : 1.3754e-01) <  8.7292e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #72:
+             "r18" and will be stored as attribute #165.
+   Attribute #165, "Log r18":
+      [  6.6219e+00 < ( 7.5108e+00 : 1.4918e-01) <  8.7002e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #73:
+             "r19" and will be stored as attribute #166.
+   Attribute #166, "Log r19":
+      [  5.1521e+00 < ( 7.4824e+00 : 1.9628e-01) <  8.7440e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #74:
+             "r20" and will be stored as attribute #167.
+   Attribute #167, "Log r20":
+      [  6.0100e+00 < ( 7.4533e+00 : 1.6298e-01) <  8.7104e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #75:
+             "r21" and will be stored as attribute #168.
+   Attribute #168, "Log r21":
+      [  6.4818e+00 < ( 7.4258e+00 : 1.6026e-01) <  8.7277e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #76:
+             "r22" and will be stored as attribute #169.
+   Attribute #169, "Log r22":
+      [  6.3457e+00 < ( 7.3911e+00 : 1.7135e-01) <  8.8314e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #77:
+             "r23" and will be stored as attribute #170.
+   Attribute #170, "Log r23":
+      [  6.0039e+00 < ( 7.3559e+00 : 1.8120e-01) <  8.7527e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #78:
+             "r24" and will be stored as attribute #171.
+   Attribute #171, "Log r24":
+      [  6.2833e+00 < ( 7.3347e+00 : 1.7942e-01) <  8.6836e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #79:
+             "r25" and will be stored as attribute #172.
+   Attribute #172, "Log r25":
+      [  6.3025e+00 < ( 7.2802e+00 : 1.9499e-01) <  8.7680e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #80:
+             "r26" and will be stored as attribute #173.
+   Attribute #173, "Log r26":
+      [  5.4502e+00 < ( 7.2436e+00 : 2.0909e-01) <  8.7865e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #81:
+             "r27" and will be stored as attribute #174.
+   Attribute #174, "Log r27":
+      [  5.7758e+00 < ( 7.2349e+00 : 2.2352e-01) <  8.7957e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #82:
+             "r28" and will be stored as attribute #175.
+   Attribute #175, "Log r28":
+      [  4.9859e+00 < ( 7.1998e+00 : 2.3481e-01) <  8.7378e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #83:
+             "r29" and will be stored as attribute #176.
+   Attribute #176, "Log r29":
+      [  5.3402e+00 < ( 7.1403e+00 : 2.2799e-01) <  8.7705e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #84:
+             "r30" and will be stored as attribute #177.
+   Attribute #177, "Log r30":
+      [  6.0435e+00 < ( 7.1409e+00 : 2.1888e-01) <  8.7818e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #85:
+             "r31" and will be stored as attribute #178.
+   Attribute #178, "Log r31":
+      [  5.8948e+00 < ( 7.1278e+00 : 2.3233e-01) <  8.7523e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #86:
+             "r32" and will be stored as attribute #179.
+   Attribute #179, "Log r32":
+      [  5.9563e+00 < ( 7.0430e+00 : 2.4240e-01) <  8.7099e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #87:
+             "r33" and will be stored as attribute #180.
+   Attribute #180, "Log r33":
+      [  5.8676e+00 < ( 7.0072e+00 : 2.5778e-01) <  8.7495e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #88:
+             "r34" and will be stored as attribute #181.
+   Attribute #181, "Log r34":
+      [  5.6967e+00 < ( 7.0201e+00 : 2.7105e-01) <  8.7323e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #89:
+             "r35" and will be stored as attribute #182.
+   Attribute #182, "Log r35":
+      [  5.5978e+00 < ( 6.9927e+00 : 2.7222e-01) <  8.7792e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #90:
+             "r36" and will be stored as attribute #183.
+   Attribute #183, "Log r36":
+      [  5.7458e+00 < ( 6.9455e+00 : 2.6602e-01) <  8.6636e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #91:
+             "r37" and will be stored as attribute #184.
+   Attribute #184, "Log r37":
+      [  5.1018e+00 < ( 6.8826e+00 : 3.5433e-01) <  8.6854e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #92:
+             "r38" and will be stored as attribute #185.
+   Attribute #185, "Log r38":
+      [ -4.4574e+00 < ( 6.8143e+00 : 1.4655e+00) <  8.6613e+00 ]
+ADVISORY[2]: log_transform is being applied to attribute #93:
+             "r39" and will be stored as attribute #186.
+   Attribute #186, "Log r39":
+      [  4.7084e+00 < ( 6.7614e+00 : 3.1355e-01) <  8.5978e+00 ]
+
+** Error & Warning Messages from READING & EXPANDING Model Index = 0 **
+
+WARNING[3]: attribute #1: "b01"
+log transform of attribute# 1 using mn -460.896454 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #92: "r38"
+log transform of attribute# 92 using mn -17.147625 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+
+*******  SUMMARY OF ALL ERROR AND WARNING MESSAGES *******
+
+2 WARNING message(s) occured:
+  0 due to unspecified attribute type set to dummy
+  0 due to excess type = discrete range(s)
+  0 due to unspecified model term type set to ignore
+  0 due to single valued attribute(s)
+  2 due to model term type expansion
+
+############ Input Check Concluded ##############
+
+Do you want to EXIT - {y/n}? 
+
+WELCOME TO AUTOCLASS.
+  1) Each time I have finished a new 'trial', or attempt to find a good
+     classification, I will print the number of classes that trial
+     started and ended with, such as 9->7.
+  2) If that trial results in a duplicate of a previous run, I will print
+     'dup' first.
+  3) If that trial results in a classification better than any previous, 
+     I will print 'best' first.
+  4) If more than 30 seconds have passed since the last report, and a new
+     classification has been found which is better than any previous ones,
+     I will report on that classification and on the status of the search
+     so far.
+  5) This report will include an estimate of the time it will take to find
+     another even better classification, and how much better that will be.
+     In addition, I will estimate a lower bound on how long it might take to
+     find the very best classification, and how much better that might be.
+  6) If you are warned about too much time in overhead, you may want to
+     change the parameters n_save, min_save_period, min_report_period, or
+     min_checkpoint_period.
+  7) To quit searching, type a 'q', hit <return>, and wait.  Otherwise I'll
+     go on until I complete trial number (100).
+  8) If needed, every 30 minutes I will save the best 2 classifications
+     so far to file: 
+     /home/clr/cos472/cos472-final-project/spectrometer/lrs.results-bin
+     and a description of the search to file:
+     /home/clr/cos472/cos472-final-project/spectrometer/lrs.search
+  9) A record of this search will be printed to file:
+     /home/clr/cos472/cos472-final-project/spectrometer/lrs.log
+
+BEGINNING SEARCH at Wed Dec 16 19:51:12 2009
+
+[j_in=12]  [cs-3: cycles 7] best12->11(1) [j_in=12]  [cs-3: cycles 8] best12->10(2) [j_in=12]  [cs-3: cycles 8] dup12->10(3) [j_in=12]  [cs-3: cycles 8] best12->10(4) [j_in=12]  [cs-3: cycles 8] dup12->10(5) [j_in=12]  [cs-3: cycles 8] dup12->10(6) [j_in=12]  [cs-3: cycles 8] dup12->10(7) [j_in=12]  [cs-3: cycles 8] dup12->10(8) [j_in=12]  [cs-3: cycles 8] dup12->10(9) [j_in=12]  [cs-3: cycles 8] dup12->10(10) [j_in=12]  [cs-3: cycles 8] dup12->10(11) [j_in=12]  [cs-3: cycles 8] dup12->10(12) [j_in=12]  [cs-3: cycles 8] dup12->10(13) [j_in=12]  [cs-3: cycles 8] dup12->10(14) [j_in=12]  [cs-3: cycles 8] dup12->10(15) [j_in=12]  [cs-3: cycles 8] dup12->10(16) [j_in=12]  [cs-3: cycles 8] dup12->10(17) [j_in=12]  [cs-3: cycles 8] dup12->10(18) [j_in=12]  [cs-3: cycles 8] dup12->10(19) [j_in=12]  [cs-3: cycles 8] dup12->10(20) [j_in=12]  [cs-3: cycles 8] dup12->10(21) [j_in=12]  [cs-3: cycles 8] dup12->10(22) [j_in=12]  [cs-3: cycles 8] dup12->10(23) [j_in=12]  [cs-3: cycles 8] dup12->10(24) [j_in=12]  [cs-3: cycles 8] dup12->10(25) [j_in=12]  [cs-3: cycles 8] dup12->10(26) [j_in=12]  [cs-3: cycles 8] dup12->10(27) [j_in=12]  [cs-3: cycles 8] dup12->10(28) [j_in=12]  [cs-3: cycles 8] dup12->10(29) [j_in=12]  [cs-3: cycles 8] dup12->10(30) [j_in=12]  [cs-3: cycles 8] dup12->10(31) [j_in=12]  [cs-3: cycles 8] dup12->10(32) [j_in=12]  [cs-3: cycles 8] dup12->10(33) [j_in=12]  [cs-3: cycles 8] dup12->10(34) [j_in=12]  [cs-3: cycles 8] dup12->10(35) [j_in=12]  [cs-3: cycles 8] dup12->10(36) [j_in=12]  [cs-3: cycles 8] dup12->10(37) [j_in=12]  [cs-3: cycles 8] dup12->10(38) [j_in=12]  [cs-3: cycles 8] dup12->10(39) [j_in=12]  [cs-3: cycles 9] 12->11(40) [j_in=12]  [cs-3: cycles 9] dup12->11(41) [j_in=12]  [cs-3: cycles 9] dup12->11(42) [j_in=12]  [cs-3: cycles 9] dup12->11(43) [j_in=12]  [cs-3: cycles 9] dup12->11(44) [j_in=12]  [cs-3: cycles 9] dup12->11(45) [j_in=12]  [cs-3: cycles 9] dup12->11(46) [j_in=12]  [cs-3: cycles 9] dup12->11(47) [j_in=12]  [cs-3: cycles 9] dup12->11(48) [j_in=12]  [cs-3: cycles 9] dup12->11(49) [j_in=12]  [cs-3: cycles 9] dup12->11(50) [j_in=12]  [cs-3: cycles 9] dup12->11(51) [j_in=12]  [cs-3: cycles 9] dup12->11(52) [j_in=12]  [cs-3: cycles 9] dup12->11(53) [j_in=12]  [cs-3: cycles 9] dup12->11(54) [j_in=12]  [cs-3: cycles 9] dup12->11(55) [j_in=12]  [cs-3: cycles 9] dup12->11(56) [j_in=12]  [cs-3: cycles 9] dup12->11(57) [j_in=12]  [cs-3: cycles 9] dup12->11(58) [j_in=12]  [cs-3: cycles 9] dup12->11(59) [j_in=12]  [cs-3: cycles 9] dup12->11(60) [j_in=12]  [cs-3: cycles 9] dup12->11(61) [j_in=12]  [cs-3: cycles 9] dup12->11(62) [j_in=12]  [cs-3: cycles 9] dup12->11(63) [j_in=12]  [cs-3: cycles 9] dup12->11(64) [j_in=12]  [cs-3: cycles 9] dup12->11(65) [j_in=12]  [cs-3: cycles 9] dup12->11(66) [j_in=12]  [cs-3: cycles 9] dup12->11(67) [j_in=12]  [cs-3: cycles 9] dup12->11(68) [j_in=12]  [cs-3: cycles 9] dup12->11(69) [j_in=12]  [cs-3: cycles 9] dup12->11(70) [j_in=12]  [cs-3: cycles 9] dup12->11(71) [j_in=12]  [cs-3: cycles 9] dup12->11(72) [j_in=12]  [cs-3: cycles 9] dup12->11(73) [j_in=12]  [cs-3: cycles 9] dup12->11(74) [j_in=12]  [cs-3: cycles 9] dup12->11(75) [j_in=12]  [cs-3: cycles 9] dup12->11(76) [j_in=12]  [cs-3: cycles 10] best12->11(77) [j_in=12]  [cs-3: cycles 10] best12->10(78) [j_in=12]  [cs-3: cycles 10] dup12->10(79) [j_in=12]  [cs-3: cycles 10] dup12->11(80) [j_in=12]  [cs-3: cycles 10] dup12->11(81) [j_in=12]  [cs-3: cycles 10] dup12->11(82) [j_in=12]  [cs-3: cycles 10] dup12->11(83) [j_in=12]  [cs-3: cycles 10] dup12->11(84) [j_in=12]  [cs-3: cycles 10] dup12->11(85) [j_in=12]  [cs-3: cycles 10] dup12->11(86) [j_in=12]  [cs-3: cycles 10] dup12->11(87) [j_in=12]  [cs-3: cycles 10] dup12->11(88) [j_in=12]  [cs-3: cycles 10] dup12->11(89) [j_in=12]  [cs-3: cycles 10] dup12->11(90) [j_in=12]  [cs-3: cycles 10] dup12->11(91) [j_in=12]  [cs-3: cycles 10] dup12->11(92) [j_in=12]  [cs-3: cycles 10] dup12->11(93) [j_in=12]  [cs-3: cycles 10] dup12->11(94) [j_in=12]  [cs-3: cycles 10] dup12->11(95) [j_in=12]  [cs-3: cycles 10] dup12->11(96) [j_in=12]  [cs-3: cycles 10] dup12->11(97) [j_in=12]  [cs-3: cycles 10] dup12->11(98) [j_in=12]  [cs-3: cycles 10] dup12->11(99) [j_in=12]  [cs-3: cycles 10] dup12->11(100) 
+
+
+ENDING SEARCH because max number of tries reached at Wed Dec 16 19:51:14 2009
+  after a total of 100 tries over 3 seconds
+A log of this search is in file:
+ /home/clr/cos472/cos472-final-project/spectrometer/lrs.log
+The search results are stored in file:
+ /home/clr/cos472/cos472-final-project/spectrometer/lrs.results-bin
+This search can be restarted by having "force_new_search_p = false" in file:
+ /home/clr/cos472/cos472-final-project/spectrometer/lrs.s-params
+ and reinvoking the "autoclass -search ..." form
+
+------------------  SUMMARY OF 10 BEST RESULTS  ------------------
+PROBABILITY  exp(-110643.866) N_CLASSES  10 FOUND ON TRY   78 DUPS  1 *SAVED*
+PROBABILITY  exp(-110989.256) N_CLASSES  11 FOUND ON TRY   77 DUPS  21 *SAVED*
+PROBABILITY  exp(-111512.559) N_CLASSES  10 FOUND ON TRY    4 DUPS  34
+PROBABILITY  exp(-111529.253) N_CLASSES  10 FOUND ON TRY    2 DUPS  2
+PROBABILITY  exp(-111822.014) N_CLASSES  11 FOUND ON TRY   40 DUPS  36
+PROBABILITY  exp(-111857.131) N_CLASSES  11 FOUND ON TRY    1
+
+------------------  SUMMARY OF TRY CONVERGENCE  ------------------
+try   78    num_cycles   10    max_cycles  200    convergent
+try   77    num_cycles   10    max_cycles  200    convergent
+try    4    num_cycles    8    max_cycles  200    convergent
+try    2    num_cycles    8    max_cycles  200    convergent
+try   40    num_cycles    9    max_cycles  200    convergent
+try    1    num_cycles    7    max_cycles  200    convergent
+
+AUTOCLASS C (version 3.3.5unx) STOPPING at Wed Dec 16 19:51:14 2009 
+
+
+AUTOCLASS C (version 3.3.5unx) STARTING at Wed Dec 16 19:51:15 2009 
+
+AUTOCLASS -PREDICT default parameters:
+n_clsfs=1; clsf_n_list=(); report_type="all"; report_mode="text"; comment_data_headers_p=false; num_atts_to_list=999; xref_class_report_att_list=(); order_attributes_by_influence_p=true; break_on_warnings_p=true; free_storage_p=true; max_num_xref_class_probs=5; sigma_contours_att_list=()
+
+USER supplied parameters which override the defaults:
+xref_class_report_att_list=(1)
+
+ADVISORY[2]: read 94 attribute defs from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.hd2
+ADVISORY[1]: read 107 datum from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.training.db2
+
+** Error & Warning Messages from READING & EXPANDING Model Index = 0 **
+
+WARNING[3]: attribute #1: "b01"
+log transform of attribute# 1 using mn -460.896454 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #92: "r38"
+log transform of attribute# 92 using mn -17.147625 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+
+*******  SUMMARY OF ALL ERROR AND WARNING MESSAGES *******
+
+2 WARNING message(s) occured:
+  0 due to unspecified attribute type set to dummy
+  0 due to excess type = discrete range(s)
+  0 due to unspecified model term type set to ignore
+  0 due to single valued attribute(s)
+  2 due to model term type expansion
+
+Do you want to EXIT - {y/n}? 
+ADVISORY: loaded 2 classifications from 
+          /home/clr/cos472/cos472-final-project/spectrometer/lrs.results-bin
+ADVISORY: read 6 search trials from 
+          /home/clr/cos472/cos472-final-project/spectrometer/lrs.search
+
+##############  Starting Input Check  ###############
+
+To log file: 
+   /home/clr/cos472/cos472-final-project/spectrometer/lrs.log
+During loading of: 
+   [1] /home/clr/cos472/cos472-final-project/spectrometer/lrs.testing.db2,
+   [2] /home/clr/cos472/cos472-final-project/spectrometer/lrs.hd2,
+   [3] /home/clr/cos472/cos472-final-project/spectrometer/lrs.model.
+
+   [Attribute #, value #, and datum # are zero based.]
+
+ADVISORY[2]: data_file_format settings:
+             separator_char = ' ', comment_char = ';', unknown_token = '?'
+ADVISORY[2]: read 94 attribute defs from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.hd2
+ADVISORY[1]: read 424 datum from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.testing.db2
+ADVISORY[3]: read 1 model def from 
+             /home/clr/cos472/cos472-final-project/spectrometer/lrs.model
+ADVISORY[2]: log_transform is being applied to attribute #1:
+             "b01" and will be stored as attribute #94.
+ADVISORY[2]: log_transform is being applied to attribute #2:
+             "b02" and will be stored as attribute #95.
+ADVISORY[2]: log_transform is being applied to attribute #3:
+             "b03" and will be stored as attribute #96.
+ADVISORY[2]: log_transform is being applied to attribute #4:
+             "b04" and will be stored as attribute #97.
+ADVISORY[2]: log_transform is being applied to attribute #5:
+             "b05" and will be stored as attribute #98.
+ADVISORY[2]: log_transform is being applied to attribute #6:
+             "b06" and will be stored as attribute #99.
+ADVISORY[2]: log_transform is being applied to attribute #7:
+             "b07" and will be stored as attribute #100.
+ADVISORY[2]: log_transform is being applied to attribute #8:
+             "b08" and will be stored as attribute #101.
+ADVISORY[2]: log_transform is being applied to attribute #9:
+             "b09" and will be stored as attribute #102.
+ADVISORY[2]: log_transform is being applied to attribute #10:
+             "b10" and will be stored as attribute #103.
+ADVISORY[2]: log_transform is being applied to attribute #11:
+             "b11" and will be stored as attribute #104.
+ADVISORY[2]: log_transform is being applied to attribute #12:
+             "b12" and will be stored as attribute #105.
+ADVISORY[2]: log_transform is being applied to attribute #13:
+             "b13" and will be stored as attribute #106.
+ADVISORY[2]: log_transform is being applied to attribute #14:
+             "b14" and will be stored as attribute #107.
+ADVISORY[2]: log_transform is being applied to attribute #15:
+             "b15" and will be stored as attribute #108.
+ADVISORY[2]: log_transform is being applied to attribute #16:
+             "b16" and will be stored as attribute #109.
+ADVISORY[2]: log_transform is being applied to attribute #17:
+             "b17" and will be stored as attribute #110.
+ADVISORY[2]: log_transform is being applied to attribute #18:
+             "b18" and will be stored as attribute #111.
+ADVISORY[2]: log_transform is being applied to attribute #19:
+             "b19" and will be stored as attribute #112.
+ADVISORY[2]: log_transform is being applied to attribute #20:
+             "b20" and will be stored as attribute #113.
+ADVISORY[2]: log_transform is being applied to attribute #21:
+             "b21" and will be stored as attribute #114.
+ADVISORY[2]: log_transform is being applied to attribute #22:
+             "b22" and will be stored as attribute #115.
+ADVISORY[2]: log_transform is being applied to attribute #23:
+             "b23" and will be stored as attribute #116.
+ADVISORY[2]: log_transform is being applied to attribute #24:
+             "b24" and will be stored as attribute #117.
+ADVISORY[2]: log_transform is being applied to attribute #25:
+             "b25" and will be stored as attribute #118.
+ADVISORY[2]: log_transform is being applied to attribute #26:
+             "b26" and will be stored as attribute #119.
+ADVISORY[2]: log_transform is being applied to attribute #27:
+             "b27" and will be stored as attribute #120.
+ADVISORY[2]: log_transform is being applied to attribute #28:
+             "b28" and will be stored as attribute #121.
+ADVISORY[2]: log_transform is being applied to attribute #29:
+             "b29" and will be stored as attribute #122.
+ADVISORY[2]: log_transform is being applied to attribute #30:
+             "b30" and will be stored as attribute #123.
+ADVISORY[2]: log_transform is being applied to attribute #31:
+             "b31" and will be stored as attribute #124.
+ADVISORY[2]: log_transform is being applied to attribute #32:
+             "b32" and will be stored as attribute #125.
+ADVISORY[2]: log_transform is being applied to attribute #33:
+             "b33" and will be stored as attribute #126.
+ADVISORY[2]: log_transform is being applied to attribute #34:
+             "b34" and will be stored as attribute #127.
+ADVISORY[2]: log_transform is being applied to attribute #35:
+             "b35" and will be stored as attribute #128.
+ADVISORY[2]: log_transform is being applied to attribute #36:
+             "b36" and will be stored as attribute #129.
+ADVISORY[2]: log_transform is being applied to attribute #37:
+             "b37" and will be stored as attribute #130.
+ADVISORY[2]: log_transform is being applied to attribute #38:
+             "b38" and will be stored as attribute #131.
+ADVISORY[2]: log_transform is being applied to attribute #39:
+             "b39" and will be stored as attribute #132.
+ADVISORY[2]: log_transform is being applied to attribute #40:
+             "b40" and will be stored as attribute #133.
+ADVISORY[2]: log_transform is being applied to attribute #41:
+             "b41" and will be stored as attribute #134.
+ADVISORY[2]: log_transform is being applied to attribute #42:
+             "b42" and will be stored as attribute #135.
+ADVISORY[2]: log_transform is being applied to attribute #43:
+             "b43" and will be stored as attribute #136.
+ADVISORY[2]: log_transform is being applied to attribute #44:
+             "b44" and will be stored as attribute #137.
+ADVISORY[2]: log_transform is being applied to attribute #45:
+             "r41" and will be stored as attribute #138.
+ADVISORY[2]: log_transform is being applied to attribute #46:
+             "r42" and will be stored as attribute #139.
+ADVISORY[2]: log_transform is being applied to attribute #47:
+             "r43" and will be stored as attribute #140.
+ADVISORY[2]: log_transform is being applied to attribute #48:
+             "r44" and will be stored as attribute #141.
+ADVISORY[2]: log_transform is being applied to attribute #49:
+             "r45" and will be stored as attribute #142.
+ADVISORY[2]: log_transform is being applied to attribute #50:
+             "r46" and will be stored as attribute #143.
+ADVISORY[2]: log_transform is being applied to attribute #51:
+             "r47" and will be stored as attribute #144.
+ADVISORY[2]: log_transform is being applied to attribute #52:
+             "r48" and will be stored as attribute #145.
+ADVISORY[2]: log_transform is being applied to attribute #53:
+             "r49" and will be stored as attribute #146.
+ADVISORY[2]: log_transform is being applied to attribute #54:
+             "r40" and will be stored as attribute #147.
+ADVISORY[2]: log_transform is being applied to attribute #55:
+             "r01" and will be stored as attribute #148.
+ADVISORY[2]: log_transform is being applied to attribute #56:
+             "r02" and will be stored as attribute #149.
+ADVISORY[2]: log_transform is being applied to attribute #57:
+             "r03" and will be stored as attribute #150.
+ADVISORY[2]: log_transform is being applied to attribute #58:
+             "r04" and will be stored as attribute #151.
+ADVISORY[2]: log_transform is being applied to attribute #59:
+             "r05" and will be stored as attribute #152.
+ADVISORY[2]: log_transform is being applied to attribute #60:
+             "r06" and will be stored as attribute #153.
+ADVISORY[2]: log_transform is being applied to attribute #61:
+             "r07" and will be stored as attribute #154.
+ADVISORY[2]: log_transform is being applied to attribute #62:
+             "r08" and will be stored as attribute #155.
+ADVISORY[2]: log_transform is being applied to attribute #63:
+             "r09" and will be stored as attribute #156.
+ADVISORY[2]: log_transform is being applied to attribute #64:
+             "r10" and will be stored as attribute #157.
+ADVISORY[2]: log_transform is being applied to attribute #65:
+             "r11" and will be stored as attribute #158.
+ADVISORY[2]: log_transform is being applied to attribute #66:
+             "r12" and will be stored as attribute #159.
+ADVISORY[2]: log_transform is being applied to attribute #67:
+             "r13" and will be stored as attribute #160.
+ADVISORY[2]: log_transform is being applied to attribute #68:
+             "r14" and will be stored as attribute #161.
+ADVISORY[2]: log_transform is being applied to attribute #69:
+             "r15" and will be stored as attribute #162.
+ADVISORY[2]: log_transform is being applied to attribute #70:
+             "r16" and will be stored as attribute #163.
+ADVISORY[2]: log_transform is being applied to attribute #71:
+             "r17" and will be stored as attribute #164.
+ADVISORY[2]: log_transform is being applied to attribute #72:
+             "r18" and will be stored as attribute #165.
+ADVISORY[2]: log_transform is being applied to attribute #73:
+             "r19" and will be stored as attribute #166.
+ADVISORY[2]: log_transform is being applied to attribute #74:
+             "r20" and will be stored as attribute #167.
+ADVISORY[2]: log_transform is being applied to attribute #75:
+             "r21" and will be stored as attribute #168.
+ADVISORY[2]: log_transform is being applied to attribute #76:
+             "r22" and will be stored as attribute #169.
+ADVISORY[2]: log_transform is being applied to attribute #77:
+             "r23" and will be stored as attribute #170.
+ADVISORY[2]: log_transform is being applied to attribute #78:
+             "r24" and will be stored as attribute #171.
+ADVISORY[2]: log_transform is being applied to attribute #79:
+             "r25" and will be stored as attribute #172.
+ADVISORY[2]: log_transform is being applied to attribute #80:
+             "r26" and will be stored as attribute #173.
+ADVISORY[2]: log_transform is being applied to attribute #81:
+             "r27" and will be stored as attribute #174.
+ADVISORY[2]: log_transform is being applied to attribute #82:
+             "r28" and will be stored as attribute #175.
+ADVISORY[2]: log_transform is being applied to attribute #83:
+             "r29" and will be stored as attribute #176.
+ADVISORY[2]: log_transform is being applied to attribute #84:
+             "r30" and will be stored as attribute #177.
+ADVISORY[2]: log_transform is being applied to attribute #85:
+             "r31" and will be stored as attribute #178.
+ADVISORY[2]: log_transform is being applied to attribute #86:
+             "r32" and will be stored as attribute #179.
+ADVISORY[2]: log_transform is being applied to attribute #87:
+             "r33" and will be stored as attribute #180.
+ADVISORY[2]: log_transform is being applied to attribute #88:
+             "r34" and will be stored as attribute #181.
+ADVISORY[2]: log_transform is being applied to attribute #89:
+             "r35" and will be stored as attribute #182.
+ADVISORY[2]: log_transform is being applied to attribute #90:
+             "r36" and will be stored as attribute #183.
+ADVISORY[2]: log_transform is being applied to attribute #91:
+             "r37" and will be stored as attribute #184.
+ADVISORY[2]: log_transform is being applied to attribute #92:
+             "r38" and will be stored as attribute #185.
+ADVISORY[2]: log_transform is being applied to attribute #93:
+             "r39" and will be stored as attribute #186.
+
+** Error & Warning Messages from READING & EXPANDING Model Index = 0 **
+
+WARNING[3]: attribute #1: "b01"
+log transform of attribute# 1 using mn -460.896454 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+WARNING[3]: attribute #92: "r38"
+log transform of attribute# 92 using mn -17.147625 rather than 0.000000 for zero_point.
+ Suggest decreasing attribute's rel_error.
+
+*******  SUMMARY OF ALL ERROR AND WARNING MESSAGES *******
+
+2 WARNING message(s) occured:
+  0 due to unspecified attribute type set to dummy
+  0 due to excess type = discrete range(s)
+  0 due to unspecified model term type set to ignore
+  0 due to single valued attribute(s)
+  2 due to model term type expansion
+
+############ Input Check Concluded ##############
+
+Do you want to EXIT - {y/n}? 
+
+File written: /home/clr/cos472/cos472-final-project/spectrometer/lrs.testing.case-text-1
+
+File written: /home/clr/cos472/cos472-final-project/spectrometer/lrs.testing.class-text-1
+
+
+AUTOCLASS C (version 3.3.5unx) STOPPING at Wed Dec 16 19:51:16 2009 
+

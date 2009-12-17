@@ -1,0 +1,1707 @@
+
+
+
+      I N F L U E N C E   V A L U E S   R E P O R T   
+       order attributes by influence values = true
+      =============================================
+
+      AutoClass CLASSIFICATION for the 425 cases in
+        /home/clr/cos472/cos472-final-project/spectrometer/lrs.training.db2
+        /home/clr/cos472/cos472-final-project/spectrometer/lrs.hd2
+      with log-A<X/H> (approximate marginal likelihood) = -429075.333
+      from classification results file
+        /home/clr/cos472/cos472-final-project/spectrometer/lrs.results-bin
+      and using models
+        /home/clr/cos472/cos472-final-project/spectrometer/lrs.model - index = 0
+
+
+
+
+ORDER OF PRESENTATION:
+
+  * Summary of the generating search.
+  * Weight ordered list of the classes found & class strength heuristic.
+  * List of class cross entropies with respect to the global class.
+  * Ordered list of attribute influence values summed over all classes.
+  * Class listings, ordered by class weight.
+
+
+
+
+
+
+
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+SEARCH SUMMARY 100 tries over  26 seconds
+
+  _______________ SUMMARY OF 10 BEST RESULTS _________________________  ##
+  PROBABILITY  exp(-429075.333) N_CLASSES  12 FOUND ON TRY   21 DUPS  2 *SAVED*  -1
+  PROBABILITY  exp(-429138.673) N_CLASSES  12 FOUND ON TRY  100 *SAVED*  -2
+  PROBABILITY  exp(-429357.102) N_CLASSES  12 FOUND ON TRY   12 DUPS  4
+  PROBABILITY  exp(-429497.746) N_CLASSES  12 FOUND ON TRY   49 DUPS  4
+  PROBABILITY  exp(-429654.130) N_CLASSES  12 FOUND ON TRY   82 DUPS  3
+  PROBABILITY  exp(-429778.425) N_CLASSES  12 FOUND ON TRY   35 DUPS  2
+  PROBABILITY  exp(-429906.285) N_CLASSES  12 FOUND ON TRY   54 DUPS  3
+  PROBABILITY  exp(-429953.245) N_CLASSES  12 FOUND ON TRY   97 DUPS  2
+  PROBABILITY  exp(-429961.076) N_CLASSES  11 FOUND ON TRY   78 DUPS  3
+  PROBABILITY  exp(-429983.464) N_CLASSES  12 FOUND ON TRY   96
+
+
+   ## - report filenames suffix
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+
+CLASSIFICATION HAS 12 POPULATED CLASSES   (max global influence value = 9.831) 
+
+  We give below a heuristic measure of class strength: the approximate
+  geometric mean probability for instances belonging to each class,
+  computed from the class parameters and statistics.  This approximates
+  the contribution made, by any one instance "belonging" to the class,
+  to the log probability of the data set w.r.t. the classification.  It
+  thus provides a heuristic measure of how strongly each class predicts
+  "its" instances.
+
+   Class     Log of class       Relative         Class     Normalized
+    num        strength       class strength     weight    class weight
+
+     0        -9.90e+02          2.62e-24          66         0.155
+     1        -9.73e+02          4.84e-17          52         0.123
+     2        -9.85e+02          6.88e-22          51         0.120
+     3        -9.77e+02          8.86e-19          46         0.108
+     4        -9.73e+02          1.15e-16          35         0.082
+     5        -1.01e+03          1.89e-33          33         0.078
+     6        -9.62e+02          6.45e-12          30         0.071
+     7        -9.98e+02          9.33e-28          29         0.068
+     8        -1.02e+03          1.53e-37          28         0.066
+     9        -9.36e+02          1.00e+00          27         0.064
+    10        -1.08e+03          0.00e+00          16         0.038
+    11        -1.09e+03          0.00e+00          12         0.028
+
+
+CLASS DIVERGENCES
+
+  The class divergence, or cross entropy w.r.t. the single class
+  classification, is a measure of how strongly the class probability
+  distribution  function differs from that of the database as a whole. 
+  It is zero for identical distributions, going infinite when two
+  discrete distributions place probability 1 on differing values of the
+  same attribute.
+
+   Class       class cross entropy       Class     Normalized
+    num        w.r.t. global class       weight    class weight
+
+     0               8.40e+01              66         0.155
+     1               9.86e+01              52         0.123
+     2               8.15e+01              51         0.120
+     3               8.40e+01              46         0.108
+     4               9.91e+01              35         0.082
+     5               9.99e+01              33         0.078
+     6               1.12e+02              30         0.071
+     7               7.40e+01              29         0.068
+     8               9.53e+01              28         0.066
+     9               2.10e+02              27         0.064
+    10               3.08e+02              16         0.038
+    11               2.78e+02              12         0.028
+
+ORDERED LIST OF NORMALIZED ATTRIBUTE INFLUENCE VALUES SUMMED OVER ALL CLASSES
+
+  This gives a rough heuristic measure of relative influence of each
+  attribute in differentiating the classes from the overall data set.
+  Note that "influence values" are only computable with respect to the
+  model terms.  When multiple attributes are modeled by a single
+  dependent term (e.g. multi_normal_cn), the term influence value is
+  distributed equally over the modeled attributes.
+
+   num                        description                          I-*k 
+
+   118  Log b25                                                    1.000
+   116  Log b23                                                    0.983
+   113  Log b20                                                    0.963
+   108  Log b15                                                    0.963
+   112  Log b19                                                    0.961
+   138  Log r41                                                    0.930
+   110  Log b17                                                    0.920
+   107  Log b14                                                    0.919
+   109  Log b16                                                    0.900
+   105  Log b12                                                    0.837
+   106  Log b13                                                    0.803
+   114  Log b21                                                    0.801
+   094  Log b01                                                    0.784
+   111  Log b18                                                    0.782
+   104  Log b11                                                    0.782
+   115  Log b22                                                    0.776
+   103  Log b10                                                    0.721
+   139  Log r42                                                    0.672
+   117  Log b24                                                    0.672
+   172  Log r25                                                    0.657
+   177  Log r30                                                    0.652
+   173  Log r26                                                    0.649
+   165  Log r18                                                    0.649
+   102  Log b09                                                    0.646
+   169  Log r22                                                    0.635
+   171  Log r24                                                    0.633
+   161  Log r14                                                    0.633
+   166  Log r19                                                    0.631
+   174  Log r27                                                    0.629
+   181  Log r34                                                    0.628
+   160  Log r13                                                    0.627
+   163  Log r16                                                    0.626
+   164  Log r17                                                    0.625
+   170  Log r23                                                    0.625
+   162  Log r15                                                    0.625
+   159  Log r12                                                    0.624
+   158  Log r11                                                    0.623
+   178  Log r31                                                    0.620
+   156  Log r09                                                    0.620
+   179  Log r32                                                    0.618
+   175  Log r28                                                    0.618
+   167  Log r20                                                    0.617
+   168  Log r21                                                    0.615
+   180  Log r33                                                    0.614
+   157  Log r10                                                    0.611
+   176  Log r29                                                    0.602
+   155  Log r08                                                    0.593
+   183  Log r36                                                    0.587
+   140  Log r43                                                    0.584
+   182  Log r35                                                    0.580
+   101  Log b08                                                    0.574
+   119  Log b26                                                    0.570
+   154  Log r07                                                    0.566
+   185  Log r38                                                    0.558
+   184  Log r37                                                    0.558
+   num                        description                          I-*k 
+
+   152  Log r05                                                    0.555
+   153  Log r06                                                    0.537
+   095  Log b02                                                    0.536
+   186  Log r39                                                    0.527
+   151  Log r04                                                    0.522
+   120  Log b27                                                    0.517
+   150  Log r03                                                    0.506
+   100  Log b07                                                    0.505
+   097  Log b04                                                    0.496
+   096  Log b03                                                    0.481
+   121  Log b28                                                    0.481
+   098  Log b05                                                    0.479
+   099  Log b06                                                    0.476
+   148  Log r01                                                    0.469
+   149  Log r02                                                    0.466
+   147  Log r40                                                    0.434
+   141  Log r44                                                    0.432
+   122  Log b29                                                    0.410
+   146  Log r49                                                    0.386
+   124  Log b31                                                    0.383
+   123  Log b30                                                    0.367
+   145  Log r48                                                    0.361
+   131  Log b38                                                    0.343
+   132  Log b39                                                    0.334
+   137  Log b44                                                    0.333
+   144  Log r47                                                    0.329
+   134  Log b41                                                    0.322
+   133  Log b40                                                    0.315
+   129  Log b36                                                    0.315
+   125  Log b32                                                    0.313
+   135  Log b42                                                    0.310
+   136  Log b43                                                    0.305
+   128  Log b35                                                    0.299
+   130  Log b37                                                    0.296
+   127  Log b34                                                    0.281
+   143  Log r46                                                    0.280
+   142  Log r45                                                    0.279
+   126  Log b33                                                    0.275
+   000  frequency                                                  -----
+   001  b01                                                        -----
+   002  b02                                                        -----
+   003  b03                                                        -----
+   004  b04                                                        -----
+   005  b05                                                        -----
+   006  b06                                                        -----
+   007  b07                                                        -----
+   008  b08                                                        -----
+   009  b09                                                        -----
+   010  b10                                                        -----
+   011  b11                                                        -----
+   012  b12                                                        -----
+   013  b13                                                        -----
+   014  b14                                                        -----
+   015  b15                                                        -----
+   016  b16                                                        -----
+   017  b17                                                        -----
+   018  b18                                                        -----
+   019  b19                                                        -----
+   020  b20                                                        -----
+   021  b21                                                        -----
+   022  b22                                                        -----
+   023  b23                                                        -----
+   num                        description                          I-*k 
+
+   024  b24                                                        -----
+   025  b25                                                        -----
+   026  b26                                                        -----
+   027  b27                                                        -----
+   028  b28                                                        -----
+   029  b29                                                        -----
+   030  b30                                                        -----
+   031  b31                                                        -----
+   032  b32                                                        -----
+   033  b33                                                        -----
+   034  b34                                                        -----
+   035  b35                                                        -----
+   036  b36                                                        -----
+   037  b37                                                        -----
+   038  b38                                                        -----
+   039  b39                                                        -----
+   040  b40                                                        -----
+   041  b41                                                        -----
+   042  b42                                                        -----
+   043  b43                                                        -----
+   044  b44                                                        -----
+   045  r41                                                        -----
+   046  r42                                                        -----
+   047  r43                                                        -----
+   048  r44                                                        -----
+   049  r45                                                        -----
+   050  r46                                                        -----
+   051  r47                                                        -----
+   052  r48                                                        -----
+   053  r49                                                        -----
+   054  r40                                                        -----
+   055  r01                                                        -----
+   056  r02                                                        -----
+   057  r03                                                        -----
+   058  r04                                                        -----
+   059  r05                                                        -----
+   060  r06                                                        -----
+   061  r07                                                        -----
+   062  r08                                                        -----
+   063  r09                                                        -----
+   064  r10                                                        -----
+   065  r11                                                        -----
+   066  r12                                                        -----
+   067  r13                                                        -----
+   068  r14                                                        -----
+   069  r15                                                        -----
+   070  r16                                                        -----
+   071  r17                                                        -----
+   072  r18                                                        -----
+   073  r19                                                        -----
+   074  r20                                                        -----
+   075  r21                                                        -----
+   076  r22                                                        -----
+   077  r23                                                        -----
+   078  r24                                                        -----
+   079  r25                                                        -----
+   080  r26                                                        -----
+   081  r27                                                        -----
+   082  r28                                                        -----
+   083  r29                                                        -----
+   084  r30                                                        -----
+   085  r31                                                        -----
+   num                        description                          I-*k 
+
+   086  r32                                                        -----
+   087  r33                                                        -----
+   088  r34                                                        -----
+   089  r35                                                        -----
+   090  r36                                                        -----
+   091  r37                                                        -----
+   092  r38                                                        -----
+   093  r39                                                        -----
+
+CLASS LISTINGS:
+
+  These listings are ordered by class weight --
+    * j is the zero-based class index,
+    * k is the zero-based attribute index, and
+    * l is the zero-based discrete attribute instance index.
+
+  Within each class, the covariant and independent model terms are ordered
+  by their term influence value I-jk.
+
+  Covariant attributes and discrete attribute instance values are both
+  ordered by their significance value.  Significance values are computed
+  with respect to a single class classification, using the divergence from
+  it, abs( log( Prob-jkl / Prob-*kl)), for discrete attributes and the
+  relative separation from it, abs( Mean-jk - Mean-*k) / StDev-jk, for
+  numerical valued attributes.  For the SNcm model, the value line is
+  followed by the probabilities that the value is known, for that class
+  and for the single class classification.
+
+  Entries are attribute type dependent, and the corresponding headers are
+  reproduced with each class.  In these --
+    * num/t denotes model term number,
+    * num/a denotes attribute number,
+    * t     denotes attribute type,
+    * mtt   denotes model term type, and
+    * I-jk  denotes the term influence value for attribute k
+            in class j.  This is the cross entropy or
+            Kullback-Leibler distance between the class and
+            full database probability distributions (see
+            interpretation-c.text).
+    * Mean  StDev
+      -jk   -jk    The estimated mean and standard deviation
+                   for attribute k in class j.
+    * |Mean-jk -   The absolute difference between the
+       Mean-*k|/   two means, scaled w.r.t. the class
+       StDev-jk    standard deviation, to get a measure
+                   of the distance between the attribute
+                   means in the class and full data.
+    * Mean  StDev  The estimated mean and standard
+      -*k   -*k    deviation for attribute k when the
+                   model is applied to the data set
+                   as a whole.
+    * Prob-jk is known  1.00e+00   Prob-*k is  known  9.98e-01
+            The SNcm model allows for the possibility that data
+            values are unknown, and models this with a discrete
+            known/unknown probability.  The gaussian normal for
+            known values is then conditional on the known
+            probability.   In this instance, we have a class
+            where all values are known, as opposed to a database
+            where only 99.8% of values are known.
+
+
+CLASS  0 - weight  66   normalized weight 0.155   relative strength  2.62e-24 *******
+                            class cross entropy w.r.t. global class  8.40e+01 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+24 118 R SNcn  Log b25 ............  2.158 ( 9.06e+00  4.34e-02)  4.11e+00 ( 8.88e+00  5.90e-01)
+22 116 R SNcn  Log b23 ............  2.054 ( 9.10e+00  5.11e-02)  4.20e+00 ( 8.89e+00  6.16e-01)
+13 107 R SNcn  Log b14 ............  1.835 ( 9.39e+00  7.73e-02)  3.84e+00 ( 9.09e+00  7.32e-01)
+44 138 R SNcn  Log r41 ............  1.814 ( 9.16e+00  6.67e-02)  3.56e+00 ( 8.92e+00  6.24e-01)
+19 113 R SNcn  Log b20 ............  1.754 ( 9.23e+00  7.39e-02)  3.61e+00 ( 8.97e+00  6.41e-01)
+18 112 R SNcn  Log b19 ............  1.745 ( 9.31e+00  7.38e-02)  3.56e+00 ( 9.05e+00  6.35e-01)
+14 108 R SNcn  Log b15 ............  1.707 ( 9.38e+00  8.76e-02)  3.54e+00 ( 9.07e+00  7.21e-01)
+16 110 R SNcn  Log b17 ............  1.703 ( 9.33e+00  8.35e-02)  3.61e+00 ( 9.03e+00  6.80e-01)
+15 109 R SNcn  Log b16 ............  1.604 ( 9.36e+00  9.33e-02)  3.27e+00 ( 9.06e+00  6.86e-01)
+21 115 R SNcn  Log b22 ............  1.574 ( 9.13e+00  5.58e-02)  3.89e+00 ( 8.91e+00  3.69e-01)
+12 106 R SNcn  Log b13 ............  1.563 ( 9.37e+00  7.14e-02)  3.44e+00 ( 9.12e+00  4.90e-01)
+20 114 R SNcn  Log b21 ............  1.533 ( 9.18e+00  6.23e-02)  3.80e+00 ( 8.94e+00  3.91e-01)
+23 117 R SNcn  Log b24 ............  1.523 ( 9.05e+00  4.56e-02)  3.93e+00 ( 8.87e+00  2.75e-01)
+11 105 R SNcn  Log b12 ............  1.499 ( 9.33e+00  7.22e-02)  2.82e+00 ( 9.13e+00  4.82e-01)
+17 111 R SNcn  Log b18 ............  1.412 ( 9.28e+00  8.17e-02)  3.43e+00 ( 9.00e+00  4.47e-01)
+87 181 R SNcn  Log r34 ............  1.349 ( 7.21e+00  1.30e-01)  1.64e+00 ( 7.00e+00  7.84e-01)
+00 94 R SNcn  Log b01 ............  1.339 ( 8.88e+00  1.46e-01)  3.34e+00 ( 9.37e+00  7.08e-01)
+01 95 R SNcn  Log b02 ............  1.314 ( 8.80e+00  1.53e-01)  3.46e+00 ( 9.33e+00  4.64e-01)
+02 96 R SNcn  Log b03 ............  1.300 ( 8.80e+00  1.64e-01)  3.17e+00 ( 9.32e+00  4.11e-01)
+45 139 R SNcn  Log r42 ............  1.243 ( 9.06e+00  6.05e-02)  3.05e+00 ( 8.88e+00  2.64e-01)
+25 119 R SNcn  Log b26 ............  1.207 ( 8.96e+00  5.00e-02)  2.96e+00 ( 8.81e+00  2.07e-01)
+70 164 R SNcn  Log r17 ............  1.186 ( 7.79e+00  9.57e-02)  2.58e+00 ( 7.54e+00  4.26e-01)
+72 166 R SNcn  Log r19 ............  1.186 ( 7.73e+00  1.00e-01)  2.48e+00 ( 7.48e+00  4.53e-01)
+03 97 R SNcn  Log b04 ............  1.182 ( 8.80e+00  1.73e-01)  2.82e+00 ( 9.29e+00  3.97e-01)
+71 165 R SNcn  Log r18 ............  1.171 ( 7.75e+00  9.96e-02)  2.52e+00 ( 7.50e+00  4.38e-01)
+26 120 R SNcn  Log b27 ............  1.162 ( 8.90e+00  4.46e-02)  2.83e+00 ( 8.77e+00  1.76e-01)
+73 167 R SNcn  Log r20 ............  1.136 ( 7.70e+00  1.07e-01)  2.37e+00 ( 7.44e+00  4.59e-01)
+69 163 R SNcn  Log r16 ............  1.108 ( 7.81e+00  1.03e-01)  2.41e+00 ( 7.56e+00  4.18e-01)
+74 168 R SNcn  Log r21 ............  1.101 ( 7.65e+00  1.11e-01)  2.19e+00 ( 7.41e+00  4.68e-01)
+46 140 R SNcn  Log r43 ............  1.100 ( 8.94e+00  5.33e-02)  2.60e+00 ( 8.80e+00  2.01e-01)
+68 162 R SNcn  Log r15 ............  1.098 ( 7.85e+00  1.01e-01)  2.45e+00 ( 7.60e+00  4.00e-01)
+79 173 R SNcn  Log r26 ............  1.091 ( 7.44e+00  1.15e-01)  1.87e+00 ( 7.22e+00  5.03e-01)
+64 158 R SNcn  Log r11 ............  1.069 ( 7.89e+00  8.59e-02)  2.14e+00 ( 7.70e+00  3.48e-01)
+65 159 R SNcn  Log r12 ............  1.055 ( 7.89e+00  9.45e-02)  2.25e+00 ( 7.68e+00  3.65e-01)
+77 171 R SNcn  Log r24 ............  1.054 ( 7.55e+00  1.16e-01)  1.94e+00 ( 7.33e+00  4.77e-01)
+66 160 R SNcn  Log r13 ............  1.046 ( 7.87e+00  9.68e-02)  2.22e+00 ( 7.65e+00  3.71e-01)
+67 161 R SNcn  Log r14 ............  1.036 ( 7.85e+00  1.02e-01)  2.18e+00 ( 7.63e+00  3.87e-01)
+04 98 R SNcn  Log b05 ............  1.025 ( 8.83e+00  1.85e-01)  2.34e+00 ( 9.26e+00  3.58e-01)
+78 172 R SNcn  Log r25 ............  1.019 ( 7.50e+00  1.24e-01)  1.82e+00 ( 7.28e+00  4.94e-01)
+75 169 R SNcn  Log r22 ............  1.016 ( 7.62e+00  1.23e-01)  1.94e+00 ( 7.38e+00  4.80e-01)
+10 104 R SNcn  Log b11 ............  1.013 ( 9.27e+00  9.91e-02)  1.30e+00 ( 9.14e+00  4.17e-01)
+63 157 R SNcn  Log r10 ............  1.008 ( 7.88e+00  8.49e-02)  1.81e+00 ( 7.73e+00  3.34e-01)
+86 180 R SNcn  Log r33 ............  1.004 ( 7.21e+00  1.42e-01)  1.54e+00 ( 6.99e+00  5.78e-01)
+82 176 R SNcn  Log r29 ............  1.000 ( 7.34e+00  1.34e-01)  1.64e+00 ( 7.12e+00  5.35e-01)
+88 182 R SNcn  Log r35 ............  0.972 ( 7.17e+00  1.47e-01)  1.37e+00 ( 6.97e+00  5.85e-01)
+80 174 R SNcn  Log r27 ............  0.962 ( 7.45e+00  1.37e-01)  1.62e+00 ( 7.22e+00  5.22e-01)
+84 178 R SNcn  Log r31 ............  0.948 ( 7.32e+00  1.46e-01)  1.48e+00 ( 7.11e+00  5.55e-01)
+83 177 R SNcn  Log r30 ............  0.946 ( 7.35e+00  1.43e-01)  1.50e+00 ( 7.13e+00  5.43e-01)
+62 156 R SNcn  Log r09 ............  0.946 ( 7.87e+00  8.43e-02)  1.48e+00 ( 7.74e+00  3.20e-01)
+89 183 R SNcn  Log r36 ............  0.935 ( 7.15e+00  1.55e-01)  1.38e+00 ( 6.93e+00  5.87e-01)
+61 155 R SNcn  Log r08 ............  0.914 ( 7.87e+00  8.11e-02)  1.19e+00 ( 7.77e+00  3.07e-01)
+60 154 R SNcn  Log r07 ............  0.911 ( 7.85e+00  7.48e-02)  6.80e-01 ( 7.80e+00  2.92e-01)
+91 185 R SNcn  Log r38 ............  0.906 ( 7.06e+00  1.63e-01)  1.23e+00 ( 6.86e+00  6.07e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+05 99 R SNcn  Log b06 ............  0.904 ( 8.88e+00  1.81e-01)  2.05e+00 ( 9.25e+00  3.17e-01)
+27 121 R SNcn  Log b28 ............  0.893 ( 8.86e+00  5.35e-02)  2.09e+00 ( 8.74e+00  1.58e-01)
+90 184 R SNcn  Log r37 ............  0.875 ( 7.10e+00  1.67e-01)  1.17e+00 ( 6.91e+00  6.04e-01)
+85 179 R SNcn  Log r32 ............  0.870 ( 7.24e+00  1.59e-01)  1.32e+00 ( 7.03e+00  5.62e-01)
+81 175 R SNcn  Log r28 ............  0.818 ( 7.39e+00  1.62e-01)  1.32e+00 ( 7.18e+00  5.32e-01)
+92 186 R SNcn  Log r39 ............  0.776 ( 6.95e+00  1.88e-01)  1.07e+00 ( 6.75e+00  6.09e-01)
+47 141 R SNcn  Log r44 ............  0.682 ( 8.81e+00  5.52e-02)  1.58e+00 ( 8.72e+00  1.33e-01)
+06 100 R SNcn  Log b07 ............  0.679 ( 8.93e+00  1.81e-01)  1.61e+00 ( 9.22e+00  2.86e-01)
+59 153 R SNcn  Log r06 ............  0.672 ( 7.85e+00  9.15e-02)  2.21e-01 ( 7.83e+00  2.79e-01)
+57 151 R SNcn  Log r04 ............  0.663 ( 7.86e+00  8.57e-02)  4.57e-01 ( 7.90e+00  2.56e-01)
+58 152 R SNcn  Log r05 ............  0.659 ( 7.84e+00  8.94e-02)  9.17e-02 ( 7.85e+00  2.69e-01)
+28 122 R SNcn  Log b29 ............  0.634 ( 8.79e+00  5.97e-02)  1.50e+00 ( 8.70e+00  1.35e-01)
+09 103 R SNcn  Log b10 ............  0.583 ( 9.19e+00  1.24e-01)  1.87e-01 ( 9.17e+00  3.42e-01)
+76 170 R SNcn  Log r23 ............  0.581 ( 7.54e+00  1.91e-01)  1.04e+00 ( 7.34e+00  4.75e-01)
+55 149 R SNcn  Log r02 ............  0.555 ( 7.95e+00  9.34e-02)  5.44e-01 ( 8.00e+00  2.44e-01)
+56 150 R SNcn  Log r03 ............  0.531 ( 7.88e+00  9.75e-02)  5.14e-01 ( 7.94e+00  2.48e-01)
+54 148 R SNcn  Log r01 ............  0.512 ( 8.01e+00  9.41e-02)  5.14e-01 ( 8.05e+00  2.34e-01)
+29 123 R SNcn  Log b30 ............  0.475 ( 8.74e+00  6.15e-02)  1.11e+00 ( 8.67e+00  1.24e-01)
+07 101 R SNcn  Log b08 ............  0.422 ( 9.01e+00  1.68e-01)  1.14e+00 ( 9.21e+00  2.73e-01)
+53 147 R SNcn  Log r40 ............  0.371 ( 8.07e+00  1.06e-01)  5.26e-01 ( 8.12e+00  2.17e-01)
+30 124 R SNcn  Log b31 ............  0.358 ( 8.67e+00  6.25e-02)  7.29e-01 ( 8.62e+00  1.20e-01)
+08 102 R SNcn  Log b09 ............  0.352 ( 9.10e+00  1.47e-01)  5.73e-01 ( 9.19e+00  2.90e-01)
+52 146 R SNcn  Log r49 ............  0.324 ( 8.13e+00  1.06e-01)  6.19e-01 ( 8.20e+00  1.99e-01)
+43 137 R SNcn  Log b44 ............  0.269 ( 8.10e+00  1.17e-01)  5.39e-01 ( 8.17e+00  2.04e-01)
+39 133 R SNcn  Log b40 ............  0.242 ( 8.22e+00  1.17e-01)  6.04e-01 ( 8.29e+00  1.90e-01)
+51 145 R SNcn  Log r48 ............  0.240 ( 8.23e+00  1.10e-01)  5.38e-01 ( 8.28e+00  1.83e-01)
+42 136 R SNcn  Log b43 ............  0.231 ( 8.13e+00  1.22e-01)  5.21e-01 ( 8.19e+00  2.00e-01)
+37 131 R SNcn  Log b38 ............  0.222 ( 8.28e+00  1.10e-01)  6.10e-01 ( 8.35e+00  1.69e-01)
+31 125 R SNcn  Log b32 ............  0.219 ( 8.60e+00  7.09e-02)  3.78e-01 ( 8.57e+00  1.19e-01)
+41 135 R SNcn  Log b42 ............  0.217 ( 8.16e+00  1.23e-01)  4.98e-01 ( 8.23e+00  1.98e-01)
+40 134 R SNcn  Log b41 ............  0.204 ( 8.20e+00  1.23e-01)  4.71e-01 ( 8.26e+00  1.95e-01)
+36 130 R SNcn  Log b37 ............  0.192 ( 8.33e+00  1.00e-01)  4.86e-01 ( 8.38e+00  1.54e-01)
+50 144 R SNcn  Log r47 ............  0.185 ( 8.33e+00  9.91e-02)  4.28e-01 ( 8.38e+00  1.54e-01)
+38 132 R SNcn  Log b39 ............  0.183 ( 8.23e+00  1.30e-01)  5.90e-01 ( 8.31e+00  1.83e-01)
+48 142 R SNcn  Log r45 ............  0.169 ( 8.62e+00  7.08e-02)  3.91e-01 ( 8.60e+00  1.08e-01)
+35 129 R SNcn  Log b36 ............  0.157 ( 8.36e+00  9.52e-02)  4.02e-01 ( 8.40e+00  1.41e-01)
+33 127 R SNcn  Log b34 ............  0.149 ( 8.47e+00  8.43e-02)  1.62e-01 ( 8.48e+00  1.30e-01)
+32 126 R SNcn  Log b33 ............  0.128 ( 8.52e+00  7.89e-02)  4.12e-02 ( 8.52e+00  1.18e-01)
+49 143 R SNcn  Log r46 ............  0.118 ( 8.46e+00  8.48e-02)  1.90e-01 ( 8.48e+00  1.23e-01)
+34 128 R SNcn  Log b35 ............  0.114 ( 8.41e+00  9.62e-02)  2.68e-01 ( 8.43e+00  1.36e-01)
+
+
+CLASS  1 - weight  52   normalized weight 0.123   relative strength  4.84e-17 *******
+                            class cross entropy w.r.t. global class  9.86e+01 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+22 116 R SNcn  Log b23 ............  2.327 ( 9.10e+00  3.88e-02)  5.52e+00 ( 8.89e+00  6.16e-01)
+14 108 R SNcn  Log b15 ............  2.222 ( 9.44e+00  5.45e-02)  6.94e+00 ( 9.07e+00  7.21e-01)
+16 110 R SNcn  Log b17 ............  2.210 ( 9.37e+00  5.15e-02)  6.65e+00 ( 9.03e+00  6.80e-01)
+19 113 R SNcn  Log b20 ............  2.205 ( 9.24e+00  4.72e-02)  5.86e+00 ( 8.97e+00  6.41e-01)
+24 118 R SNcn  Log b25 ............  2.192 ( 9.04e+00  4.15e-02)  3.82e+00 ( 8.88e+00  5.90e-01)
+18 112 R SNcn  Log b19 ............  2.184 ( 9.33e+00  4.81e-02)  5.95e+00 ( 9.05e+00  6.35e-01)
+13 107 R SNcn  Log b14 ............  2.107 ( 9.46e+00  6.18e-02)  6.08e+00 ( 9.09e+00  7.32e-01)
+15 109 R SNcn  Log b16 ............  2.091 ( 9.41e+00  5.90e-02)  6.01e+00 ( 9.06e+00  6.86e-01)
+44 138 R SNcn  Log r41 ............  1.995 ( 9.17e+00  5.58e-02)  4.39e+00 ( 8.92e+00  6.24e-01)
+12 106 R SNcn  Log b13 ............  1.963 ( 9.47e+00  5.39e-02)  6.42e+00 ( 9.12e+00  4.90e-01)
+17 111 R SNcn  Log b18 ............  1.940 ( 9.31e+00  5.01e-02)  6.24e+00 ( 9.00e+00  4.47e-01)
+11 105 R SNcn  Log b12 ............  1.914 ( 9.45e+00  5.41e-02)  5.93e+00 ( 9.13e+00  4.82e-01)
+20 114 R SNcn  Log b21 ............  1.897 ( 9.19e+00  4.42e-02)  5.72e+00 ( 8.94e+00  3.91e-01)
+21 115 R SNcn  Log b22 ............  1.792 ( 9.14e+00  4.56e-02)  5.03e+00 ( 8.91e+00  3.69e-01)
+45 139 R SNcn  Log r42 ............  1.634 ( 9.07e+00  4.05e-02)  4.60e+00 ( 8.88e+00  2.64e-01)
+23 117 R SNcn  Log b24 ............  1.602 ( 9.05e+00  4.17e-02)  4.21e+00 ( 8.87e+00  2.75e-01)
+10 104 R SNcn  Log b11 ............  1.588 ( 9.41e+00  6.43e-02)  4.17e+00 ( 9.14e+00  4.17e-01)
+87 181 R SNcn  Log r34 ............  1.301 ( 6.97e+00  1.31e-01)  1.79e-01 ( 7.00e+00  7.84e-01)
+46 140 R SNcn  Log r43 ............  1.237 ( 8.92e+00  4.34e-02)  2.80e+00 ( 8.80e+00  2.01e-01)
+09 103 R SNcn  Log b10 ............  1.235 ( 9.35e+00  7.07e-02)  2.54e+00 ( 9.17e+00  3.42e-01)
+56 150 R SNcn  Log r03 ............  1.120 ( 7.75e+00  6.64e-02)  2.73e+00 ( 7.94e+00  2.48e-01)
+25 119 R SNcn  Log b26 ............  1.115 ( 8.94e+00  5.12e-02)  2.47e+00 ( 8.81e+00  2.07e-01)
+53 147 R SNcn  Log r40 ............  1.086 ( 7.93e+00  6.86e-02)  2.77e+00 ( 8.12e+00  2.17e-01)
+84 178 R SNcn  Log r31 ............  1.083 ( 7.09e+00  1.17e-01)  1.61e-01 ( 7.11e+00  5.55e-01)
+58 152 R SNcn  Log r05 ............  1.082 ( 7.68e+00  6.96e-02)  2.42e+00 ( 7.85e+00  2.69e-01)
+57 151 R SNcn  Log r04 ............  1.078 ( 7.72e+00  7.04e-02)  2.57e+00 ( 7.90e+00  2.56e-01)
+80 174 R SNcn  Log r27 ............  1.068 ( 7.23e+00  1.11e-01)  3.48e-02 ( 7.22e+00  5.22e-01)
+76 170 R SNcn  Log r23 ............  1.044 ( 7.36e+00  1.04e-01)  2.26e-01 ( 7.34e+00  4.75e-01)
+00 94 R SNcn  Log b01 ............  1.041 ( 9.08e+00  1.70e-01)  1.72e+00 ( 9.37e+00  7.08e-01)
+55 149 R SNcn  Log r02 ............  1.033 ( 7.80e+00  7.74e-02)  2.58e+00 ( 8.00e+00  2.44e-01)
+79 173 R SNcn  Log r26 ............  1.026 ( 7.20e+00  1.12e-01)  1.75e-01 ( 7.22e+00  5.03e-01)
+52 146 R SNcn  Log r49 ............  1.026 ( 8.01e+00  7.00e-02)  2.60e+00 ( 8.20e+00  1.99e-01)
+72 166 R SNcn  Log r19 ............  1.006 ( 7.52e+00  1.04e-01)  3.64e-01 ( 7.48e+00  4.53e-01)
+85 179 R SNcn  Log r32 ............  1.001 ( 7.01e+00  1.29e-01)  1.87e-01 ( 7.03e+00  5.62e-01)
+78 172 R SNcn  Log r25 ............  0.980 ( 7.29e+00  1.16e-01)  1.37e-01 ( 7.28e+00  4.94e-01)
+51 145 R SNcn  Log r48 ............  0.958 ( 8.11e+00  7.25e-02)  2.40e+00 ( 8.28e+00  1.83e-01)
+59 153 R SNcn  Log r06 ............  0.955 ( 7.69e+00  7.76e-02)  1.87e+00 ( 7.83e+00  2.79e-01)
+37 131 R SNcn  Log b38 ............  0.942 ( 8.19e+00  6.59e-02)  2.36e+00 ( 8.35e+00  1.69e-01)
+81 175 R SNcn  Log r28 ............  0.938 ( 7.20e+00  1.30e-01)  1.50e-01 ( 7.18e+00  5.32e-01)
+75 169 R SNcn  Log r22 ............  0.938 ( 7.42e+00  1.18e-01)  3.63e-01 ( 7.38e+00  4.80e-01)
+77 171 R SNcn  Log r24 ............  0.935 ( 7.34e+00  1.17e-01)  8.71e-02 ( 7.33e+00  4.77e-01)
+08 102 R SNcn  Log b09 ............  0.935 ( 9.28e+00  7.53e-02)  1.24e+00 ( 9.19e+00  2.90e-01)
+04 98 R SNcn  Log b05 ............  0.933 ( 9.05e+00  1.07e-01)  2.00e+00 ( 9.26e+00  3.58e-01)
+86 180 R SNcn  Log r33 ............  0.930 ( 6.95e+00  1.43e-01)  2.36e-01 ( 6.99e+00  5.78e-01)
+39 133 R SNcn  Log b40 ............  0.925 ( 8.12e+00  7.44e-02)  2.32e+00 ( 8.29e+00  1.90e-01)
+54 148 R SNcn  Log r01 ............  0.923 ( 7.86e+00  8.58e-02)  2.29e+00 ( 8.05e+00  2.34e-01)
+03 97 R SNcn  Log b04 ............  0.908 ( 9.03e+00  1.28e-01)  2.07e+00 ( 9.29e+00  3.97e-01)
+50 144 R SNcn  Log r47 ............  0.900 ( 8.23e+00  6.50e-02)  2.24e+00 ( 8.38e+00  1.54e-01)
+83 177 R SNcn  Log r30 ............  0.897 ( 7.12e+00  1.39e-01)  9.41e-02 ( 7.13e+00  5.43e-01)
+26 120 R SNcn  Log b27 ............  0.896 ( 8.87e+00  5.35e-02)  1.86e+00 ( 8.77e+00  1.76e-01)
+67 161 R SNcn  Log r14 ............  0.892 ( 7.64e+00  9.95e-02)  1.49e-01 ( 7.63e+00  3.87e-01)
+40 134 R SNcn  Log b41 ............  0.885 ( 8.09e+00  7.55e-02)  2.19e+00 ( 8.26e+00  1.95e-01)
+71 165 R SNcn  Log r18 ............  0.869 ( 7.53e+00  1.16e-01)  2.04e-01 ( 7.50e+00  4.38e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+63 157 R SNcn  Log r10 ............  0.868 ( 7.67e+00  8.96e-02)  6.29e-01 ( 7.73e+00  3.34e-01)
+69 163 R SNcn  Log r16 ............  0.862 ( 7.60e+00  1.11e-01)  3.26e-01 ( 7.56e+00  4.18e-01)
+66 160 R SNcn  Log r13 ............  0.859 ( 7.64e+00  9.88e-02)  1.04e-01 ( 7.65e+00  3.71e-01)
+02 96 R SNcn  Log b03 ............  0.858 ( 9.02e+00  1.47e-01)  2.04e+00 ( 9.32e+00  4.11e-01)
+01 95 R SNcn  Log b02 ............  0.854 ( 9.02e+00  1.60e-01)  1.97e+00 ( 9.33e+00  4.64e-01)
+90 184 R SNcn  Log r37 ............  0.845 ( 6.87e+00  1.64e-01)  2.54e-01 ( 6.91e+00  6.04e-01)
+68 162 R SNcn  Log r15 ............  0.841 ( 7.63e+00  1.09e-01)  2.91e-01 ( 7.60e+00  4.00e-01)
+65 159 R SNcn  Log r12 ............  0.837 ( 7.66e+00  9.97e-02)  1.75e-01 ( 7.68e+00  3.65e-01)
+43 137 R SNcn  Log b44 ............  0.829 ( 8.00e+00  8.07e-02)  2.04e+00 ( 8.17e+00  2.04e-01)
+82 176 R SNcn  Log r29 ............  0.827 ( 7.12e+00  1.48e-01)  3.28e-02 ( 7.12e+00  5.35e-01)
+06 100 R SNcn  Log b07 ............  0.822 ( 9.14e+00  8.27e-02)  9.72e-01 ( 9.22e+00  2.86e-01)
+88 182 R SNcn  Log r35 ............  0.821 ( 6.95e+00  1.62e-01)  1.64e-01 ( 6.97e+00  5.85e-01)
+73 167 R SNcn  Log r20 ............  0.816 ( 7.47e+00  1.28e-01)  2.13e-01 ( 7.44e+00  4.59e-01)
+74 168 R SNcn  Log r21 ............  0.816 ( 7.43e+00  1.31e-01)  1.53e-01 ( 7.41e+00  4.68e-01)
+36 130 R SNcn  Log b37 ............  0.805 ( 8.24e+00  7.14e-02)  2.00e+00 ( 8.38e+00  1.54e-01)
+05 99 R SNcn  Log b06 ............  0.801 ( 9.10e+00  1.01e-01)  1.46e+00 ( 9.25e+00  3.17e-01)
+89 183 R SNcn  Log r36 ............  0.799 ( 6.89e+00  1.67e-01)  2.21e-01 ( 6.93e+00  5.87e-01)
+91 185 R SNcn  Log r38 ............  0.791 ( 6.80e+00  1.75e-01)  3.47e-01 ( 6.86e+00  6.07e-01)
+70 164 R SNcn  Log r17 ............  0.783 ( 7.57e+00  1.23e-01)  2.30e-01 ( 7.54e+00  4.26e-01)
+27 121 R SNcn  Log b28 ............  0.775 ( 8.81e+00  5.11e-02)  1.33e+00 ( 8.74e+00  1.58e-01)
+60 154 R SNcn  Log r07 ............  0.771 ( 7.68e+00  9.38e-02)  1.27e+00 ( 7.80e+00  2.92e-01)
+38 132 R SNcn  Log b39 ............  0.768 ( 8.15e+00  8.21e-02)  1.91e+00 ( 8.31e+00  1.83e-01)
+07 101 R SNcn  Log b08 ............  0.758 ( 9.21e+00  8.11e-02)  4.17e-02 ( 9.21e+00  2.73e-01)
+92 186 R SNcn  Log r39 ............  0.741 ( 6.73e+00  1.84e-01)  8.67e-02 ( 6.75e+00  6.09e-01)
+62 156 R SNcn  Log r09 ............  0.739 ( 7.67e+00  1.00e-01)  7.40e-01 ( 7.74e+00  3.20e-01)
+35 129 R SNcn  Log b36 ............  0.733 ( 8.27e+00  7.02e-02)  1.82e+00 ( 8.40e+00  1.41e-01)
+34 128 R SNcn  Log b35 ............  0.729 ( 8.32e+00  6.22e-02)  1.81e+00 ( 8.43e+00  1.36e-01)
+61 155 R SNcn  Log r08 ............  0.727 ( 7.68e+00  9.92e-02)  9.43e-01 ( 7.77e+00  3.07e-01)
+64 158 R SNcn  Log r11 ............  0.692 ( 7.66e+00  1.12e-01)  3.59e-01 ( 7.70e+00  3.48e-01)
+47 141 R SNcn  Log r44 ............  0.683 ( 8.75e+00  4.49e-02)  8.15e-01 ( 8.72e+00  1.33e-01)
+42 136 R SNcn  Log b43 ............  0.677 ( 8.02e+00  1.04e-01)  1.69e+00 ( 8.19e+00  2.00e-01)
+49 143 R SNcn  Log r46 ............  0.640 ( 8.38e+00  6.04e-02)  1.60e+00 ( 8.48e+00  1.23e-01)
+41 135 R SNcn  Log b42 ............  0.617 ( 8.06e+00  1.04e-01)  1.56e+00 ( 8.23e+00  1.98e-01)
+28 122 R SNcn  Log b29 ............  0.508 ( 8.74e+00  5.58e-02)  6.78e-01 ( 8.70e+00  1.35e-01)
+33 127 R SNcn  Log b34 ............  0.474 ( 8.39e+00  7.56e-02)  1.25e+00 ( 8.48e+00  1.30e-01)
+29 123 R SNcn  Log b30 ............  0.455 ( 8.68e+00  5.23e-02)  2.45e-01 ( 8.67e+00  1.24e-01)
+32 126 R SNcn  Log b33 ............  0.423 ( 8.46e+00  6.22e-02)  1.01e+00 ( 8.52e+00  1.18e-01)
+30 124 R SNcn  Log b31 ............  0.379 ( 8.60e+00  5.62e-02)  3.62e-01 ( 8.62e+00  1.20e-01)
+48 142 R SNcn  Log r45 ............  0.331 ( 8.56e+00  5.67e-02)  6.04e-01 ( 8.60e+00  1.08e-01)
+31 125 R SNcn  Log b32 ............  0.297 ( 8.52e+00  7.27e-02)  7.99e-01 ( 8.57e+00  1.19e-01)
+
+
+CLASS  2 - weight  51   normalized weight 0.120   relative strength  6.88e-22 *******
+                            class cross entropy w.r.t. global class  8.15e+01 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+24 118 R SNcn  Log b25 ............  1.905 ( 8.92e+00  5.36e-02)  6.14e-01 ( 8.88e+00  5.90e-01)
+22 116 R SNcn  Log b23 ............  1.751 ( 8.91e+00  6.52e-02)  4.12e-01 ( 8.89e+00  6.16e-01)
+19 113 R SNcn  Log b20 ............  1.707 ( 8.96e+00  7.10e-02)  6.62e-02 ( 8.97e+00  6.41e-01)
+18 112 R SNcn  Log b19 ............  1.640 ( 9.03e+00  7.53e-02)  1.95e-01 ( 9.05e+00  6.35e-01)
+44 138 R SNcn  Log r41 ............  1.601 ( 8.93e+00  7.69e-02)  1.20e-01 ( 8.92e+00  6.24e-01)
+09 103 R SNcn  Log b10 ............  1.500 ( 9.18e+00  4.67e-02)  3.08e-01 ( 9.17e+00  3.42e-01)
+10 104 R SNcn  Log b11 ............  1.442 ( 9.13e+00  6.05e-02)  2.32e-01 ( 9.14e+00  4.17e-01)
+13 107 R SNcn  Log b14 ............  1.436 ( 9.06e+00  1.07e-01)  2.25e-01 ( 9.09e+00  7.32e-01)
+15 109 R SNcn  Log b16 ............  1.412 ( 9.02e+00  1.03e-01)  3.22e-01 ( 9.06e+00  6.86e-01)
+14 108 R SNcn  Log b15 ............  1.398 ( 9.04e+00  1.09e-01)  2.71e-01 ( 9.07e+00  7.21e-01)
+16 110 R SNcn  Log b17 ............  1.351 ( 9.00e+00  1.08e-01)  2.71e-01 ( 9.03e+00  6.80e-01)
+00 94 R SNcn  Log b01 ............  1.343 ( 9.56e+00  1.18e-01)  1.64e+00 ( 9.37e+00  7.08e-01)
+11 105 R SNcn  Log b12 ............  1.277 ( 9.10e+00  8.28e-02)  3.25e-01 ( 9.13e+00  4.82e-01)
+21 115 R SNcn  Log b22 ............  1.238 ( 8.92e+00  6.60e-02)  5.52e-02 ( 8.91e+00  3.69e-01)
+12 106 R SNcn  Log b13 ............  1.213 ( 9.09e+00  9.02e-02)  3.95e-01 ( 9.12e+00  4.90e-01)
+20 114 R SNcn  Log b21 ............  1.192 ( 8.94e+00  7.34e-02)  9.30e-02 ( 8.94e+00  3.91e-01)
+01 95 R SNcn  Log b02 ............  1.086 ( 9.52e+00  1.06e-01)  1.78e+00 ( 9.33e+00  4.64e-01)
+08 102 R SNcn  Log b09 ............  1.083 ( 9.23e+00  6.15e-02)  6.38e-01 ( 9.19e+00  2.90e-01)
+17 111 R SNcn  Log b18 ............  1.048 ( 8.96e+00  9.76e-02)  3.78e-01 ( 9.00e+00  4.47e-01)
+02 96 R SNcn  Log b03 ............  1.034 ( 9.51e+00  1.01e-01)  1.84e+00 ( 9.32e+00  4.11e-01)
+23 117 R SNcn  Log b24 ............  1.021 ( 8.88e+00  6.17e-02)  1.80e-01 ( 8.87e+00  2.75e-01)
+03 97 R SNcn  Log b04 ............  0.974 ( 9.47e+00  1.04e-01)  1.74e+00 ( 9.29e+00  3.97e-01)
+75 169 R SNcn  Log r22 ............  0.956 ( 7.26e+00  1.19e-01)  9.69e-01 ( 7.38e+00  4.80e-01)
+87 181 R SNcn  Log r34 ............  0.954 ( 6.94e+00  1.89e-01)  3.22e-01 ( 7.00e+00  7.84e-01)
+50 144 R SNcn  Log r47 ............  0.942 ( 8.49e+00  5.09e-02)  2.27e+00 ( 8.38e+00  1.54e-01)
+79 173 R SNcn  Log r26 ............  0.927 ( 7.13e+00  1.27e-01)  7.07e-01 ( 7.22e+00  5.03e-01)
+71 165 R SNcn  Log r18 ............  0.925 ( 7.40e+00  1.12e-01)  9.24e-01 ( 7.50e+00  4.38e-01)
+72 166 R SNcn  Log r19 ............  0.921 ( 7.37e+00  1.16e-01)  9.15e-01 ( 7.48e+00  4.53e-01)
+83 177 R SNcn  Log r30 ............  0.914 ( 7.05e+00  1.38e-01)  6.11e-01 ( 7.13e+00  5.43e-01)
+65 159 R SNcn  Log r12 ............  0.881 ( 7.62e+00  9.63e-02)  6.16e-01 ( 7.68e+00  3.65e-01)
+46 140 R SNcn  Log r43 ............  0.877 ( 8.82e+00  5.27e-02)  3.88e-01 ( 8.80e+00  2.01e-01)
+80 174 R SNcn  Log r27 ............  0.877 ( 7.14e+00  1.38e-01)  6.19e-01 ( 7.22e+00  5.22e-01)
+53 147 R SNcn  Log r40 ............  0.872 ( 8.24e+00  6.70e-02)  1.77e+00 ( 8.12e+00  2.17e-01)
+04 98 R SNcn  Log b05 ............  0.872 ( 9.42e+00  1.05e-01)  1.53e+00 ( 9.26e+00  3.58e-01)
+07 101 R SNcn  Log b08 ............  0.866 ( 9.28e+00  7.51e-02)  9.84e-01 ( 9.21e+00  2.73e-01)
+34 128 R SNcn  Log b35 ............  0.859 ( 8.54e+00  5.00e-02)  2.08e+00 ( 8.43e+00  1.36e-01)
+51 145 R SNcn  Log r48 ............  0.859 ( 8.41e+00  6.23e-02)  1.97e+00 ( 8.28e+00  1.83e-01)
+25 119 R SNcn  Log b26 ............  0.845 ( 8.83e+00  5.63e-02)  3.12e-01 ( 8.81e+00  2.07e-01)
+54 148 R SNcn  Log r01 ............  0.836 ( 8.17e+00  7.21e-02)  1.54e+00 ( 8.05e+00  2.34e-01)
+05 99 R SNcn  Log b06 ............  0.834 ( 9.38e+00  9.53e-02)  1.38e+00 ( 9.25e+00  3.17e-01)
+45 139 R SNcn  Log r42 ............  0.824 ( 8.88e+00  7.29e-02)  5.17e-02 ( 8.88e+00  2.64e-01)
+74 168 R SNcn  Log r21 ............  0.823 ( 7.30e+00  1.33e-01)  8.02e-01 ( 7.41e+00  4.68e-01)
+52 146 R SNcn  Log r49 ............  0.823 ( 8.32e+00  6.79e-02)  1.81e+00 ( 8.20e+00  1.99e-01)
+64 158 R SNcn  Log r11 ............  0.822 ( 7.65e+00  9.78e-02)  5.88e-01 ( 7.70e+00  3.48e-01)
+49 143 R SNcn  Log r46 ............  0.820 ( 8.58e+00  4.91e-02)  2.01e+00 ( 8.48e+00  1.23e-01)
+68 162 R SNcn  Log r15 ............  0.785 ( 7.49e+00  1.21e-01)  9.31e-01 ( 7.60e+00  4.00e-01)
+81 175 R SNcn  Log r28 ............  0.783 ( 7.09e+00  1.56e-01)  5.91e-01 ( 7.18e+00  5.32e-01)
+70 164 R SNcn  Log r17 ............  0.781 ( 7.43e+00  1.28e-01)  8.36e-01 ( 7.54e+00  4.26e-01)
+33 127 R SNcn  Log b34 ............  0.774 ( 8.58e+00  5.17e-02)  1.86e+00 ( 8.48e+00  1.30e-01)
+69 163 R SNcn  Log r16 ............  0.774 ( 7.45e+00  1.27e-01)  8.60e-01 ( 7.56e+00  4.18e-01)
+06 100 R SNcn  Log b07 ............  0.769 ( 9.32e+00  9.03e-02)  1.16e+00 ( 9.22e+00  2.86e-01)
+77 171 R SNcn  Log r24 ............  0.768 ( 7.23e+00  1.43e-01)  6.59e-01 ( 7.33e+00  4.77e-01)
+36 130 R SNcn  Log b37 ............  0.767 ( 8.49e+00  6.04e-02)  1.82e+00 ( 8.38e+00  1.54e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+73 167 R SNcn  Log r20 ............  0.765 ( 7.32e+00  1.40e-01)  8.60e-01 ( 7.44e+00  4.59e-01)
+27 121 R SNcn  Log b28 ............  0.756 ( 8.79e+00  4.89e-02)  8.28e-01 ( 8.74e+00  1.58e-01)
+35 129 R SNcn  Log b36 ............  0.754 ( 8.51e+00  5.98e-02)  1.85e+00 ( 8.40e+00  1.41e-01)
+85 179 R SNcn  Log r32 ............  0.752 ( 6.93e+00  1.71e-01)  6.14e-01 ( 7.03e+00  5.62e-01)
+78 172 R SNcn  Log r25 ............  0.749 ( 7.19e+00  1.51e-01)  5.50e-01 ( 7.28e+00  4.94e-01)
+84 178 R SNcn  Log r31 ............  0.746 ( 6.99e+00  1.71e-01)  6.88e-01 ( 7.11e+00  5.55e-01)
+67 161 R SNcn  Log r14 ............  0.737 ( 7.53e+00  1.21e-01)  7.59e-01 ( 7.63e+00  3.87e-01)
+32 126 R SNcn  Log b33 ............  0.735 ( 8.61e+00  4.98e-02)  1.78e+00 ( 8.52e+00  1.18e-01)
+26 120 R SNcn  Log b27 ............  0.713 ( 8.80e+00  5.56e-02)  4.77e-01 ( 8.77e+00  1.76e-01)
+82 176 R SNcn  Log r29 ............  0.708 ( 7.01e+00  1.72e-01)  6.33e-01 ( 7.12e+00  5.35e-01)
+40 134 R SNcn  Log b41 ............  0.705 ( 8.40e+00  8.42e-02)  1.71e+00 ( 8.26e+00  1.95e-01)
+37 131 R SNcn  Log b38 ............  0.693 ( 8.46e+00  6.93e-02)  1.60e+00 ( 8.35e+00  1.69e-01)
+63 157 R SNcn  Log r10 ............  0.690 ( 7.69e+00  1.08e-01)  3.12e-01 ( 7.73e+00  3.34e-01)
+88 182 R SNcn  Log r35 ............  0.690 ( 6.89e+00  1.90e-01)  4.44e-01 ( 6.97e+00  5.85e-01)
+56 150 R SNcn  Log r03 ............  0.684 ( 8.04e+00  8.80e-02)  1.17e+00 ( 7.94e+00  2.48e-01)
+76 170 R SNcn  Log r23 ............  0.681 ( 7.24e+00  1.58e-01)  6.55e-01 ( 7.34e+00  4.75e-01)
+43 137 R SNcn  Log b44 ............  0.677 ( 8.30e+00  8.50e-02)  1.58e+00 ( 8.17e+00  2.04e-01)
+47 141 R SNcn  Log r44 ............  0.663 ( 8.76e+00  4.69e-02)  9.53e-01 ( 8.72e+00  1.33e-01)
+39 133 R SNcn  Log b40 ............  0.663 ( 8.42e+00  8.46e-02)  1.60e+00 ( 8.29e+00  1.90e-01)
+55 149 R SNcn  Log r02 ............  0.647 ( 8.11e+00  9.16e-02)  1.17e+00 ( 8.00e+00  2.44e-01)
+62 156 R SNcn  Log r09 ............  0.646 ( 7.73e+00  1.08e-01)  1.10e-01 ( 7.74e+00  3.20e-01)
+57 151 R SNcn  Log r04 ............  0.632 ( 7.98e+00  9.28e-02)  8.85e-01 ( 7.90e+00  2.56e-01)
+31 125 R SNcn  Log b32 ............  0.629 ( 8.65e+00  5.33e-02)  1.50e+00 ( 8.57e+00  1.19e-01)
+30 124 R SNcn  Log b31 ............  0.621 ( 8.68e+00  4.76e-02)  1.24e+00 ( 8.62e+00  1.20e-01)
+66 160 R SNcn  Log r13 ............  0.621 ( 7.58e+00  1.31e-01)  5.33e-01 ( 7.65e+00  3.71e-01)
+58 152 R SNcn  Log r05 ............  0.616 ( 7.92e+00  9.78e-02)  7.55e-01 ( 7.85e+00  2.69e-01)
+61 155 R SNcn  Log r08 ............  0.599 ( 7.78e+00  1.09e-01)  8.33e-02 ( 7.77e+00  3.07e-01)
+48 142 R SNcn  Log r45 ............  0.595 ( 8.66e+00  4.89e-02)  1.40e+00 ( 8.60e+00  1.08e-01)
+28 122 R SNcn  Log b29 ............  0.594 ( 8.75e+00  5.14e-02)  8.82e-01 ( 8.70e+00  1.35e-01)
+60 154 R SNcn  Log r07 ............  0.593 ( 7.83e+00  1.05e-01)  2.53e-01 ( 7.80e+00  2.92e-01)
+38 132 R SNcn  Log b39 ............  0.591 ( 8.43e+00  8.66e-02)  1.43e+00 ( 8.31e+00  1.83e-01)
+42 136 R SNcn  Log b43 ............  0.583 ( 8.33e+00  9.54e-02)  1.42e+00 ( 8.19e+00  2.00e-01)
+89 183 R SNcn  Log r36 ............  0.579 ( 6.83e+00  2.17e-01)  4.89e-01 ( 6.93e+00  5.87e-01)
+86 180 R SNcn  Log r33 ............  0.557 ( 6.87e+00  2.21e-01)  5.39e-01 ( 6.99e+00  5.78e-01)
+59 153 R SNcn  Log r06 ............  0.549 ( 7.89e+00  1.08e-01)  5.19e-01 ( 7.83e+00  2.79e-01)
+91 185 R SNcn  Log r38 ............  0.541 ( 6.77e+00  2.33e-01)  3.54e-01 ( 6.86e+00  6.07e-01)
+41 135 R SNcn  Log b42 ............  0.491 ( 8.35e+00  1.03e-01)  1.22e+00 ( 8.23e+00  1.98e-01)
+29 123 R SNcn  Log b30 ............  0.457 ( 8.72e+00  5.71e-02)  8.54e-01 ( 8.67e+00  1.24e-01)
+90 184 R SNcn  Log r37 ............  0.429 ( 6.81e+00  2.67e-01)  3.77e-01 ( 6.91e+00  6.04e-01)
+92 186 R SNcn  Log r39 ............  0.414 ( 6.65e+00  2.74e-01)  3.63e-01 ( 6.75e+00  6.09e-01)
+
+
+CLASS  3 - weight  46   normalized weight 0.108   relative strength  8.86e-19 *******
+                            class cross entropy w.r.t. global class  8.40e+01 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+14 108 R SNcn  Log b15 ............  2.118 ( 9.30e+00  5.56e-02)  4.21e+00 ( 9.07e+00  7.21e-01)
+13 107 R SNcn  Log b14 ............  2.112 ( 9.32e+00  5.66e-02)  4.06e+00 ( 9.09e+00  7.32e-01)
+22 116 R SNcn  Log b23 ............  2.105 ( 9.01e+00  4.66e-02)  2.67e+00 ( 8.89e+00  6.16e-01)
+15 109 R SNcn  Log b16 ............  2.080 ( 9.27e+00  5.49e-02)  3.97e+00 ( 9.06e+00  6.86e-01)
+16 110 R SNcn  Log b17 ............  2.054 ( 9.24e+00  5.56e-02)  3.74e+00 ( 9.03e+00  6.80e-01)
+18 112 R SNcn  Log b19 ............  2.041 ( 9.21e+00  5.19e-02)  3.19e+00 ( 9.05e+00  6.35e-01)
+19 113 R SNcn  Log b20 ............  2.039 ( 9.13e+00  5.25e-02)  3.13e+00 ( 8.97e+00  6.41e-01)
+24 118 R SNcn  Log b25 ............  1.960 ( 8.97e+00  5.12e-02)  1.78e+00 ( 8.88e+00  5.90e-01)
+44 138 R SNcn  Log r41 ............  1.943 ( 9.07e+00  5.61e-02)  2.70e+00 ( 8.92e+00  6.24e-01)
+17 111 R SNcn  Log b18 ............  1.762 ( 9.19e+00  5.12e-02)  3.68e+00 ( 9.00e+00  4.47e-01)
+20 114 R SNcn  Log b21 ............  1.751 ( 9.09e+00  4.44e-02)  3.24e+00 ( 8.94e+00  3.91e-01)
+12 106 R SNcn  Log b13 ............  1.699 ( 9.31e+00  5.88e-02)  3.16e+00 ( 9.12e+00  4.90e-01)
+11 105 R SNcn  Log b12 ............  1.606 ( 9.29e+00  6.25e-02)  2.56e+00 ( 9.13e+00  4.82e-01)
+21 115 R SNcn  Log b22 ............  1.540 ( 9.04e+00  5.14e-02)  2.44e+00 ( 8.91e+00  3.69e-01)
+10 104 R SNcn  Log b11 ............  1.338 ( 9.26e+00  7.03e-02)  1.75e+00 ( 9.14e+00  4.17e-01)
+23 117 R SNcn  Log b24 ............  1.328 ( 8.96e+00  4.71e-02)  1.80e+00 ( 8.87e+00  2.75e-01)
+45 139 R SNcn  Log r42 ............  1.197 ( 8.99e+00  5.35e-02)  1.99e+00 ( 8.88e+00  2.64e-01)
+09 103 R SNcn  Log b10 ............  1.120 ( 9.24e+00  7.07e-02)  1.03e+00 ( 9.17e+00  3.42e-01)
+87 181 R SNcn  Log r34 ............  1.057 ( 6.94e+00  1.70e-01)  3.43e-01 ( 7.00e+00  7.84e-01)
+58 152 R SNcn  Log r05 ............  1.040 ( 7.77e+00  6.20e-02)  1.28e+00 ( 7.85e+00  2.69e-01)
+46 140 R SNcn  Log r43 ............  1.038 ( 8.87e+00  4.69e-02)  1.43e+00 ( 8.80e+00  2.01e-01)
+80 174 R SNcn  Log r27 ............  1.026 ( 7.16e+00  1.17e-01)  5.53e-01 ( 7.22e+00  5.22e-01)
+83 177 R SNcn  Log r30 ............  1.019 ( 7.06e+00  1.23e-01)  5.90e-01 ( 7.13e+00  5.43e-01)
+75 169 R SNcn  Log r22 ............  0.999 ( 7.34e+00  1.10e-01)  3.13e-01 ( 7.38e+00  4.80e-01)
+64 158 R SNcn  Log r11 ............  0.964 ( 7.65e+00  8.39e-02)  6.37e-01 ( 7.70e+00  3.48e-01)
+76 170 R SNcn  Log r23 ............  0.947 ( 7.32e+00  1.15e-01)  1.94e-01 ( 7.34e+00  4.75e-01)
+60 154 R SNcn  Log r07 ............  0.932 ( 7.73e+00  7.43e-02)  9.69e-01 ( 7.80e+00  2.92e-01)
+00 94 R SNcn  Log b01 ............  0.922 ( 9.41e+00  1.76e-01)  1.99e-01 ( 9.37e+00  7.08e-01)
+61 155 R SNcn  Log r08 ............  0.919 ( 7.69e+00  7.98e-02)  1.08e+00 ( 7.77e+00  3.07e-01)
+71 165 R SNcn  Log r18 ............  0.918 ( 7.47e+00  1.10e-01)  2.97e-01 ( 7.50e+00  4.38e-01)
+25 119 R SNcn  Log b26 ............  0.895 ( 8.86e+00  5.47e-02)  8.88e-01 ( 8.81e+00  2.07e-01)
+57 151 R SNcn  Log r04 ............  0.891 ( 7.82e+00  6.91e-02)  1.10e+00 ( 7.90e+00  2.56e-01)
+08 102 R SNcn  Log b09 ............  0.887 ( 9.22e+00  7.56e-02)  4.68e-01 ( 9.19e+00  2.90e-01)
+07 101 R SNcn  Log b08 ............  0.876 ( 9.21e+00  7.14e-02)  5.33e-03 ( 9.21e+00  2.73e-01)
+81 175 R SNcn  Log r28 ............  0.863 ( 7.11e+00  1.42e-01)  4.76e-01 ( 7.18e+00  5.32e-01)
+62 156 R SNcn  Log r09 ............  0.851 ( 7.67e+00  8.81e-02)  7.65e-01 ( 7.74e+00  3.20e-01)
+77 171 R SNcn  Log r24 ............  0.850 ( 7.28e+00  1.29e-01)  3.97e-01 ( 7.33e+00  4.77e-01)
+65 159 R SNcn  Log r12 ............  0.848 ( 7.63e+00  9.95e-02)  5.31e-01 ( 7.68e+00  3.65e-01)
+78 172 R SNcn  Log r25 ............  0.828 ( 7.22e+00  1.37e-01)  4.14e-01 ( 7.28e+00  4.94e-01)
+74 168 R SNcn  Log r21 ............  0.824 ( 7.37e+00  1.30e-01)  3.07e-01 ( 7.41e+00  4.68e-01)
+70 164 R SNcn  Log r17 ............  0.811 ( 7.53e+00  1.19e-01)  1.05e-01 ( 7.54e+00  4.26e-01)
+26 120 R SNcn  Log b27 ............  0.808 ( 8.82e+00  5.14e-02)  9.26e-01 ( 8.77e+00  1.76e-01)
+06 100 R SNcn  Log b07 ............  0.797 ( 9.21e+00  8.14e-02)  1.11e-01 ( 9.22e+00  2.86e-01)
+69 163 R SNcn  Log r16 ............  0.795 ( 7.55e+00  1.19e-01)  1.22e-01 ( 7.56e+00  4.18e-01)
+66 160 R SNcn  Log r13 ............  0.792 ( 7.61e+00  1.07e-01)  4.38e-01 ( 7.65e+00  3.71e-01)
+67 161 R SNcn  Log r14 ............  0.789 ( 7.61e+00  1.11e-01)  1.48e-01 ( 7.63e+00  3.87e-01)
+84 178 R SNcn  Log r31 ............  0.783 ( 7.05e+00  1.61e-01)  3.32e-01 ( 7.11e+00  5.55e-01)
+86 180 R SNcn  Log r33 ............  0.779 ( 6.88e+00  1.71e-01)  6.20e-01 ( 6.99e+00  5.78e-01)
+72 166 R SNcn  Log r19 ............  0.774 ( 7.46e+00  1.33e-01)  1.65e-01 ( 7.48e+00  4.53e-01)
+55 149 R SNcn  Log r02 ............  0.773 ( 7.94e+00  7.38e-02)  8.31e-01 ( 8.00e+00  2.44e-01)
+85 179 R SNcn  Log r32 ............  0.770 ( 6.96e+00  1.66e-01)  4.15e-01 ( 7.03e+00  5.62e-01)
+68 162 R SNcn  Log r15 ............  0.763 ( 7.56e+00  1.19e-01)  3.27e-01 ( 7.60e+00  4.00e-01)
+82 176 R SNcn  Log r29 ............  0.759 ( 7.03e+00  1.61e-01)  5.67e-01 ( 7.12e+00  5.35e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+05 99 R SNcn  Log b06 ............  0.751 ( 9.23e+00  9.51e-02)  1.88e-01 ( 9.25e+00  3.17e-01)
+59 153 R SNcn  Log r06 ............  0.745 ( 7.75e+00  8.85e-02)  9.51e-01 ( 7.83e+00  2.79e-01)
+63 157 R SNcn  Log r10 ............  0.740 ( 7.67e+00  1.03e-01)  5.79e-01 ( 7.73e+00  3.34e-01)
+04 98 R SNcn  Log b05 ............  0.728 ( 9.24e+00  1.10e-01)  1.67e-01 ( 9.26e+00  3.58e-01)
+56 150 R SNcn  Log r03 ............  0.723 ( 7.86e+00  8.01e-02)  8.96e-01 ( 7.94e+00  2.48e-01)
+41 135 R SNcn  Log b42 ............  0.716 ( 8.24e+00  6.17e-02)  1.90e-01 ( 8.23e+00  1.98e-01)
+53 147 R SNcn  Log r40 ............  0.710 ( 8.08e+00  6.92e-02)  5.87e-01 ( 8.12e+00  2.17e-01)
+38 132 R SNcn  Log b39 ............  0.706 ( 8.31e+00  5.77e-02)  8.62e-02 ( 8.31e+00  1.83e-01)
+79 173 R SNcn  Log r26 ............  0.702 ( 7.18e+00  1.59e-01)  2.40e-01 ( 7.22e+00  5.03e-01)
+54 148 R SNcn  Log r01 ............  0.688 ( 8.00e+00  7.72e-02)  6.93e-01 ( 8.05e+00  2.34e-01)
+91 185 R SNcn  Log r38 ............  0.686 ( 6.72e+00  2.01e-01)  6.94e-01 ( 6.86e+00  6.07e-01)
+73 167 R SNcn  Log r20 ............  0.680 ( 7.42e+00  1.49e-01)  1.72e-01 ( 7.44e+00  4.59e-01)
+03 97 R SNcn  Log b04 ............  0.669 ( 9.29e+00  1.30e-01)  4.60e-02 ( 9.29e+00  3.97e-01)
+52 146 R SNcn  Log r49 ............  0.661 ( 8.17e+00  6.61e-02)  3.26e-01 ( 8.20e+00  1.99e-01)
+88 182 R SNcn  Log r35 ............  0.660 ( 6.84e+00  1.99e-01)  6.62e-01 ( 6.97e+00  5.85e-01)
+27 121 R SNcn  Log b28 ............  0.649 ( 8.78e+00  5.45e-02)  6.30e-01 ( 8.74e+00  1.58e-01)
+01 95 R SNcn  Log b02 ............  0.587 ( 9.35e+00  1.67e-01)  8.84e-02 ( 9.33e+00  4.64e-01)
+02 96 R SNcn  Log b03 ............  0.573 ( 9.33e+00  1.50e-01)  2.27e-02 ( 9.32e+00  4.11e-01)
+51 145 R SNcn  Log r48 ............  0.558 ( 8.26e+00  6.85e-02)  3.18e-01 ( 8.28e+00  1.83e-01)
+37 131 R SNcn  Log b38 ............  0.547 ( 8.34e+00  6.39e-02)  5.69e-02 ( 8.35e+00  1.69e-01)
+42 136 R SNcn  Log b43 ............  0.547 ( 8.20e+00  7.55e-02)  5.67e-02 ( 8.19e+00  2.00e-01)
+47 141 R SNcn  Log r44 ............  0.539 ( 8.75e+00  5.22e-02)  5.64e-01 ( 8.72e+00  1.33e-01)
+89 183 R SNcn  Log r36 ............  0.528 ( 6.80e+00  2.33e-01)  5.75e-01 ( 6.93e+00  5.87e-01)
+35 129 R SNcn  Log b36 ............  0.523 ( 8.39e+00  5.48e-02)  2.13e-01 ( 8.40e+00  1.41e-01)
+43 137 R SNcn  Log b44 ............  0.507 ( 8.17e+00  8.05e-02)  5.23e-03 ( 8.17e+00  2.04e-01)
+40 134 R SNcn  Log b41 ............  0.502 ( 8.25e+00  7.76e-02)  2.42e-02 ( 8.26e+00  1.95e-01)
+39 133 R SNcn  Log b40 ............  0.501 ( 8.30e+00  7.57e-02)  1.87e-01 ( 8.29e+00  1.90e-01)
+50 144 R SNcn  Log r47 ............  0.488 ( 8.35e+00  6.29e-02)  3.59e-01 ( 8.38e+00  1.54e-01)
+36 130 R SNcn  Log b37 ............  0.458 ( 8.38e+00  6.47e-02)  3.39e-04 ( 8.38e+00  1.54e-01)
+28 122 R SNcn  Log b29 ............  0.427 ( 8.72e+00  5.98e-02)  3.77e-01 ( 8.70e+00  1.35e-01)
+34 128 R SNcn  Log b35 ............  0.407 ( 8.42e+00  6.07e-02)  1.40e-01 ( 8.43e+00  1.36e-01)
+90 184 R SNcn  Log r37 ............  0.366 ( 6.76e+00  2.95e-01)  5.06e-01 ( 6.91e+00  6.04e-01)
+29 123 R SNcn  Log b30 ............  0.347 ( 8.68e+00  6.00e-02)  2.28e-01 ( 8.67e+00  1.24e-01)
+30 124 R SNcn  Log b31 ............  0.344 ( 8.63e+00  5.80e-02)  1.65e-01 ( 8.62e+00  1.20e-01)
+92 186 R SNcn  Log r39 ............  0.331 ( 6.59e+00  3.15e-01)  5.25e-01 ( 6.75e+00  6.09e-01)
+49 143 R SNcn  Log r46 ............  0.311 ( 8.46e+00  6.39e-02)  3.95e-01 ( 8.48e+00  1.23e-01)
+31 125 R SNcn  Log b32 ............  0.299 ( 8.58e+00  6.08e-02)  1.62e-02 ( 8.57e+00  1.19e-01)
+48 142 R SNcn  Log r45 ............  0.269 ( 8.59e+00  5.76e-02)  4.87e-02 ( 8.60e+00  1.08e-01)
+33 127 R SNcn  Log b34 ............  0.209 ( 8.47e+00  7.63e-02)  1.43e-01 ( 8.48e+00  1.30e-01)
+32 126 R SNcn  Log b33 ............  0.204 ( 8.50e+00  7.09e-02)  2.61e-01 ( 8.52e+00  1.18e-01)
+
+
+CLASS  4 - weight  35   normalized weight 0.082   relative strength  1.15e-16 *******
+                            class cross entropy w.r.t. global class  9.91e+01 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+22 116 R SNcn  Log b23 ............  2.211 ( 8.88e+00  4.10e-02)  1.21e-01 ( 8.89e+00  6.16e-01)
+24 118 R SNcn  Log b25 ............  2.205 ( 8.86e+00  3.96e-02)  6.52e-01 ( 8.88e+00  5.90e-01)
+19 113 R SNcn  Log b20 ............  2.159 ( 8.99e+00  4.50e-02)  4.85e-01 ( 8.97e+00  6.41e-01)
+13 107 R SNcn  Log b14 ............  2.110 ( 9.19e+00  5.44e-02)  1.77e+00 ( 9.09e+00  7.32e-01)
+18 112 R SNcn  Log b19 ............  2.087 ( 9.07e+00  4.80e-02)  4.79e-01 ( 9.05e+00  6.35e-01)
+15 109 R SNcn  Log b16 ............  2.008 ( 9.13e+00  5.64e-02)  1.28e+00 ( 9.06e+00  6.86e-01)
+14 108 R SNcn  Log b15 ............  2.007 ( 9.16e+00  5.95e-02)  1.54e+00 ( 9.07e+00  7.21e-01)
+16 110 R SNcn  Log b17 ............  1.979 ( 9.08e+00  5.73e-02)  8.16e-01 ( 9.03e+00  6.80e-01)
+44 138 R SNcn  Log r41 ............  1.931 ( 8.94e+00  5.51e-02)  2.94e-01 ( 8.92e+00  6.24e-01)
+10 104 R SNcn  Log b11 ............  1.919 ( 9.24e+00  3.84e-02)  2.62e+00 ( 9.14e+00  4.17e-01)
+20 114 R SNcn  Log b21 ............  1.781 ( 8.93e+00  4.02e-02)  2.39e-01 ( 8.94e+00  3.91e-01)
+11 105 R SNcn  Log b12 ............  1.770 ( 9.22e+00  5.09e-02)  1.81e+00 ( 9.13e+00  4.82e-01)
+12 106 R SNcn  Log b13 ............  1.732 ( 9.20e+00  5.36e-02)  1.47e+00 ( 9.12e+00  4.90e-01)
+17 111 R SNcn  Log b18 ............  1.706 ( 9.02e+00  4.95e-02)  4.81e-01 ( 9.00e+00  4.47e-01)
+02 96 R SNcn  Log b03 ............  1.703 ( 9.69e+00  6.88e-02)  5.35e+00 ( 9.32e+00  4.11e-01)
+21 115 R SNcn  Log b22 ............  1.657 ( 8.89e+00  4.31e-02)  5.26e-01 ( 8.91e+00  3.69e-01)
+01 95 R SNcn  Log b02 ............  1.626 ( 9.74e+00  8.28e-02)  4.93e+00 ( 9.33e+00  4.64e-01)
+00 94 R SNcn  Log b01 ............  1.625 ( 9.81e+00  1.03e-01)  4.21e+00 ( 9.37e+00  7.08e-01)
+03 97 R SNcn  Log b04 ............  1.622 ( 9.62e+00  6.76e-02)  4.82e+00 ( 9.29e+00  3.97e-01)
+45 139 R SNcn  Log r42 ............  1.575 ( 8.85e+00  3.35e-02)  7.73e-01 ( 8.88e+00  2.64e-01)
+04 98 R SNcn  Log b05 ............  1.558 ( 9.55e+00  6.40e-02)  4.48e+00 ( 9.26e+00  3.58e-01)
+09 103 R SNcn  Log b10 ............  1.460 ( 9.29e+00  5.20e-02)  2.37e+00 ( 9.17e+00  3.42e-01)
+07 101 R SNcn  Log b08 ............  1.420 ( 9.38e+00  4.95e-02)  3.45e+00 ( 9.21e+00  2.73e-01)
+06 100 R SNcn  Log b07 ............  1.376 ( 9.42e+00  5.75e-02)  3.53e+00 ( 9.22e+00  2.86e-01)
+23 117 R SNcn  Log b24 ............  1.359 ( 8.83e+00  4.39e-02)  8.96e-01 ( 8.87e+00  2.75e-01)
+05 99 R SNcn  Log b06 ............  1.354 ( 9.49e+00  6.83e-02)  3.57e+00 ( 9.25e+00  3.17e-01)
+08 102 R SNcn  Log b09 ............  1.352 ( 9.33e+00  5.23e-02)  2.73e+00 ( 9.19e+00  2.90e-01)
+66 160 R SNcn  Log r13 ............  1.289 ( 7.40e+00  8.01e-02)  3.16e+00 ( 7.65e+00  3.71e-01)
+87 181 R SNcn  Log r34 ............  1.265 ( 6.59e+00  1.56e-01)  2.59e+00 ( 7.00e+00  7.84e-01)
+71 165 R SNcn  Log r18 ............  1.265 ( 7.19e+00  9.87e-02)  3.13e+00 ( 7.50e+00  4.38e-01)
+83 177 R SNcn  Log r30 ............  1.227 ( 6.74e+00  1.29e-01)  3.03e+00 ( 7.13e+00  5.43e-01)
+62 156 R SNcn  Log r09 ............  1.189 ( 7.53e+00  7.53e-02)  2.77e+00 ( 7.74e+00  3.20e-01)
+72 166 R SNcn  Log r19 ............  1.169 ( 7.19e+00  1.08e-01)  2.69e+00 ( 7.48e+00  4.53e-01)
+63 157 R SNcn  Log r10 ............  1.142 ( 7.50e+00  8.46e-02)  2.71e+00 ( 7.73e+00  3.34e-01)
+84 178 R SNcn  Log r31 ............  1.136 ( 6.71e+00  1.43e-01)  2.73e+00 ( 7.11e+00  5.55e-01)
+70 164 R SNcn  Log r17 ............  1.131 ( 7.23e+00  1.12e-01)  2.75e+00 ( 7.54e+00  4.26e-01)
+79 173 R SNcn  Log r26 ............  1.118 ( 6.90e+00  1.26e-01)  2.53e+00 ( 7.22e+00  5.03e-01)
+46 140 R SNcn  Log r43 ............  1.099 ( 8.75e+00  4.29e-02)  1.22e+00 ( 8.80e+00  2.01e-01)
+68 162 R SNcn  Log r15 ............  1.078 ( 7.31e+00  1.10e-01)  2.57e+00 ( 7.60e+00  4.00e-01)
+25 119 R SNcn  Log b26 ............  1.063 ( 8.76e+00  4.60e-02)  1.15e+00 ( 8.81e+00  2.07e-01)
+85 179 R SNcn  Log r32 ............  1.059 ( 6.65e+00  1.54e-01)  2.45e+00 ( 7.03e+00  5.62e-01)
+76 170 R SNcn  Log r23 ............  1.032 ( 7.04e+00  1.30e-01)  2.31e+00 ( 7.34e+00  4.75e-01)
+73 167 R SNcn  Log r20 ............  1.019 ( 7.12e+00  1.34e-01)  2.40e+00 ( 7.44e+00  4.59e-01)
+64 158 R SNcn  Log r11 ............  1.009 ( 7.46e+00  1.02e-01)  2.36e+00 ( 7.70e+00  3.48e-01)
+67 161 R SNcn  Log r14 ............  0.994 ( 7.36e+00  1.14e-01)  2.29e+00 ( 7.63e+00  3.87e-01)
+77 171 R SNcn  Log r24 ............  0.991 ( 7.03e+00  1.36e-01)  2.19e+00 ( 7.33e+00  4.77e-01)
+90 184 R SNcn  Log r37 ............  0.986 ( 6.48e+00  1.85e-01)  2.34e+00 ( 6.91e+00  6.04e-01)
+58 152 R SNcn  Log r05 ............  0.980 ( 7.74e+00  6.88e-02)  1.59e+00 ( 7.85e+00  2.69e-01)
+74 168 R SNcn  Log r21 ............  0.977 ( 7.13e+00  1.34e-01)  2.12e+00 ( 7.41e+00  4.68e-01)
+80 174 R SNcn  Log r27 ............  0.975 ( 6.88e+00  1.55e-01)  2.22e+00 ( 7.22e+00  5.22e-01)
+61 155 R SNcn  Log r08 ............  0.960 ( 7.58e+00  9.03e-02)  2.11e+00 ( 7.77e+00  3.07e-01)
+89 183 R SNcn  Log r36 ............  0.959 ( 6.49e+00  1.92e-01)  2.32e+00 ( 6.93e+00  5.87e-01)
+75 169 R SNcn  Log r22 ............  0.946 ( 7.07e+00  1.45e-01)  2.10e+00 ( 7.38e+00  4.80e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+86 180 R SNcn  Log r33 ............  0.945 ( 6.54e+00  1.94e-01)  2.30e+00 ( 6.99e+00  5.78e-01)
+78 172 R SNcn  Log r25 ............  0.930 ( 6.94e+00  1.57e-01)  2.15e+00 ( 7.28e+00  4.94e-01)
+88 182 R SNcn  Log r35 ............  0.917 ( 6.55e+00  1.96e-01)  2.18e+00 ( 6.97e+00  5.85e-01)
+59 153 R SNcn  Log r06 ............  0.916 ( 7.69e+00  7.95e-02)  1.71e+00 ( 7.83e+00  2.79e-01)
+26 120 R SNcn  Log b27 ............  0.894 ( 8.72e+00  4.73e-02)  1.12e+00 ( 8.77e+00  1.76e-01)
+27 121 R SNcn  Log b28 ............  0.877 ( 8.68e+00  4.48e-02)  1.36e+00 ( 8.74e+00  1.58e-01)
+82 176 R SNcn  Log r29 ............  0.851 ( 6.77e+00  1.82e-01)  1.93e+00 ( 7.12e+00  5.35e-01)
+65 159 R SNcn  Log r12 ............  0.844 ( 7.40e+00  1.39e-01)  2.05e+00 ( 7.68e+00  3.65e-01)
+69 163 R SNcn  Log r16 ............  0.798 ( 7.25e+00  1.63e-01)  1.92e+00 ( 7.56e+00  4.18e-01)
+91 185 R SNcn  Log r38 ............  0.788 ( 6.39e+00  2.46e-01)  1.92e+00 ( 6.86e+00  6.07e-01)
+92 186 R SNcn  Log r39 ............  0.759 ( 6.29e+00  2.49e-01)  1.83e+00 ( 6.75e+00  6.09e-01)
+56 150 R SNcn  Log r03 ............  0.717 ( 7.87e+00  7.99e-02)  8.03e-01 ( 7.94e+00  2.48e-01)
+60 154 R SNcn  Log r07 ............  0.685 ( 7.67e+00  1.05e-01)  1.23e+00 ( 7.80e+00  2.92e-01)
+28 122 R SNcn  Log b29 ............  0.671 ( 8.64e+00  4.97e-02)  1.24e+00 ( 8.70e+00  1.35e-01)
+47 141 R SNcn  Log r44 ............  0.644 ( 8.66e+00  4.98e-02)  1.14e+00 ( 8.72e+00  1.33e-01)
+54 148 R SNcn  Log r01 ............  0.625 ( 8.03e+00  8.11e-02)  3.24e-01 ( 8.05e+00  2.34e-01)
+37 131 R SNcn  Log b38 ............  0.619 ( 8.37e+00  5.96e-02)  4.28e-01 ( 8.35e+00  1.69e-01)
+29 123 R SNcn  Log b30 ............  0.617 ( 8.62e+00  4.71e-02)  1.04e+00 ( 8.67e+00  1.24e-01)
+41 135 R SNcn  Log b42 ............  0.577 ( 8.29e+00  7.60e-02)  7.92e-01 ( 8.23e+00  1.98e-01)
+35 129 R SNcn  Log b36 ............  0.567 ( 8.41e+00  5.20e-02)  1.73e-01 ( 8.40e+00  1.41e-01)
+57 151 R SNcn  Log r04 ............  0.550 ( 7.81e+00  1.03e-01)  8.46e-01 ( 7.90e+00  2.56e-01)
+38 132 R SNcn  Log b39 ............  0.542 ( 8.35e+00  7.11e-02)  5.02e-01 ( 8.31e+00  1.83e-01)
+81 175 R SNcn  Log r28 ............  0.541 ( 6.80e+00  2.74e-01)  1.36e+00 ( 7.18e+00  5.32e-01)
+53 147 R SNcn  Log r40 ............  0.524 ( 8.12e+00  8.39e-02)  3.40e-02 ( 8.12e+00  2.17e-01)
+30 124 R SNcn  Log b31 ............  0.513 ( 8.58e+00  4.97e-02)  7.60e-01 ( 8.62e+00  1.20e-01)
+52 146 R SNcn  Log r49 ............  0.501 ( 8.22e+00  7.97e-02)  3.15e-01 ( 8.20e+00  1.99e-01)
+40 134 R SNcn  Log b41 ............  0.483 ( 8.32e+00  8.52e-02)  7.85e-01 ( 8.26e+00  1.95e-01)
+34 128 R SNcn  Log b35 ............  0.478 ( 8.42e+00  5.56e-02)  1.63e-01 ( 8.43e+00  1.36e-01)
+51 145 R SNcn  Log r48 ............  0.469 ( 8.31e+00  7.63e-02)  3.20e-01 ( 8.28e+00  1.83e-01)
+55 149 R SNcn  Log r02 ............  0.467 ( 7.96e+00  1.02e-01)  3.50e-01 ( 8.00e+00  2.44e-01)
+31 125 R SNcn  Log b32 ............  0.431 ( 8.54e+00  5.36e-02)  5.88e-01 ( 8.57e+00  1.19e-01)
+49 143 R SNcn  Log r46 ............  0.392 ( 8.46e+00  5.68e-02)  3.51e-01 ( 8.48e+00  1.23e-01)
+42 136 R SNcn  Log b43 ............  0.392 ( 8.23e+00  9.32e-02)  4.17e-01 ( 8.19e+00  2.00e-01)
+39 133 R SNcn  Log b40 ............  0.368 ( 8.34e+00  9.36e-02)  5.75e-01 ( 8.29e+00  1.90e-01)
+50 144 R SNcn  Log r47 ............  0.365 ( 8.39e+00  7.28e-02)  2.20e-01 ( 8.38e+00  1.54e-01)
+48 142 R SNcn  Log r45 ............  0.351 ( 8.56e+00  5.56e-02)  6.52e-01 ( 8.60e+00  1.08e-01)
+43 137 R SNcn  Log b44 ............  0.346 ( 8.21e+00  1.01e-01)  4.52e-01 ( 8.17e+00  2.04e-01)
+36 130 R SNcn  Log b37 ............  0.276 ( 8.39e+00  8.19e-02)  1.02e-01 ( 8.38e+00  1.54e-01)
+32 126 R SNcn  Log b33 ............  0.257 ( 8.49e+00  6.73e-02)  4.30e-01 ( 8.52e+00  1.18e-01)
+33 127 R SNcn  Log b34 ............  0.255 ( 8.47e+00  7.12e-02)  1.54e-01 ( 8.48e+00  1.30e-01)
+
+
+CLASS  5 - weight  33   normalized weight 0.078   relative strength  1.89e-33 *******
+                            class cross entropy w.r.t. global class  9.99e+01 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+61 155 R SNcn  Log r08 ............  1.837 ( 8.22e+00  8.89e-02)  5.01e+00 ( 7.77e+00  3.07e-01)
+60 154 R SNcn  Log r07 ............  1.701 ( 8.23e+00  1.01e-01)  4.26e+00 ( 7.80e+00  2.92e-01)
+62 156 R SNcn  Log r09 ............  1.696 ( 8.19e+00  1.01e-01)  4.46e+00 ( 7.74e+00  3.20e-01)
+64 158 R SNcn  Log r11 ............  1.639 ( 8.15e+00  9.79e-02)  4.58e+00 ( 7.70e+00  3.48e-01)
+63 157 R SNcn  Log r10 ............  1.621 ( 8.18e+00  1.06e-01)  4.27e+00 ( 7.73e+00  3.34e-01)
+67 161 R SNcn  Log r14 ............  1.618 ( 8.09e+00  9.82e-02)  4.71e+00 ( 7.63e+00  3.87e-01)
+69 163 R SNcn  Log r16 ............  1.600 ( 8.05e+00  1.05e-01)  4.67e+00 ( 7.56e+00  4.18e-01)
+57 151 R SNcn  Log r04 ............  1.594 ( 8.29e+00  1.14e-01)  3.47e+00 ( 7.90e+00  2.56e-01)
+90 184 R SNcn  Log r37 ............  1.586 ( 7.61e+00  1.54e-01)  4.60e+00 ( 6.91e+00  6.04e-01)
+66 160 R SNcn  Log r13 ............  1.585 ( 8.11e+00  1.02e-01)  4.47e+00 ( 7.65e+00  3.71e-01)
+68 162 R SNcn  Log r15 ............  1.566 ( 8.07e+00  1.05e-01)  4.49e+00 ( 7.60e+00  4.00e-01)
+81 175 R SNcn  Log r28 ............  1.561 ( 7.79e+00  1.37e-01)  4.50e+00 ( 7.18e+00  5.32e-01)
+72 166 R SNcn  Log r19 ............  1.554 ( 8.00e+00  1.16e-01)  4.48e+00 ( 7.48e+00  4.53e-01)
+84 178 R SNcn  Log r31 ............  1.553 ( 7.76e+00  1.49e-01)  4.42e+00 ( 7.11e+00  5.55e-01)
+59 153 R SNcn  Log r06 ............  1.546 ( 8.25e+00  1.24e-01)  3.39e+00 ( 7.83e+00  2.79e-01)
+87 181 R SNcn  Log r34 ............  1.534 ( 7.69e+00  1.55e-01)  4.48e+00 ( 7.00e+00  7.84e-01)
+74 168 R SNcn  Log r21 ............  1.528 ( 7.94e+00  1.21e-01)  4.38e+00 ( 7.41e+00  4.68e-01)
+75 169 R SNcn  Log r22 ............  1.525 ( 7.92e+00  1.23e-01)  4.38e+00 ( 7.38e+00  4.80e-01)
+71 165 R SNcn  Log r18 ............  1.525 ( 8.01e+00  1.18e-01)  4.32e+00 ( 7.50e+00  4.38e-01)
+86 180 R SNcn  Log r33 ............  1.522 ( 7.67e+00  1.60e-01)  4.27e+00 ( 6.99e+00  5.78e-01)
+78 172 R SNcn  Log r25 ............  1.521 ( 7.84e+00  1.29e-01)  4.35e+00 ( 7.28e+00  4.94e-01)
+65 159 R SNcn  Log r12 ............  1.518 ( 8.14e+00  1.11e-01)  4.12e+00 ( 7.68e+00  3.65e-01)
+58 152 R SNcn  Log r05 ............  1.514 ( 8.26e+00  1.27e-01)  3.21e+00 ( 7.85e+00  2.69e-01)
+73 167 R SNcn  Log r20 ............  1.514 ( 7.98e+00  1.26e-01)  4.26e+00 ( 7.44e+00  4.59e-01)
+77 171 R SNcn  Log r24 ............  1.513 ( 7.87e+00  1.28e-01)  4.29e+00 ( 7.33e+00  4.77e-01)
+79 173 R SNcn  Log r26 ............  1.507 ( 7.80e+00  1.36e-01)  4.26e+00 ( 7.22e+00  5.03e-01)
+80 174 R SNcn  Log r27 ............  1.495 ( 7.82e+00  1.42e-01)  4.22e+00 ( 7.22e+00  5.22e-01)
+76 170 R SNcn  Log r23 ............  1.492 ( 7.90e+00  1.34e-01)  4.15e+00 ( 7.34e+00  4.75e-01)
+56 150 R SNcn  Log r03 ............  1.486 ( 8.30e+00  1.13e-01)  3.24e+00 ( 7.94e+00  2.48e-01)
+92 186 R SNcn  Log r39 ............  1.479 ( 7.46e+00  1.74e-01)  4.10e+00 ( 6.75e+00  6.09e-01)
+53 147 R SNcn  Log r40 ............  1.473 ( 8.43e+00  9.14e-02)  3.39e+00 ( 8.12e+00  2.17e-01)
+70 164 R SNcn  Log r17 ............  1.463 ( 8.03e+00  1.19e-01)  4.07e+00 ( 7.54e+00  4.26e-01)
+82 176 R SNcn  Log r29 ............  1.444 ( 7.73e+00  1.51e-01)  4.01e+00 ( 7.12e+00  5.35e-01)
+55 149 R SNcn  Log r02 ............  1.437 ( 8.35e+00  1.14e-01)  3.12e+00 ( 8.00e+00  2.44e-01)
+85 179 R SNcn  Log r32 ............  1.427 ( 7.67e+00  1.61e-01)  3.93e+00 ( 7.03e+00  5.62e-01)
+54 148 R SNcn  Log r01 ............  1.422 ( 8.39e+00  1.07e-01)  3.15e+00 ( 8.05e+00  2.34e-01)
+91 185 R SNcn  Log r38 ............  1.420 ( 7.57e+00  1.87e-01)  3.83e+00 ( 6.86e+00  6.07e-01)
+83 177 R SNcn  Log r30 ............  1.376 ( 7.75e+00  1.67e-01)  3.71e+00 ( 7.13e+00  5.43e-01)
+89 183 R SNcn  Log r36 ............  1.334 ( 7.62e+00  1.97e-01)  3.49e+00 ( 6.93e+00  5.87e-01)
+52 146 R SNcn  Log r49 ............  1.263 ( 8.47e+00  1.03e-01)  2.68e+00 ( 8.20e+00  1.99e-01)
+88 182 R SNcn  Log r35 ............  1.239 ( 7.65e+00  2.12e-01)  3.17e+00 ( 6.97e+00  5.85e-01)
+24 118 R SNcn  Log b25 ............  1.173 ( 8.77e+00  1.15e-01)  1.02e+00 ( 8.88e+00  5.90e-01)
+49 143 R SNcn  Log r46 ............  1.149 ( 8.64e+00  5.99e-02)  2.61e+00 ( 8.48e+00  1.23e-01)
+43 137 R SNcn  Log b44 ............  1.120 ( 8.43e+00  1.02e-01)  2.53e+00 ( 8.17e+00  2.04e-01)
+50 144 R SNcn  Log r47 ............  1.088 ( 8.58e+00  8.46e-02)  2.35e+00 ( 8.38e+00  1.54e-01)
+51 145 R SNcn  Log r48 ............  1.086 ( 8.52e+00  9.99e-02)  2.36e+00 ( 8.28e+00  1.83e-01)
+33 127 R SNcn  Log b34 ............  1.054 ( 8.63e+00  6.06e-02)  2.51e+00 ( 8.48e+00  1.30e-01)
+37 131 R SNcn  Log b38 ............  1.053 ( 8.55e+00  8.56e-02)  2.41e+00 ( 8.35e+00  1.69e-01)
+22 116 R SNcn  Log b23 ............  1.026 ( 8.70e+00  1.44e-01)  1.31e+00 ( 8.89e+00  6.16e-01)
+35 129 R SNcn  Log b36 ............  1.021 ( 8.58e+00  7.76e-02)  2.26e+00 ( 8.40e+00  1.41e-01)
+19 113 R SNcn  Log b20 ............  0.943 ( 8.69e+00  1.73e-01)  1.63e+00 ( 8.97e+00  6.41e-01)
+18 112 R SNcn  Log b19 ............  0.924 ( 8.77e+00  1.75e-01)  1.60e+00 ( 9.05e+00  6.35e-01)
+44 138 R SNcn  Log r41 ............  0.907 ( 8.69e+00  1.70e-01)  1.39e+00 ( 8.92e+00  6.24e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+16 110 R SNcn  Log b17 ............  0.904 ( 8.69e+00  1.97e-01)  1.72e+00 ( 9.03e+00  6.80e-01)
+34 128 R SNcn  Log b35 ............  0.900 ( 8.59e+00  7.85e-02)  2.02e+00 ( 8.43e+00  1.36e-01)
+41 135 R SNcn  Log b42 ............  0.897 ( 8.46e+00  1.15e-01)  2.01e+00 ( 8.23e+00  1.98e-01)
+15 109 R SNcn  Log b16 ............  0.894 ( 8.70e+00  2.04e-01)  1.76e+00 ( 9.06e+00  6.86e-01)
+39 133 R SNcn  Log b40 ............  0.892 ( 8.50e+00  1.00e-01)  2.10e+00 ( 8.29e+00  1.90e-01)
+42 136 R SNcn  Log b43 ............  0.892 ( 8.44e+00  1.29e-01)  1.90e+00 ( 8.19e+00  2.00e-01)
+13 107 R SNcn  Log b14 ............  0.891 ( 8.70e+00  2.20e-01)  1.79e+00 ( 9.09e+00  7.32e-01)
+36 130 R SNcn  Log b37 ............  0.877 ( 8.56e+00  9.64e-02)  1.91e+00 ( 8.38e+00  1.54e-01)
+14 108 R SNcn  Log b15 ............  0.843 ( 8.67e+00  2.30e-01)  1.72e+00 ( 9.07e+00  7.21e-01)
+38 132 R SNcn  Log b39 ............  0.811 ( 8.51e+00  1.07e-01)  1.88e+00 ( 8.31e+00  1.83e-01)
+40 134 R SNcn  Log b41 ............  0.759 ( 8.47e+00  1.30e-01)  1.69e+00 ( 8.26e+00  1.95e-01)
+00 94 R SNcn  Log b01 ............  0.745 ( 9.29e+00  2.15e-01)  3.83e-01 ( 9.37e+00  7.08e-01)
+08 102 R SNcn  Log b09 ............  0.742 ( 9.05e+00  9.86e-02)  1.35e+00 ( 9.19e+00  2.90e-01)
+12 106 R SNcn  Log b13 ............  0.740 ( 8.73e+00  2.14e-01)  1.82e+00 ( 9.12e+00  4.90e-01)
+17 111 R SNcn  Log b18 ............  0.707 ( 8.65e+00  2.02e-01)  1.75e+00 ( 9.00e+00  4.47e-01)
+20 114 R SNcn  Log b21 ............  0.707 ( 8.66e+00  1.64e-01)  1.69e+00 ( 8.94e+00  3.91e-01)
+11 105 R SNcn  Log b12 ............  0.701 ( 8.78e+00  2.07e-01)  1.69e+00 ( 9.13e+00  4.82e-01)
+07 101 R SNcn  Log b08 ............  0.701 ( 9.14e+00  8.93e-02)  7.36e-01 ( 9.21e+00  2.73e-01)
+48 142 R SNcn  Log r45 ............  0.696 ( 8.68e+00  4.83e-02)  1.71e+00 ( 8.60e+00  1.08e-01)
+21 115 R SNcn  Log b22 ............  0.692 ( 8.67e+00  1.50e-01)  1.59e+00 ( 8.91e+00  3.69e-01)
+10 104 R SNcn  Log b11 ............  0.678 ( 8.84e+00  1.85e-01)  1.65e+00 ( 9.14e+00  4.17e-01)
+09 103 R SNcn  Log b10 ............  0.661 ( 8.95e+00  1.43e-01)  1.52e+00 ( 9.17e+00  3.42e-01)
+30 124 R SNcn  Log b31 ............  0.607 ( 8.68e+00  4.95e-02)  1.27e+00 ( 8.62e+00  1.20e-01)
+32 126 R SNcn  Log b33 ............  0.601 ( 8.63e+00  7.80e-02)  1.47e+00 ( 8.52e+00  1.18e-01)
+06 100 R SNcn  Log b07 ............  0.594 ( 9.20e+00  1.02e-01)  1.76e-01 ( 9.22e+00  2.86e-01)
+45 139 R SNcn  Log r42 ............  0.577 ( 8.67e+00  1.41e-01)  1.47e+00 ( 8.88e+00  2.64e-01)
+23 117 R SNcn  Log b24 ............  0.559 ( 8.69e+00  1.34e-01)  1.37e+00 ( 8.87e+00  2.75e-01)
+31 125 R SNcn  Log b32 ............  0.546 ( 8.67e+00  6.83e-02)  1.41e+00 ( 8.57e+00  1.19e-01)
+05 99 R SNcn  Log b06 ............  0.521 ( 9.25e+00  1.23e-01)  2.51e-02 ( 9.25e+00  3.17e-01)
+03 97 R SNcn  Log b04 ............  0.454 ( 9.30e+00  1.67e-01)  2.30e-02 ( 9.29e+00  3.97e-01)
+04 98 R SNcn  Log b05 ............  0.439 ( 9.27e+00  1.53e-01)  5.66e-02 ( 9.26e+00  3.58e-01)
+46 140 R SNcn  Log r43 ............  0.412 ( 8.69e+00  1.09e-01)  1.02e+00 ( 8.80e+00  2.01e-01)
+25 119 R SNcn  Log b26 ............  0.375 ( 8.71e+00  1.15e-01)  9.22e-01 ( 8.81e+00  2.07e-01)
+02 96 R SNcn  Log b03 ............  0.355 ( 9.28e+00  1.97e-01)  2.32e-01 ( 9.32e+00  4.11e-01)
+01 95 R SNcn  Log b02 ............  0.342 ( 9.24e+00  2.31e-01)  3.95e-01 ( 9.33e+00  4.64e-01)
+26 120 R SNcn  Log b27 ............  0.314 ( 8.70e+00  1.01e-01)  7.55e-01 ( 8.77e+00  1.76e-01)
+27 121 R SNcn  Log b28 ............  0.306 ( 8.71e+00  8.30e-02)  4.01e-01 ( 8.74e+00  1.58e-01)
+28 122 R SNcn  Log b29 ............  0.285 ( 8.71e+00  7.06e-02)  5.26e-02 ( 8.70e+00  1.35e-01)
+47 141 R SNcn  Log r44 ............  0.274 ( 8.70e+00  7.14e-02)  2.05e-01 ( 8.72e+00  1.33e-01)
+29 123 R SNcn  Log b30 ............  0.259 ( 8.70e+00  7.18e-02)  5.28e-01 ( 8.67e+00  1.24e-01)
+
+
+CLASS  6 - weight  30   normalized weight 0.071   relative strength  6.45e-12 *******
+                            class cross entropy w.r.t. global class  1.12e+02 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+19 113 R SNcn  Log b20 ............  2.297 ( 9.03e+00  3.94e-02)  1.69e+00 ( 8.97e+00  6.41e-01)
+24 118 R SNcn  Log b25 ............  2.242 ( 8.99e+00  3.87e-02)  2.83e+00 ( 8.88e+00  5.90e-01)
+22 116 R SNcn  Log b23 ............  2.227 ( 9.00e+00  4.11e-02)  2.88e+00 ( 8.89e+00  6.16e-01)
+44 138 R SNcn  Log r41 ............  2.135 ( 8.99e+00  4.51e-02)  1.47e+00 ( 8.92e+00  6.24e-01)
+18 112 R SNcn  Log b19 ............  2.123 ( 9.08e+00  4.63e-02)  8.27e-01 ( 9.05e+00  6.35e-01)
+00 94 R SNcn  Log b01 ............  1.889 ( 9.66e+00  7.08e-02)  4.02e+00 ( 9.37e+00  7.08e-01)
+20 114 R SNcn  Log b21 ............  1.886 ( 9.02e+00  3.69e-02)  2.18e+00 ( 8.94e+00  3.91e-01)
+16 110 R SNcn  Log b17 ............  1.841 ( 9.04e+00  6.57e-02)  1.87e-01 ( 9.03e+00  6.80e-01)
+21 115 R SNcn  Log b22 ............  1.788 ( 9.01e+00  3.89e-02)  2.43e+00 ( 8.91e+00  3.69e-01)
+03 97 R SNcn  Log b04 ............  1.742 ( 9.60e+00  5.78e-02)  5.36e+00 ( 9.29e+00  3.97e-01)
+01 95 R SNcn  Log b02 ............  1.702 ( 9.63e+00  6.33e-02)  4.63e+00 ( 9.33e+00  4.64e-01)
+02 96 R SNcn  Log b03 ............  1.693 ( 9.63e+00  6.12e-02)  5.00e+00 ( 9.32e+00  4.11e-01)
+13 107 R SNcn  Log b14 ............  1.672 ( 9.11e+00  8.40e-02)  2.84e-01 ( 9.09e+00  7.32e-01)
+10 104 R SNcn  Log b11 ............  1.658 ( 9.22e+00  4.93e-02)  1.53e+00 ( 9.14e+00  4.17e-01)
+04 98 R SNcn  Log b05 ............  1.655 ( 9.55e+00  5.86e-02)  4.98e+00 ( 9.26e+00  3.58e-01)
+06 100 R SNcn  Log b07 ............  1.617 ( 9.44e+00  4.73e-02)  4.72e+00 ( 9.22e+00  2.86e-01)
+09 103 R SNcn  Log b10 ............  1.617 ( 9.27e+00  4.36e-02)  2.47e+00 ( 9.17e+00  3.42e-01)
+15 109 R SNcn  Log b16 ............  1.603 ( 9.05e+00  8.45e-02)  4.91e-02 ( 9.06e+00  6.86e-01)
+05 99 R SNcn  Log b06 ............  1.573 ( 9.51e+00  5.63e-02)  4.57e+00 ( 9.25e+00  3.17e-01)
+14 108 R SNcn  Log b15 ............  1.556 ( 9.08e+00  9.31e-02)  1.45e-01 ( 9.07e+00  7.21e-01)
+08 102 R SNcn  Log b09 ............  1.527 ( 9.34e+00  4.42e-02)  3.40e+00 ( 9.19e+00  2.90e-01)
+45 139 R SNcn  Log r42 ............  1.512 ( 8.95e+00  3.70e-02)  2.00e+00 ( 8.88e+00  2.64e-01)
+07 101 R SNcn  Log b08 ............  1.483 ( 9.40e+00  4.91e-02)  3.94e+00 ( 9.21e+00  2.73e-01)
+11 105 R SNcn  Log b12 ............  1.478 ( 9.18e+00  6.76e-02)  6.77e-01 ( 9.13e+00  4.82e-01)
+17 111 R SNcn  Log b18 ............  1.464 ( 9.01e+00  6.33e-02)  1.18e-01 ( 9.00e+00  4.47e-01)
+69 163 R SNcn  Log r16 ............  1.455 ( 7.20e+00  8.73e-02)  4.10e+00 ( 7.56e+00  4.18e-01)
+23 117 R SNcn  Log b24 ............  1.448 ( 8.98e+00  4.32e-02)  2.62e+00 ( 8.87e+00  2.75e-01)
+70 164 R SNcn  Log r17 ............  1.431 ( 7.17e+00  9.23e-02)  4.01e+00 ( 7.54e+00  4.26e-01)
+78 172 R SNcn  Log r25 ............  1.429 ( 6.87e+00  1.04e-01)  3.96e+00 ( 7.28e+00  4.94e-01)
+74 168 R SNcn  Log r21 ............  1.335 ( 7.01e+00  1.10e-01)  3.61e+00 ( 7.41e+00  4.68e-01)
+73 167 R SNcn  Log r20 ............  1.328 ( 7.07e+00  1.06e-01)  3.55e+00 ( 7.44e+00  4.59e-01)
+76 170 R SNcn  Log r23 ............  1.322 ( 6.93e+00  1.16e-01)  3.58e+00 ( 7.34e+00  4.75e-01)
+25 119 R SNcn  Log b26 ............  1.317 ( 8.91e+00  3.85e-02)  2.59e+00 ( 8.81e+00  2.07e-01)
+46 140 R SNcn  Log r43 ............  1.314 ( 8.90e+00  3.74e-02)  2.59e+00 ( 8.80e+00  2.01e-01)
+72 166 R SNcn  Log r19 ............  1.312 ( 7.09e+00  1.11e-01)  3.53e+00 ( 7.48e+00  4.53e-01)
+67 161 R SNcn  Log r14 ............  1.294 ( 7.30e+00  9.43e-02)  3.45e+00 ( 7.63e+00  3.87e-01)
+86 180 R SNcn  Log r33 ............  1.285 ( 6.64e+00  1.19e-01)  2.96e+00 ( 6.99e+00  5.78e-01)
+88 182 R SNcn  Log r35 ............  1.280 ( 6.59e+00  1.25e-01)  3.06e+00 ( 6.97e+00  5.85e-01)
+12 106 R SNcn  Log b13 ............  1.280 ( 9.14e+00  8.40e-02)  2.29e-01 ( 9.12e+00  4.90e-01)
+71 165 R SNcn  Log r18 ............  1.279 ( 7.11e+00  1.14e-01)  3.43e+00 ( 7.50e+00  4.38e-01)
+68 162 R SNcn  Log r15 ............  1.274 ( 7.25e+00  1.01e-01)  3.39e+00 ( 7.60e+00  4.00e-01)
+75 169 R SNcn  Log r22 ............  1.269 ( 6.96e+00  1.23e-01)  3.38e+00 ( 7.38e+00  4.80e-01)
+66 160 R SNcn  Log r13 ............  1.266 ( 7.35e+00  9.18e-02)  3.33e+00 ( 7.65e+00  3.71e-01)
+26 120 R SNcn  Log b27 ............  1.240 ( 8.87e+00  3.66e-02)  2.62e+00 ( 8.77e+00  1.76e-01)
+65 159 R SNcn  Log r12 ............  1.239 ( 7.39e+00  9.17e-02)  3.21e+00 ( 7.68e+00  3.65e-01)
+64 158 R SNcn  Log r11 ............  1.233 ( 7.45e+00  8.23e-02)  3.07e+00 ( 7.70e+00  3.48e-01)
+87 181 R SNcn  Log r34 ............  1.189 ( 6.66e+00  1.62e-01)  2.09e+00 ( 7.00e+00  7.84e-01)
+83 177 R SNcn  Log r30 ............  1.184 ( 6.74e+00  1.34e-01)  2.90e+00 ( 7.13e+00  5.43e-01)
+62 156 R SNcn  Log r09 ............  1.138 ( 7.52e+00  8.24e-02)  2.73e+00 ( 7.74e+00  3.20e-01)
+89 183 R SNcn  Log r36 ............  1.130 ( 6.57e+00  1.44e-01)  2.54e+00 ( 6.93e+00  5.87e-01)
+27 121 R SNcn  Log b28 ............  1.115 ( 8.83e+00  3.76e-02)  2.30e+00 ( 8.74e+00  1.58e-01)
+28 122 R SNcn  Log b29 ............  1.083 ( 8.79e+00  3.55e-02)  2.48e+00 ( 8.70e+00  1.35e-01)
+30 124 R SNcn  Log b31 ............  1.070 ( 8.69e+00  3.07e-02)  2.32e+00 ( 8.62e+00  1.20e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+79 173 R SNcn  Log r26 ............  1.059 ( 6.86e+00  1.43e-01)  2.54e+00 ( 7.22e+00  5.03e-01)
+81 175 R SNcn  Log r28 ............  1.056 ( 6.79e+00  1.52e-01)  2.54e+00 ( 7.18e+00  5.32e-01)
+77 171 R SNcn  Log r24 ............  1.048 ( 6.90e+00  1.60e-01)  2.66e+00 ( 7.33e+00  4.77e-01)
+47 141 R SNcn  Log r44 ............  1.031 ( 8.80e+00  3.65e-02)  2.30e+00 ( 8.72e+00  1.33e-01)
+92 186 R SNcn  Log r39 ............  1.016 ( 6.37e+00  1.69e-01)  2.25e+00 ( 6.75e+00  6.09e-01)
+54 148 R SNcn  Log r01 ............  1.007 ( 7.97e+00  5.67e-02)  1.45e+00 ( 8.05e+00  2.34e-01)
+82 176 R SNcn  Log r29 ............  0.999 ( 6.76e+00  1.58e-01)  2.32e+00 ( 7.12e+00  5.35e-01)
+61 155 R SNcn  Log r08 ............  0.991 ( 7.58e+00  8.84e-02)  2.22e+00 ( 7.77e+00  3.07e-01)
+58 152 R SNcn  Log r05 ............  0.989 ( 7.74e+00  6.80e-02)  1.59e+00 ( 7.85e+00  2.69e-01)
+56 150 R SNcn  Log r03 ............  0.986 ( 7.85e+00  6.09e-02)  1.33e+00 ( 7.94e+00  2.48e-01)
+57 151 R SNcn  Log r04 ............  0.975 ( 7.81e+00  6.46e-02)  1.43e+00 ( 7.90e+00  2.56e-01)
+59 153 R SNcn  Log r06 ............  0.964 ( 7.68e+00  7.74e-02)  1.92e+00 ( 7.83e+00  2.79e-01)
+85 179 R SNcn  Log r32 ............  0.959 ( 6.61e+00  1.82e-01)  2.31e+00 ( 7.03e+00  5.62e-01)
+84 178 R SNcn  Log r31 ............  0.946 ( 6.74e+00  1.70e-01)  2.14e+00 ( 7.11e+00  5.55e-01)
+91 185 R SNcn  Log r38 ............  0.944 ( 6.50e+00  1.77e-01)  1.99e+00 ( 6.86e+00  6.07e-01)
+63 157 R SNcn  Log r10 ............  0.940 ( 7.46e+00  1.16e-01)  2.31e+00 ( 7.73e+00  3.34e-01)
+80 174 R SNcn  Log r27 ............  0.925 ( 6.81e+00  1.83e-01)  2.27e+00 ( 7.22e+00  5.22e-01)
+53 147 R SNcn  Log r40 ............  0.891 ( 8.03e+00  6.11e-02)  1.47e+00 ( 8.12e+00  2.17e-01)
+29 123 R SNcn  Log b30 ............  0.854 ( 8.75e+00  4.16e-02)  1.92e+00 ( 8.67e+00  1.24e-01)
+52 146 R SNcn  Log r49 ............  0.840 ( 8.12e+00  5.90e-02)  1.36e+00 ( 8.20e+00  1.99e-01)
+55 149 R SNcn  Log r02 ............  0.818 ( 7.92e+00  7.17e-02)  1.08e+00 ( 8.00e+00  2.44e-01)
+32 126 R SNcn  Log b33 ............  0.804 ( 8.57e+00  3.77e-02)  1.46e+00 ( 8.52e+00  1.18e-01)
+40 134 R SNcn  Log b41 ............  0.804 ( 8.16e+00  6.22e-02)  1.46e+00 ( 8.26e+00  1.95e-01)
+31 125 R SNcn  Log b32 ............  0.774 ( 8.64e+00  4.01e-02)  1.52e+00 ( 8.57e+00  1.19e-01)
+90 184 R SNcn  Log r37 ............  0.770 ( 6.54e+00  2.18e-01)  1.68e+00 ( 6.91e+00  6.04e-01)
+38 132 R SNcn  Log b39 ............  0.748 ( 8.23e+00  6.17e-02)  1.34e+00 ( 8.31e+00  1.83e-01)
+33 127 R SNcn  Log b34 ............  0.739 ( 8.51e+00  4.01e-02)  5.88e-01 ( 8.48e+00  1.30e-01)
+49 143 R SNcn  Log r46 ............  0.734 ( 8.51e+00  3.84e-02)  6.70e-01 ( 8.48e+00  1.23e-01)
+60 154 R SNcn  Log r07 ............  0.730 ( 7.62e+00  1.12e-01)  1.64e+00 ( 7.80e+00  2.92e-01)
+51 145 R SNcn  Log r48 ............  0.710 ( 8.24e+00  5.95e-02)  8.22e-01 ( 8.28e+00  1.83e-01)
+50 144 R SNcn  Log r47 ............  0.709 ( 8.36e+00  4.86e-02)  3.99e-01 ( 8.38e+00  1.54e-01)
+41 135 R SNcn  Log b42 ............  0.685 ( 8.13e+00  7.19e-02)  1.27e+00 ( 8.23e+00  1.98e-01)
+48 142 R SNcn  Log r45 ............  0.679 ( 8.67e+00  4.53e-02)  1.59e+00 ( 8.60e+00  1.08e-01)
+39 133 R SNcn  Log b40 ............  0.667 ( 8.20e+00  7.10e-02)  1.28e+00 ( 8.29e+00  1.90e-01)
+42 136 R SNcn  Log b43 ............  0.614 ( 8.12e+00  7.62e-02)  1.02e+00 ( 8.19e+00  2.00e-01)
+35 129 R SNcn  Log b36 ............  0.571 ( 8.39e+00  5.17e-02)  1.76e-01 ( 8.40e+00  1.41e-01)
+43 137 R SNcn  Log b44 ............  0.560 ( 8.09e+00  8.24e-02)  9.43e-01 ( 8.17e+00  2.04e-01)
+37 131 R SNcn  Log b38 ............  0.525 ( 8.28e+00  7.18e-02)  9.20e-01 ( 8.35e+00  1.69e-01)
+36 130 R SNcn  Log b37 ............  0.464 ( 8.34e+00  6.67e-02)  5.80e-01 ( 8.38e+00  1.54e-01)
+34 128 R SNcn  Log b35 ............  0.439 ( 8.43e+00  5.82e-02)  1.34e-02 ( 8.43e+00  1.36e-01)
+
+
+CLASS  7 - weight  29   normalized weight 0.068   relative strength  9.33e-28 *******
+                            class cross entropy w.r.t. global class  7.40e+01 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+24 118 R SNcn  Log b25 ............  2.044 ( 8.96e+00  4.69e-02)  1.65e+00 ( 8.88e+00  5.90e-01)
+22 116 R SNcn  Log b23 ............  1.915 ( 8.97e+00  5.57e-02)  1.43e+00 ( 8.89e+00  6.16e-01)
+19 113 R SNcn  Log b20 ............  1.861 ( 9.04e+00  6.11e-02)  1.11e+00 ( 8.97e+00  6.41e-01)
+18 112 R SNcn  Log b19 ............  1.791 ( 9.10e+00  6.49e-02)  8.79e-01 ( 9.05e+00  6.35e-01)
+44 138 R SNcn  Log r41 ............  1.720 ( 8.99e+00  6.86e-02)  9.48e-01 ( 8.92e+00  6.24e-01)
+16 110 R SNcn  Log b17 ............  1.640 ( 9.10e+00  8.09e-02)  8.11e-01 ( 9.03e+00  6.80e-01)
+15 109 R SNcn  Log b16 ............  1.600 ( 9.10e+00  8.49e-02)  5.40e-01 ( 9.06e+00  6.86e-01)
+13 107 R SNcn  Log b14 ............  1.598 ( 9.13e+00  9.06e-02)  4.79e-01 ( 9.09e+00  7.32e-01)
+14 108 R SNcn  Log b15 ............  1.581 ( 9.12e+00  9.09e-02)  5.42e-01 ( 9.07e+00  7.21e-01)
+11 105 R SNcn  Log b12 ............  1.382 ( 9.15e+00  7.43e-02)  2.46e-01 ( 9.13e+00  4.82e-01)
+20 114 R SNcn  Log b21 ............  1.342 ( 9.00e+00  6.35e-02)  8.45e-01 ( 8.94e+00  3.91e-01)
+12 106 R SNcn  Log b13 ............  1.336 ( 9.14e+00  7.93e-02)  2.83e-01 ( 9.12e+00  4.90e-01)
+21 115 R SNcn  Log b22 ............  1.308 ( 8.97e+00  6.21e-02)  9.01e-01 ( 8.91e+00  3.69e-01)
+17 111 R SNcn  Log b18 ............  1.227 ( 9.05e+00  8.12e-02)  6.26e-01 ( 9.00e+00  4.47e-01)
+45 139 R SNcn  Log r42 ............  1.191 ( 8.93e+00  5.04e-02)  9.66e-01 ( 8.88e+00  2.64e-01)
+10 104 R SNcn  Log b11 ............  1.095 ( 9.16e+00  8.65e-02)  1.62e-01 ( 9.14e+00  4.17e-01)
+23 117 R SNcn  Log b24 ............  1.074 ( 8.93e+00  6.00e-02)  1.04e+00 ( 8.87e+00  2.75e-01)
+25 119 R SNcn  Log b26 ............  1.053 ( 8.88e+00  4.70e-02)  1.30e+00 ( 8.81e+00  2.07e-01)
+57 151 R SNcn  Log r04 ............  1.005 ( 8.04e+00  6.83e-02)  2.04e+00 ( 7.90e+00  2.56e-01)
+60 154 R SNcn  Log r07 ............  1.004 ( 7.98e+00  8.09e-02)  2.17e+00 ( 7.80e+00  2.92e-01)
+00 94 R SNcn  Log b01 ............  1.003 ( 9.20e+00  1.67e-01)  1.00e+00 ( 9.37e+00  7.08e-01)
+87 181 R SNcn  Log r34 ............  0.990 ( 7.24e+00  1.91e-01)  1.29e+00 ( 7.00e+00  7.84e-01)
+71 165 R SNcn  Log r18 ............  0.957 ( 7.75e+00  1.25e-01)  2.00e+00 ( 7.50e+00  4.38e-01)
+81 175 R SNcn  Log r28 ............  0.949 ( 7.41e+00  1.42e-01)  1.62e+00 ( 7.18e+00  5.32e-01)
+63 157 R SNcn  Log r10 ............  0.918 ( 7.93e+00  1.02e-01)  2.00e+00 ( 7.73e+00  3.34e-01)
+62 156 R SNcn  Log r09 ............  0.915 ( 7.92e+00  9.53e-02)  1.89e+00 ( 7.74e+00  3.20e-01)
+78 172 R SNcn  Log r25 ............  0.902 ( 7.51e+00  1.42e-01)  1.67e+00 ( 7.28e+00  4.94e-01)
+61 155 R SNcn  Log r08 ............  0.888 ( 7.96e+00  9.73e-02)  1.94e+00 ( 7.77e+00  3.07e-01)
+75 169 R SNcn  Log r22 ............  0.884 ( 7.63e+00  1.45e-01)  1.76e+00 ( 7.38e+00  4.80e-01)
+67 161 R SNcn  Log r14 ............  0.880 ( 7.85e+00  1.21e-01)  1.85e+00 ( 7.63e+00  3.87e-01)
+82 176 R SNcn  Log r29 ............  0.871 ( 7.35e+00  1.56e-01)  1.49e+00 ( 7.12e+00  5.35e-01)
+58 152 R SNcn  Log r05 ............  0.871 ( 7.98e+00  8.05e-02)  1.63e+00 ( 7.85e+00  2.69e-01)
+65 159 R SNcn  Log r12 ............  0.870 ( 7.91e+00  1.18e-01)  1.90e+00 ( 7.68e+00  3.65e-01)
+46 140 R SNcn  Log r43 ............  0.865 ( 8.86e+00  5.58e-02)  1.09e+00 ( 8.80e+00  2.01e-01)
+76 170 R SNcn  Log r23 ............  0.864 ( 7.58e+00  1.44e-01)  1.65e+00 ( 7.34e+00  4.75e-01)
+77 171 R SNcn  Log r24 ............  0.858 ( 7.55e+00  1.43e-01)  1.55e+00 ( 7.33e+00  4.77e-01)
+64 158 R SNcn  Log r11 ............  0.855 ( 7.93e+00  1.16e-01)  1.91e+00 ( 7.70e+00  3.48e-01)
+79 173 R SNcn  Log r26 ............  0.850 ( 7.45e+00  1.51e-01)  1.51e+00 ( 7.22e+00  5.03e-01)
+73 167 R SNcn  Log r20 ............  0.821 ( 7.68e+00  1.47e-01)  1.61e+00 ( 7.44e+00  4.59e-01)
+26 120 R SNcn  Log b27 ............  0.812 ( 8.84e+00  5.28e-02)  1.20e+00 ( 8.77e+00  1.76e-01)
+68 162 R SNcn  Log r15 ............  0.803 ( 7.82e+00  1.34e-01)  1.65e+00 ( 7.60e+00  4.00e-01)
+74 168 R SNcn  Log r21 ............  0.794 ( 7.67e+00  1.58e-01)  1.63e+00 ( 7.41e+00  4.68e-01)
+70 164 R SNcn  Log r17 ............  0.794 ( 7.78e+00  1.45e-01)  1.66e+00 ( 7.54e+00  4.26e-01)
+72 166 R SNcn  Log r19 ............  0.789 ( 7.71e+00  1.51e-01)  1.55e+00 ( 7.48e+00  4.53e-01)
+69 163 R SNcn  Log r16 ............  0.780 ( 7.80e+00  1.45e-01)  1.63e+00 ( 7.56e+00  4.18e-01)
+83 177 R SNcn  Log r30 ............  0.761 ( 7.36e+00  1.77e-01)  1.27e+00 ( 7.13e+00  5.43e-01)
+09 103 R SNcn  Log b10 ............  0.760 ( 9.16e+00  1.01e-01)  8.09e-02 ( 9.17e+00  3.42e-01)
+54 148 R SNcn  Log r01 ............  0.759 ( 8.16e+00  7.77e-02)  1.36e+00 ( 8.05e+00  2.34e-01)
+59 153 R SNcn  Log r06 ............  0.758 ( 7.97e+00  9.56e-02)  1.47e+00 ( 7.83e+00  2.79e-01)
+56 150 R SNcn  Log r03 ............  0.733 ( 8.06e+00  8.83e-02)  1.47e+00 ( 7.94e+00  2.48e-01)
+66 160 R SNcn  Log r13 ............  0.730 ( 7.86e+00  1.34e-01)  1.50e+00 ( 7.65e+00  3.71e-01)
+80 174 R SNcn  Log r27 ............  0.720 ( 7.46e+00  1.81e-01)  1.30e+00 ( 7.22e+00  5.22e-01)
+01 95 R SNcn  Log b02 ............  0.719 ( 9.16e+00  1.56e-01)  1.12e+00 ( 9.33e+00  4.64e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+55 149 R SNcn  Log r02 ............  0.701 ( 8.11e+00  8.70e-02)  1.29e+00 ( 8.00e+00  2.44e-01)
+85 179 R SNcn  Log r32 ............  0.693 ( 7.27e+00  1.98e-01)  1.19e+00 ( 7.03e+00  5.62e-01)
+89 183 R SNcn  Log r36 ............  0.681 ( 7.17e+00  2.08e-01)  1.14e+00 ( 6.93e+00  5.87e-01)
+86 180 R SNcn  Log r33 ............  0.673 ( 7.24e+00  2.10e-01)  1.19e+00 ( 6.99e+00  5.78e-01)
+02 96 R SNcn  Log b03 ............  0.640 ( 9.15e+00  1.54e-01)  1.11e+00 ( 9.32e+00  4.11e-01)
+88 182 R SNcn  Log r35 ............  0.634 ( 7.20e+00  2.18e-01)  1.06e+00 ( 6.97e+00  5.85e-01)
+53 147 R SNcn  Log r40 ............  0.631 ( 8.23e+00  8.48e-02)  1.23e+00 ( 8.12e+00  2.17e-01)
+27 121 R SNcn  Log b28 ............  0.624 ( 8.81e+00  5.97e-02)  1.04e+00 ( 8.74e+00  1.58e-01)
+84 178 R SNcn  Log r31 ............  0.612 ( 7.29e+00  2.07e-01)  8.98e-01 ( 7.11e+00  5.55e-01)
+03 97 R SNcn  Log b04 ............  0.604 ( 9.14e+00  1.51e-01)  9.73e-01 ( 9.29e+00  3.97e-01)
+92 186 R SNcn  Log r39 ............  0.586 ( 6.98e+00  2.39e-01)  9.75e-01 ( 6.75e+00  6.09e-01)
+90 184 R SNcn  Log r37 ............  0.568 ( 7.12e+00  2.39e-01)  8.99e-01 ( 6.91e+00  6.04e-01)
+47 141 R SNcn  Log r44 ............  0.564 ( 8.79e+00  5.84e-02)  1.22e+00 ( 8.72e+00  1.33e-01)
+28 122 R SNcn  Log b29 ............  0.542 ( 8.77e+00  6.02e-02)  1.17e+00 ( 8.70e+00  1.35e-01)
+52 146 R SNcn  Log r49 ............  0.507 ( 8.30e+00  9.18e-02)  1.10e+00 ( 8.20e+00  1.99e-01)
+91 185 R SNcn  Log r38 ............  0.494 ( 7.09e+00  2.67e-01)  8.80e-01 ( 6.86e+00  6.07e-01)
+08 102 R SNcn  Log b09 ............  0.489 ( 9.15e+00  1.18e-01)  2.74e-01 ( 9.19e+00  2.90e-01)
+04 98 R SNcn  Log b05 ............  0.482 ( 9.13e+00  1.58e-01)  8.21e-01 ( 9.26e+00  3.58e-01)
+29 123 R SNcn  Log b30 ............  0.452 ( 8.73e+00  6.06e-02)  9.94e-01 ( 8.67e+00  1.24e-01)
+48 142 R SNcn  Log r45 ............  0.447 ( 8.68e+00  6.76e-02)  1.20e+00 ( 8.60e+00  1.08e-01)
+05 99 R SNcn  Log b06 ............  0.432 ( 9.15e+00  1.46e-01)  6.97e-01 ( 9.25e+00  3.17e-01)
+06 100 R SNcn  Log b07 ............  0.417 ( 9.14e+00  1.32e-01)  5.91e-01 ( 9.22e+00  2.86e-01)
+07 101 R SNcn  Log b08 ............  0.413 ( 9.14e+00  1.25e-01)  4.92e-01 ( 9.21e+00  2.73e-01)
+30 124 R SNcn  Log b31 ............  0.411 ( 8.69e+00  6.64e-02)  1.04e+00 ( 8.62e+00  1.20e-01)
+51 145 R SNcn  Log r48 ............  0.381 ( 8.37e+00  9.84e-02)  9.00e-01 ( 8.28e+00  1.83e-01)
+34 128 R SNcn  Log b35 ............  0.351 ( 8.51e+00  8.23e-02)  9.52e-01 ( 8.43e+00  1.36e-01)
+36 130 R SNcn  Log b37 ............  0.325 ( 8.45e+00  9.01e-02)  8.26e-01 ( 8.38e+00  1.54e-01)
+31 125 R SNcn  Log b32 ............  0.318 ( 8.64e+00  7.58e-02)  9.01e-01 ( 8.57e+00  1.19e-01)
+33 127 R SNcn  Log b34 ............  0.314 ( 8.56e+00  8.42e-02)  9.01e-01 ( 8.48e+00  1.30e-01)
+49 143 R SNcn  Log r46 ............  0.311 ( 8.56e+00  8.23e-02)  9.10e-01 ( 8.48e+00  1.23e-01)
+37 131 R SNcn  Log b38 ............  0.283 ( 8.42e+00  1.01e-01)  7.01e-01 ( 8.35e+00  1.69e-01)
+32 126 R SNcn  Log b33 ............  0.270 ( 8.59e+00  8.36e-02)  8.33e-01 ( 8.52e+00  1.18e-01)
+42 136 R SNcn  Log b43 ............  0.251 ( 8.27e+00  1.23e-01)  6.24e-01 ( 8.19e+00  2.00e-01)
+50 144 R SNcn  Log r47 ............  0.245 ( 8.44e+00  9.71e-02)  6.56e-01 ( 8.38e+00  1.54e-01)
+38 132 R SNcn  Log b39 ............  0.237 ( 8.40e+00  1.23e-01)  7.07e-01 ( 8.31e+00  1.83e-01)
+35 129 R SNcn  Log b36 ............  0.208 ( 8.47e+00  1.01e-01)  6.80e-01 ( 8.40e+00  1.41e-01)
+39 133 R SNcn  Log b40 ............  0.203 ( 8.37e+00  1.33e-01)  6.43e-01 ( 8.29e+00  1.90e-01)
+43 137 R SNcn  Log b44 ............  0.201 ( 8.23e+00  1.31e-01)  5.12e-01 ( 8.17e+00  2.04e-01)
+41 135 R SNcn  Log b42 ............  0.187 ( 8.31e+00  1.39e-01)  5.96e-01 ( 8.23e+00  1.98e-01)
+40 134 R SNcn  Log b41 ............  0.151 ( 8.33e+00  1.43e-01)  5.19e-01 ( 8.26e+00  1.95e-01)
+
+
+CLASS  8 - weight  28   normalized weight 0.066   relative strength  1.53e-37 *******
+                            class cross entropy w.r.t. global class  9.53e+01 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+87 181 R SNcn  Log r34 ............  2.491 ( 6.01e+00  1.96e+00)  5.04e-01 ( 7.00e+00  7.84e-01)
+65 159 R SNcn  Log r12 ............  1.827 ( 7.19e+00  9.09e-02)  5.41e+00 ( 7.68e+00  3.65e-01)
+18 112 R SNcn  Log b19 ............  1.710 ( 9.11e+00  7.05e-02)  9.24e-01 ( 9.05e+00  6.35e-01)
+66 160 R SNcn  Log r13 ............  1.675 ( 7.16e+00  1.07e-01)  4.63e+00 ( 7.65e+00  3.71e-01)
+61 155 R SNcn  Log r08 ............  1.666 ( 7.37e+00  8.68e-02)  4.64e+00 ( 7.77e+00  3.07e-01)
+63 157 R SNcn  Log r10 ............  1.570 ( 7.28e+00  1.06e-01)  4.16e+00 ( 7.73e+00  3.34e-01)
+69 163 R SNcn  Log r16 ............  1.531 ( 6.99e+00  1.51e-01)  3.81e+00 ( 7.56e+00  4.18e-01)
+60 154 R SNcn  Log r07 ............  1.526 ( 7.43e+00  8.85e-02)  4.14e+00 ( 7.80e+00  2.92e-01)
+67 161 R SNcn  Log r14 ............  1.524 ( 7.09e+00  1.43e-01)  3.75e+00 ( 7.63e+00  3.87e-01)
+19 113 R SNcn  Log b20 ............  1.509 ( 9.04e+00  8.74e-02)  8.68e-01 ( 8.97e+00  6.41e-01)
+64 158 R SNcn  Log r11 ............  1.494 ( 7.22e+00  1.31e-01)  3.65e+00 ( 7.70e+00  3.48e-01)
+68 162 R SNcn  Log r15 ............  1.485 ( 7.06e+00  1.43e-01)  3.74e+00 ( 7.60e+00  4.00e-01)
+16 110 R SNcn  Log b17 ............  1.477 ( 9.11e+00  9.57e-02)  8.07e-01 ( 9.03e+00  6.80e-01)
+70 164 R SNcn  Log r17 ............  1.451 ( 6.96e+00  1.66e-01)  3.50e+00 ( 7.54e+00  4.26e-01)
+62 156 R SNcn  Log r09 ............  1.439 ( 7.32e+00  1.19e-01)  3.57e+00 ( 7.74e+00  3.20e-01)
+44 138 R SNcn  Log r41 ............  1.437 ( 8.99e+00  9.15e-02)  7.83e-01 ( 8.92e+00  6.24e-01)
+78 172 R SNcn  Log r25 ............  1.434 ( 6.62e+00  1.85e-01)  3.55e+00 ( 7.28e+00  4.94e-01)
+81 175 R SNcn  Log r28 ............  1.431 ( 6.52e+00  1.76e-01)  3.75e+00 ( 7.18e+00  5.32e-01)
+59 153 R SNcn  Log r06 ............  1.419 ( 7.52e+00  8.00e-02)  3.91e+00 ( 7.83e+00  2.79e-01)
+79 173 R SNcn  Log r26 ............  1.408 ( 6.54e+00  2.03e-01)  3.36e+00 ( 7.22e+00  5.03e-01)
+15 109 R SNcn  Log b16 ............  1.396 ( 9.14e+00  1.05e-01)  8.11e-01 ( 9.06e+00  6.86e-01)
+14 108 R SNcn  Log b15 ............  1.395 ( 9.18e+00  1.11e-01)  1.04e+00 ( 9.07e+00  7.21e-01)
+71 165 R SNcn  Log r18 ............  1.391 ( 6.92e+00  1.75e-01)  3.35e+00 ( 7.50e+00  4.38e-01)
+05 99 R SNcn  Log b06 ............  1.391 ( 9.60e+00  9.32e-02)  3.80e+00 ( 9.25e+00  3.17e-01)
+04 98 R SNcn  Log b05 ............  1.390 ( 9.65e+00  9.96e-02)  3.84e+00 ( 9.26e+00  3.58e-01)
+13 107 R SNcn  Log b14 ............  1.376 ( 9.21e+00  1.15e-01)  1.08e+00 ( 9.09e+00  7.32e-01)
+85 179 R SNcn  Log r32 ............  1.375 ( 6.41e+00  1.65e-01)  3.75e+00 ( 7.03e+00  5.62e-01)
+76 170 R SNcn  Log r23 ............  1.345 ( 6.74e+00  1.79e-01)  3.35e+00 ( 7.34e+00  4.75e-01)
+73 167 R SNcn  Log r20 ............  1.344 ( 6.84e+00  1.88e-01)  3.22e+00 ( 7.44e+00  4.59e-01)
+03 97 R SNcn  Log b04 ............  1.341 ( 9.69e+00  1.09e-01)  3.68e+00 ( 9.29e+00  3.97e-01)
+06 100 R SNcn  Log b07 ............  1.337 ( 9.54e+00  9.21e-02)  3.55e+00 ( 9.22e+00  2.86e-01)
+80 174 R SNcn  Log r27 ............  1.327 ( 6.56e+00  2.06e-01)  3.24e+00 ( 7.22e+00  5.22e-01)
+02 96 R SNcn  Log b03 ............  1.301 ( 9.74e+00  1.17e-01)  3.53e+00 ( 9.32e+00  4.11e-01)
+89 183 R SNcn  Log r36 ............  1.298 ( 6.27e+00  1.95e-01)  3.41e+00 ( 6.93e+00  5.87e-01)
+74 168 R SNcn  Log r21 ............  1.265 ( 6.81e+00  1.98e-01)  3.02e+00 ( 7.41e+00  4.68e-01)
+83 177 R SNcn  Log r30 ............  1.255 ( 6.40e+00  2.61e-01)  2.80e+00 ( 7.13e+00  5.43e-01)
+77 171 R SNcn  Log r24 ............  1.249 ( 6.74e+00  1.91e-01)  3.07e+00 ( 7.33e+00  4.77e-01)
+00 94 R SNcn  Log b01 ............  1.240 ( 9.81e+00  1.55e-01)  2.86e+00 ( 9.37e+00  7.08e-01)
+22 116 R SNcn  Log b23 ............  1.236 ( 8.97e+00  1.11e-01)  7.21e-01 ( 8.89e+00  6.16e-01)
+07 101 R SNcn  Log b08 ............  1.227 ( 9.50e+00  9.00e-02)  3.22e+00 ( 9.21e+00  2.73e-01)
+58 152 R SNcn  Log r05 ............  1.224 ( 7.53e+00  1.02e-01)  3.08e+00 ( 7.85e+00  2.69e-01)
+56 150 R SNcn  Log r03 ............  1.217 ( 7.66e+00  8.84e-02)  3.13e+00 ( 7.94e+00  2.48e-01)
+01 95 R SNcn  Log b02 ............  1.205 ( 9.75e+00  1.33e-01)  3.18e+00 ( 9.33e+00  4.64e-01)
+72 166 R SNcn  Log r19 ............  1.196 ( 6.85e+00  2.59e-01)  2.44e+00 ( 7.48e+00  4.53e-01)
+09 103 R SNcn  Log b10 ............  1.154 ( 9.39e+00  8.33e-02)  2.67e+00 ( 9.17e+00  3.42e-01)
+17 111 R SNcn  Log b18 ............  1.135 ( 9.06e+00  8.97e-02)  6.90e-01 ( 9.00e+00  4.47e-01)
+08 102 R SNcn  Log b09 ............  1.135 ( 9.44e+00  8.72e-02)  2.93e+00 ( 9.19e+00  2.90e-01)
+10 104 R SNcn  Log b11 ............  1.112 ( 9.33e+00  9.40e-02)  1.95e+00 ( 9.14e+00  4.17e-01)
+91 185 R SNcn  Log r38 ............  1.095 ( 6.20e+00  2.37e-01)  2.75e+00 ( 6.86e+00  6.07e-01)
+11 105 R SNcn  Log b12 ............  1.085 ( 9.28e+00  1.06e-01)  1.43e+00 ( 9.13e+00  4.82e-01)
+24 118 R SNcn  Log b25 ............  1.072 ( 8.95e+00  1.26e-01)  5.16e-01 ( 8.88e+00  5.90e-01)
+75 169 R SNcn  Log r22 ............  1.060 ( 6.72e+00  3.16e-01)  2.07e+00 ( 7.38e+00  4.80e-01)
+90 184 R SNcn  Log r37 ............  1.036 ( 6.23e+00  2.68e-01)  2.52e+00 ( 6.91e+00  6.04e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+57 151 R SNcn  Log r04 ............  1.026 ( 7.62e+00  1.11e-01)  2.52e+00 ( 7.90e+00  2.56e-01)
+86 180 R SNcn  Log r33 ............  1.020 ( 6.30e+00  2.95e-01)  2.35e+00 ( 6.99e+00  5.78e-01)
+82 176 R SNcn  Log r29 ............  1.016 ( 6.44e+00  3.11e-01)  2.18e+00 ( 7.12e+00  5.35e-01)
+12 106 R SNcn  Log b13 ............  0.999 ( 9.24e+00  1.16e-01)  1.06e+00 ( 9.12e+00  4.90e-01)
+84 178 R SNcn  Log r31 ............  0.998 ( 6.41e+00  3.24e-01)  2.15e+00 ( 7.11e+00  5.55e-01)
+54 148 R SNcn  Log r01 ............  0.988 ( 7.78e+00  1.22e-01)  2.27e+00 ( 8.05e+00  2.34e-01)
+92 186 R SNcn  Log r39 ............  0.984 ( 6.03e+00  3.20e-01)  2.26e+00 ( 6.75e+00  6.09e-01)
+20 114 R SNcn  Log b21 ............  0.965 ( 9.02e+00  9.50e-02)  8.13e-01 ( 8.94e+00  3.91e-01)
+55 149 R SNcn  Log r02 ............  0.961 ( 7.73e+00  1.17e-01)  2.31e+00 ( 8.00e+00  2.44e-01)
+40 134 R SNcn  Log b41 ............  0.930 ( 8.02e+00  1.14e-01)  2.05e+00 ( 8.26e+00  1.95e-01)
+88 182 R SNcn  Log r35 ............  0.884 ( 6.24e+00  4.16e-01)  1.77e+00 ( 6.97e+00  5.85e-01)
+53 147 R SNcn  Log r40 ............  0.838 ( 7.86e+00  1.50e-01)  1.74e+00 ( 8.12e+00  2.17e-01)
+43 137 R SNcn  Log b44 ............  0.784 ( 7.95e+00  1.19e-01)  1.84e+00 ( 8.17e+00  2.04e-01)
+21 115 R SNcn  Log b22 ............  0.774 ( 8.99e+00  1.10e-01)  7.01e-01 ( 8.91e+00  3.69e-01)
+52 146 R SNcn  Log r49 ............  0.754 ( 7.98e+00  1.25e-01)  1.73e+00 ( 8.20e+00  1.99e-01)
+39 133 R SNcn  Log b40 ............  0.697 ( 8.08e+00  1.36e-01)  1.54e+00 ( 8.29e+00  1.90e-01)
+51 145 R SNcn  Log r48 ............  0.664 ( 8.10e+00  1.15e-01)  1.59e+00 ( 8.28e+00  1.83e-01)
+35 129 R SNcn  Log b36 ............  0.651 ( 8.26e+00  9.38e-02)  1.53e+00 ( 8.40e+00  1.41e-01)
+37 131 R SNcn  Log b38 ............  0.648 ( 8.17e+00  1.14e-01)  1.52e+00 ( 8.35e+00  1.69e-01)
+50 144 R SNcn  Log r47 ............  0.621 ( 8.23e+00  9.98e-02)  1.51e+00 ( 8.38e+00  1.54e-01)
+42 136 R SNcn  Log b43 ............  0.609 ( 7.99e+00  1.41e-01)  1.43e+00 ( 8.19e+00  2.00e-01)
+41 135 R SNcn  Log b42 ............  0.590 ( 8.02e+00  1.52e-01)  1.34e+00 ( 8.23e+00  1.98e-01)
+38 132 R SNcn  Log b39 ............  0.586 ( 8.12e+00  1.36e-01)  1.37e+00 ( 8.31e+00  1.83e-01)
+36 130 R SNcn  Log b37 ............  0.581 ( 8.22e+00  1.20e-01)  1.32e+00 ( 8.38e+00  1.54e-01)
+45 139 R SNcn  Log r42 ............  0.427 ( 8.93e+00  1.17e-01)  4.23e-01 ( 8.88e+00  2.64e-01)
+34 128 R SNcn  Log b35 ............  0.403 ( 8.33e+00  9.39e-02)  1.11e+00 ( 8.43e+00  1.36e-01)
+49 143 R SNcn  Log r46 ............  0.386 ( 8.38e+00  9.39e-02)  1.06e+00 ( 8.48e+00  1.23e-01)
+23 117 R SNcn  Log b24 ............  0.353 ( 8.93e+00  1.35e-01)  4.32e-01 ( 8.87e+00  2.75e-01)
+33 127 R SNcn  Log b34 ............  0.258 ( 8.39e+00  1.17e-01)  7.80e-01 ( 8.48e+00  1.30e-01)
+25 119 R SNcn  Log b26 ............  0.253 ( 8.85e+00  1.16e-01)  3.08e-01 ( 8.81e+00  2.07e-01)
+32 126 R SNcn  Log b33 ............  0.224 ( 8.45e+00  9.64e-02)  7.50e-01 ( 8.52e+00  1.18e-01)
+46 140 R SNcn  Log r43 ............  0.214 ( 8.84e+00  1.19e-01)  2.86e-01 ( 8.80e+00  2.01e-01)
+31 125 R SNcn  Log b32 ............  0.121 ( 8.52e+00  9.97e-02)  5.17e-01 ( 8.57e+00  1.19e-01)
+26 120 R SNcn  Log b27 ............  0.116 ( 8.78e+00  1.20e-01)  6.57e-02 ( 8.77e+00  1.76e-01)
+48 142 R SNcn  Log r45 ............  0.094 ( 8.55e+00  1.07e-01)  4.37e-01 ( 8.60e+00  1.08e-01)
+27 121 R SNcn  Log b28 ............  0.057 ( 8.75e+00  1.23e-01)  6.52e-02 ( 8.74e+00  1.58e-01)
+30 124 R SNcn  Log b31 ............  0.021 ( 8.60e+00  1.07e-01)  1.49e-01 ( 8.62e+00  1.20e-01)
+28 122 R SNcn  Log b29 ............  0.018 ( 8.69e+00  1.19e-01)  1.05e-01 ( 8.70e+00  1.35e-01)
+47 141 R SNcn  Log r44 ............  0.015 ( 8.72e+00  1.18e-01)  4.90e-02 ( 8.72e+00  1.33e-01)
+29 123 R SNcn  Log b30 ............  0.014 ( 8.65e+00  1.16e-01)  1.54e-01 ( 8.67e+00  1.24e-01)
+
+
+CLASS  9 - weight  27   normalized weight 0.064   relative strength  1.00e+00 *******
+                            class cross entropy w.r.t. global class  2.10e+02 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+01 95 R SNcn  Log b02 ............  3.708 ( 1.01e+01  2.40e-02)  3.05e+01 ( 9.33e+00  4.64e-01)
+02 96 R SNcn  Log b03 ............  3.386 ( 9.98e+00  3.06e-02)  2.15e+01 ( 9.32e+00  4.11e-01)
+13 107 R SNcn  Log b14 ............  3.211 ( 9.22e+00  1.82e-02)  7.21e+00 ( 9.09e+00  7.32e-01)
+16 110 R SNcn  Log b17 ............  3.178 ( 9.06e+00  1.72e-02)  1.83e+00 ( 9.03e+00  6.80e-01)
+15 109 R SNcn  Log b16 ............  3.114 ( 9.12e+00  1.86e-02)  3.42e+00 ( 9.06e+00  6.86e-01)
+00 94 R SNcn  Log b01 ............  3.112 ( 1.02e+01  3.58e-02)  2.21e+01 ( 9.37e+00  7.08e-01)
+14 108 R SNcn  Log b15 ............  3.033 ( 9.16e+00  2.12e-02)  4.30e+00 ( 9.07e+00  7.21e-01)
+18 112 R SNcn  Log b19 ............  3.016 ( 9.02e+00  1.89e-02)  1.30e+00 ( 9.05e+00  6.35e-01)
+67 161 R SNcn  Log r14 ............  2.936 ( 6.89e+00  7.69e-02)  9.55e+00 ( 7.63e+00  3.87e-01)
+03 97 R SNcn  Log b04 ............  2.919 ( 9.89e+00  4.07e-02)  1.47e+01 ( 9.29e+00  3.97e-01)
+19 113 R SNcn  Log b20 ............  2.879 ( 8.92e+00  2.19e-02)  2.01e+00 ( 8.97e+00  6.41e-01)
+05 99 R SNcn  Log b06 ............  2.822 ( 9.74e+00  3.87e-02)  1.28e+01 ( 9.25e+00  3.17e-01)
+22 116 R SNcn  Log b23 ............  2.814 ( 8.77e+00  2.28e-02)  4.93e+00 ( 8.89e+00  6.16e-01)
+66 160 R SNcn  Log r13 ............  2.772 ( 6.97e+00  8.10e-02)  8.51e+00 ( 7.65e+00  3.71e-01)
+04 98 R SNcn  Log b05 ............  2.767 ( 9.81e+00  4.45e-02)  1.23e+01 ( 9.26e+00  3.58e-01)
+06 100 R SNcn  Log b07 ............  2.759 ( 9.65e+00  3.55e-02)  1.23e+01 ( 9.22e+00  2.86e-01)
+24 118 R SNcn  Log b25 ............  2.734 ( 8.74e+00  2.39e-02)  5.93e+00 ( 8.88e+00  5.90e-01)
+70 164 R SNcn  Log r17 ............  2.728 ( 6.75e+00  9.50e-02)  8.27e+00 ( 7.54e+00  4.26e-01)
+17 111 R SNcn  Log b18 ............  2.727 ( 8.99e+00  1.77e-02)  7.51e-01 ( 9.00e+00  4.47e-01)
+69 163 R SNcn  Log r16 ............  2.721 ( 6.79e+00  9.40e-02)  8.22e+00 ( 7.56e+00  4.18e-01)
+12 106 R SNcn  Log b13 ............  2.719 ( 9.26e+00  2.04e-02)  6.85e+00 ( 9.12e+00  4.90e-01)
+11 105 R SNcn  Log b12 ............  2.709 ( 9.31e+00  2.10e-02)  8.82e+00 ( 9.13e+00  4.82e-01)
+72 166 R SNcn  Log r19 ............  2.708 ( 6.64e+00  1.05e-01)  8.01e+00 ( 7.48e+00  4.53e-01)
+71 165 R SNcn  Log r18 ............  2.680 ( 6.69e+00  1.04e-01)  7.78e+00 ( 7.50e+00  4.38e-01)
+78 172 R SNcn  Log r25 ............  2.680 ( 6.40e+00  1.02e-01)  8.60e+00 ( 7.28e+00  4.94e-01)
+68 162 R SNcn  Log r15 ............  2.668 ( 6.85e+00  9.84e-02)  7.58e+00 ( 7.60e+00  4.00e-01)
+07 101 R SNcn  Log b08 ............  2.661 ( 9.59e+00  3.10e-02)  1.23e+01 ( 9.21e+00  2.73e-01)
+73 167 R SNcn  Log r20 ............  2.617 ( 6.60e+00  1.17e-01)  7.28e+00 ( 7.44e+00  4.59e-01)
+64 158 R SNcn  Log r11 ............  2.603 ( 7.07e+00  8.25e-02)  7.63e+00 ( 7.70e+00  3.48e-01)
+77 171 R SNcn  Log r24 ............  2.589 ( 6.45e+00  1.21e-01)  7.23e+00 ( 7.33e+00  4.77e-01)
+76 170 R SNcn  Log r23 ............  2.587 ( 6.48e+00  1.17e-01)  7.38e+00 ( 7.34e+00  4.75e-01)
+48 142 R SNcn  Log r45 ............  2.582 ( 8.39e+00  3.27e-02)  6.34e+00 ( 8.60e+00  1.08e-01)
+62 156 R SNcn  Log r09 ............  2.560 ( 7.19e+00  6.59e-02)  8.30e+00 ( 7.74e+00  3.20e-01)
+75 169 R SNcn  Log r22 ............  2.516 ( 6.51e+00  1.25e-01)  6.94e+00 ( 7.38e+00  4.80e-01)
+65 159 R SNcn  Log r12 ............  2.510 ( 7.02e+00  9.56e-02)  6.91e+00 ( 7.68e+00  3.65e-01)
+81 175 R SNcn  Log r28 ............  2.487 ( 6.22e+00  1.39e-01)  6.85e+00 ( 7.18e+00  5.32e-01)
+10 104 R SNcn  Log b11 ............  2.460 ( 9.38e+00  2.54e-02)  9.31e+00 ( 9.14e+00  4.17e-01)
+08 102 R SNcn  Log b09 ............  2.453 ( 9.51e+00  2.87e-02)  1.14e+01 ( 9.19e+00  2.90e-01)
+63 157 R SNcn  Log r10 ............  2.453 ( 7.15e+00  7.91e-02)  7.28e+00 ( 7.73e+00  3.34e-01)
+79 173 R SNcn  Log r26 ............  2.442 ( 6.31e+00  1.40e-01)  6.49e+00 ( 7.22e+00  5.03e-01)
+74 168 R SNcn  Log r21 ............  2.426 ( 6.51e+00  1.67e-01)  5.35e+00 ( 7.41e+00  4.68e-01)
+84 178 R SNcn  Log r31 ............  2.408 ( 6.17e+00  1.29e-01)  7.27e+00 ( 7.11e+00  5.55e-01)
+44 138 R SNcn  Log r41 ............  2.405 ( 8.86e+00  3.43e-02)  1.70e+00 ( 8.92e+00  6.24e-01)
+83 177 R SNcn  Log r30 ............  2.403 ( 6.24e+00  1.18e-01)  7.59e+00 ( 7.13e+00  5.43e-01)
+30 124 R SNcn  Log b31 ............  2.355 ( 8.42e+00  2.65e-02)  7.34e+00 ( 8.62e+00  1.20e-01)
+61 155 R SNcn  Log r08 ............  2.351 ( 7.27e+00  6.97e-02)  7.21e+00 ( 7.77e+00  3.07e-01)
+09 103 R SNcn  Log b10 ............  2.343 ( 9.45e+00  2.78e-02)  1.00e+01 ( 9.17e+00  3.42e-01)
+20 114 R SNcn  Log b21 ............  2.307 ( 8.86e+00  2.43e-02)  3.54e+00 ( 8.94e+00  3.91e-01)
+80 174 R SNcn  Log r27 ............  2.280 ( 6.30e+00  1.66e-01)  5.60e+00 ( 7.22e+00  5.22e-01)
+21 115 R SNcn  Log b22 ............  2.218 ( 8.80e+00  2.56e-02)  4.38e+00 ( 8.91e+00  3.69e-01)
+86 180 R SNcn  Log r33 ............  2.209 ( 6.04e+00  1.51e-01)  6.24e+00 ( 6.99e+00  5.78e-01)
+58 152 R SNcn  Log r05 ............  2.208 ( 7.48e+00  4.76e-02)  7.84e+00 ( 7.85e+00  2.69e-01)
+82 176 R SNcn  Log r29 ............  2.207 ( 6.21e+00  1.59e-01)  5.74e+00 ( 7.12e+00  5.35e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+60 154 R SNcn  Log r07 ............  2.121 ( 7.32e+00  8.39e-02)  5.69e+00 ( 7.80e+00  2.92e-01)
+89 183 R SNcn  Log r36 ............  2.104 ( 5.98e+00  1.67e-01)  5.68e+00 ( 6.93e+00  5.87e-01)
+31 125 R SNcn  Log b32 ............  2.062 ( 8.38e+00  3.67e-02)  5.30e+00 ( 8.57e+00  1.19e-01)
+47 141 R SNcn  Log r44 ............  2.055 ( 8.52e+00  3.13e-02)  6.26e+00 ( 8.72e+00  1.33e-01)
+59 153 R SNcn  Log r06 ............  2.032 ( 7.42e+00  6.73e-02)  6.10e+00 ( 7.83e+00  2.79e-01)
+28 122 R SNcn  Log b29 ............  2.024 ( 8.50e+00  3.56e-02)  5.77e+00 ( 8.70e+00  1.35e-01)
+85 179 R SNcn  Log r32 ............  2.024 ( 6.03e+00  2.45e-01)  4.10e+00 ( 7.03e+00  5.62e-01)
+29 123 R SNcn  Log b30 ............  2.006 ( 8.47e+00  3.84e-02)  5.17e+00 ( 8.67e+00  1.24e-01)
+27 121 R SNcn  Log b28 ............  1.989 ( 8.54e+00  3.00e-02)  6.71e+00 ( 8.74e+00  1.58e-01)
+49 143 R SNcn  Log r46 ............  1.954 ( 8.29e+00  3.87e-02)  5.02e+00 ( 8.48e+00  1.23e-01)
+26 120 R SNcn  Log b27 ............  1.941 ( 8.57e+00  2.93e-02)  6.76e+00 ( 8.77e+00  1.76e-01)
+88 182 R SNcn  Log r35 ............  1.917 ( 6.10e+00  1.67e-01)  5.26e+00 ( 6.97e+00  5.85e-01)
+23 117 R SNcn  Log b24 ............  1.885 ( 8.72e+00  2.96e-02)  5.08e+00 ( 8.87e+00  2.75e-01)
+56 150 R SNcn  Log r03 ............  1.833 ( 7.62e+00  5.51e-02)  5.71e+00 ( 7.94e+00  2.48e-01)
+25 119 R SNcn  Log b26 ............  1.823 ( 8.62e+00  3.14e-02)  6.08e+00 ( 8.81e+00  2.07e-01)
+35 129 R SNcn  Log b36 ............  1.807 ( 8.24e+00  2.82e-02)  5.82e+00 ( 8.40e+00  1.41e-01)
+90 184 R SNcn  Log r37 ............  1.802 ( 5.97e+00  2.14e-01)  4.37e+00 ( 6.91e+00  6.04e-01)
+57 151 R SNcn  Log r04 ............  1.802 ( 7.57e+00  6.09e-02)  5.44e+00 ( 7.90e+00  2.56e-01)
+45 139 R SNcn  Log r42 ............  1.795 ( 8.76e+00  2.97e-02)  4.10e+00 ( 8.88e+00  2.64e-01)
+32 126 R SNcn  Log b33 ............  1.744 ( 8.34e+00  4.12e-02)  4.32e+00 ( 8.52e+00  1.18e-01)
+46 140 R SNcn  Log r43 ............  1.736 ( 8.63e+00  3.11e-02)  5.47e+00 ( 8.80e+00  2.01e-01)
+91 185 R SNcn  Log r38 ............  1.735 ( 5.88e+00  2.63e-01)  3.73e+00 ( 6.86e+00  6.07e-01)
+55 149 R SNcn  Log r02 ............  1.722 ( 7.70e+00  5.59e-02)  5.25e+00 ( 8.00e+00  2.44e-01)
+87 181 R SNcn  Log r34 ............  1.677 ( 6.07e+00  1.83e-01)  5.05e+00 ( 7.00e+00  7.84e-01)
+34 128 R SNcn  Log b35 ............  1.666 ( 8.26e+00  3.57e-02)  4.80e+00 ( 8.43e+00  1.36e-01)
+50 144 R SNcn  Log r47 ............  1.621 ( 8.18e+00  4.18e-02)  4.60e+00 ( 8.38e+00  1.54e-01)
+33 127 R SNcn  Log b34 ............  1.595 ( 8.30e+00  4.38e-02)  4.09e+00 ( 8.48e+00  1.30e-01)
+92 186 R SNcn  Log r39 ............  1.574 ( 5.87e+00  2.38e-01)  3.72e+00 ( 6.75e+00  6.09e-01)
+38 132 R SNcn  Log b39 ............  1.565 ( 8.13e+00  3.91e-02)  4.67e+00 ( 8.31e+00  1.83e-01)
+51 145 R SNcn  Log r48 ............  1.543 ( 8.07e+00  4.78e-02)  4.42e+00 ( 8.28e+00  1.83e-01)
+54 148 R SNcn  Log r01 ............  1.534 ( 7.80e+00  5.81e-02)  4.45e+00 ( 8.05e+00  2.34e-01)
+52 146 R SNcn  Log r49 ............  1.400 ( 7.97e+00  5.77e-02)  3.84e+00 ( 8.20e+00  1.99e-01)
+53 147 R SNcn  Log r40 ............  1.393 ( 7.89e+00  5.84e-02)  3.88e+00 ( 8.12e+00  2.17e-01)
+39 133 R SNcn  Log b40 ............  1.387 ( 8.10e+00  4.84e-02)  3.87e+00 ( 8.29e+00  1.90e-01)
+40 134 R SNcn  Log b41 ............  1.333 ( 8.06e+00  5.28e-02)  3.66e+00 ( 8.26e+00  1.95e-01)
+41 135 R SNcn  Log b42 ............  1.322 ( 8.03e+00  5.39e-02)  3.61e+00 ( 8.23e+00  1.98e-01)
+37 131 R SNcn  Log b38 ............  1.312 ( 8.17e+00  4.88e-02)  3.56e+00 ( 8.35e+00  1.69e-01)
+36 130 R SNcn  Log b37 ............  1.268 ( 8.21e+00  4.92e-02)  3.36e+00 ( 8.38e+00  1.54e-01)
+42 136 R SNcn  Log b43 ............  1.244 ( 8.01e+00  5.65e-02)  3.32e+00 ( 8.19e+00  2.00e-01)
+43 137 R SNcn  Log b44 ............  1.218 ( 7.96e+00  6.33e-02)  3.22e+00 ( 8.17e+00  2.04e-01)
+
+
+CLASS 10 - weight  16   normalized weight 0.038   relative strength  0.00e+00 *******
+                            class cross entropy w.r.t. global class  3.08e+02 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+24 118 R SNcn  Log b25 ............  9.831 ( 7.65e+00  2.59e+00)  4.78e-01 ( 8.88e+00  5.90e-01)
+22 116 R SNcn  Log b23 ............  9.424 ( 7.43e+00  2.54e+00)  5.74e-01 ( 8.89e+00  6.16e-01)
+44 138 R SNcn  Log r41 ............  9.277 ( 7.40e+00  2.53e+00)  6.03e-01 ( 8.92e+00  6.24e-01)
+18 112 R SNcn  Log b19 ............  9.078 ( 7.44e+00  2.50e+00)  6.44e-01 ( 9.05e+00  6.35e-01)
+19 113 R SNcn  Log b20 ............  9.052 ( 7.32e+00  2.50e+00)  6.59e-01 ( 8.97e+00  6.41e-01)
+16 110 R SNcn  Log b17 ............  8.360 ( 7.24e+00  2.49e+00)  7.19e-01 ( 9.03e+00  6.80e-01)
+13 107 R SNcn  Log b14 ............  8.264 ( 6.99e+00  2.51e+00)  8.35e-01 ( 9.09e+00  7.32e-01)
+15 109 R SNcn  Log b16 ............  8.202 ( 7.22e+00  2.46e+00)  7.48e-01 ( 9.06e+00  6.86e-01)
+21 115 R SNcn  Log b22 ............  7.100 ( 7.76e+00  1.01e+00)  1.14e+00 ( 8.91e+00  3.69e-01)
+20 114 R SNcn  Log b21 ............  7.031 ( 7.69e+00  1.02e+00)  1.22e+00 ( 8.94e+00  3.91e-01)
+23 117 R SNcn  Log b24 ............  6.313 ( 7.99e+00  6.17e-01)  1.43e+00 ( 8.87e+00  2.75e-01)
+10 104 R SNcn  Log b11 ............  6.223 ( 7.75e+00  7.90e-01)  1.76e+00 ( 9.14e+00  4.17e-01)
+17 111 R SNcn  Log b18 ............  5.987 ( 7.65e+00  1.05e+00)  1.28e+00 ( 9.00e+00  4.47e-01)
+12 106 R SNcn  Log b13 ............  5.608 ( 7.61e+00  1.00e+00)  1.50e+00 ( 9.12e+00  4.90e-01)
+25 119 R SNcn  Log b26 ............  5.579 ( 8.19e+00  4.53e-01)  1.37e+00 ( 8.81e+00  2.07e-01)
+45 139 R SNcn  Log r42 ............  5.490 ( 8.06e+00  5.00e-01)  1.64e+00 ( 8.88e+00  2.64e-01)
+09 103 R SNcn  Log b10 ............  5.481 ( 8.09e+00  6.06e-01)  1.78e+00 ( 9.17e+00  3.42e-01)
+46 140 R SNcn  Log r43 ............  4.599 ( 8.24e+00  3.78e-01)  1.50e+00 ( 8.80e+00  2.01e-01)
+11 105 R SNcn  Log b12 ............  4.261 ( 7.75e+00  6.76e-01)  2.04e+00 ( 9.13e+00  4.82e-01)
+26 120 R SNcn  Log b27 ............  3.983 ( 8.31e+00  3.15e-01)  1.47e+00 ( 8.77e+00  1.76e-01)
+56 150 R SNcn  Log r03 ............  3.691 ( 8.58e+00  1.35e-01)  4.80e+00 ( 7.94e+00  2.48e-01)
+54 148 R SNcn  Log r01 ............  3.681 ( 8.67e+00  1.33e-01)  4.60e+00 ( 8.05e+00  2.34e-01)
+55 149 R SNcn  Log r02 ............  3.638 ( 8.63e+00  1.35e-01)  4.70e+00 ( 8.00e+00  2.44e-01)
+08 102 R SNcn  Log b09 ............  3.543 ( 8.42e+00  3.80e-01)  2.01e+00 ( 9.19e+00  2.90e-01)
+53 147 R SNcn  Log r40 ............  3.538 ( 8.68e+00  1.33e-01)  4.22e+00 ( 8.12e+00  2.17e-01)
+27 121 R SNcn  Log b28 ............  3.497 ( 8.37e+00  3.03e-01)  1.24e+00 ( 8.74e+00  1.58e-01)
+57 151 R SNcn  Log r04 ............  3.476 ( 8.55e+00  1.39e-01)  4.69e+00 ( 7.90e+00  2.56e-01)
+43 137 R SNcn  Log b44 ............  3.397 ( 8.70e+00  1.73e-01)  3.07e+00 ( 8.17e+00  2.04e-01)
+51 145 R SNcn  Log r48 ............  3.255 ( 8.74e+00  1.29e-01)  3.55e+00 ( 8.28e+00  1.83e-01)
+52 146 R SNcn  Log r49 ............  3.247 ( 8.70e+00  1.47e-01)  3.39e+00 ( 8.20e+00  1.99e-01)
+60 154 R SNcn  Log r07 ............  3.200 ( 8.44e+00  8.54e-02)  7.55e+00 ( 7.80e+00  2.92e-01)
+42 136 R SNcn  Log b43 ............  3.168 ( 8.70e+00  1.73e-01)  2.90e+00 ( 8.19e+00  2.00e-01)
+86 180 R SNcn  Log r33 ............  2.987 ( 8.19e+00  1.60e-01)  7.53e+00 ( 6.99e+00  5.78e-01)
+37 131 R SNcn  Log b38 ............  2.980 ( 8.76e+00  1.41e-01)  2.93e+00 ( 8.35e+00  1.69e-01)
+85 179 R SNcn  Log r32 ............  2.960 ( 8.18e+00  1.49e-01)  7.74e+00 ( 7.03e+00  5.62e-01)
+62 156 R SNcn  Log r09 ............  2.944 ( 8.37e+00  7.33e-02)  8.62e+00 ( 7.74e+00  3.20e-01)
+40 134 R SNcn  Log b41 ............  2.935 ( 8.73e+00  1.64e-01)  2.87e+00 ( 8.26e+00  1.95e-01)
+83 177 R SNcn  Log r30 ............  2.923 ( 8.24e+00  1.50e-01)  7.41e+00 ( 7.13e+00  5.43e-01)
+41 135 R SNcn  Log b42 ............  2.899 ( 8.70e+00  1.70e-01)  2.79e+00 ( 8.23e+00  1.98e-01)
+39 133 R SNcn  Log b40 ............  2.893 ( 8.74e+00  1.68e-01)  2.72e+00 ( 8.29e+00  1.90e-01)
+79 173 R SNcn  Log r26 ............  2.878 ( 8.20e+00  1.16e-01)  8.40e+00 ( 7.22e+00  5.03e-01)
+80 174 R SNcn  Log r27 ............  2.861 ( 8.25e+00  1.30e-01)  7.90e+00 ( 7.22e+00  5.22e-01)
+90 184 R SNcn  Log r37 ............  2.857 ( 8.19e+00  2.11e-01)  6.07e+00 ( 6.91e+00  6.04e-01)
+58 152 R SNcn  Log r05 ............  2.855 ( 8.48e+00  1.89e-01)  3.35e+00 ( 7.85e+00  2.69e-01)
+91 185 R SNcn  Log r38 ............  2.849 ( 8.14e+00  2.13e-01)  6.04e+00 ( 6.86e+00  6.07e-01)
+38 132 R SNcn  Log b39 ............  2.849 ( 8.75e+00  1.65e-01)  2.65e+00 ( 8.31e+00  1.83e-01)
+36 130 R SNcn  Log b37 ............  2.825 ( 8.75e+00  1.60e-01)  2.30e+00 ( 8.38e+00  1.54e-01)
+84 178 R SNcn  Log r31 ............  2.825 ( 8.23e+00  1.60e-01)  7.03e+00 ( 7.11e+00  5.55e-01)
+63 157 R SNcn  Log r10 ............  2.818 ( 8.36e+00  7.56e-02)  8.41e+00 ( 7.73e+00  3.34e-01)
+78 172 R SNcn  Log r25 ............  2.791 ( 8.23e+00  1.20e-01)  7.90e+00 ( 7.28e+00  4.94e-01)
+77 171 R SNcn  Log r24 ............  2.770 ( 8.22e+00  1.07e-01)  8.35e+00 ( 7.33e+00  4.77e-01)
+88 182 R SNcn  Log r35 ............  2.756 ( 8.18e+00  2.02e-01)  5.98e+00 ( 6.97e+00  5.85e-01)
+81 175 R SNcn  Log r28 ............  2.755 ( 8.20e+00  1.35e-01)  7.56e+00 ( 7.18e+00  5.32e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+92 186 R SNcn  Log r39 ............  2.741 ( 8.02e+00  2.25e-01)  5.65e+00 ( 6.75e+00  6.09e-01)
+59 153 R SNcn  Log r06 ............  2.737 ( 8.46e+00  1.63e-01)  3.85e+00 ( 7.83e+00  2.79e-01)
+61 155 R SNcn  Log r08 ............  2.736 ( 8.40e+00  1.06e-01)  5.97e+00 ( 7.77e+00  3.07e-01)
+89 183 R SNcn  Log r36 ............  2.726 ( 8.16e+00  2.28e-01)  5.41e+00 ( 6.93e+00  5.87e-01)
+50 144 R SNcn  Log r47 ............  2.719 ( 8.73e+00  1.40e-01)  2.56e+00 ( 8.38e+00  1.54e-01)
+82 176 R SNcn  Log r29 ............  2.707 ( 8.17e+00  1.52e-01)  6.89e+00 ( 7.12e+00  5.35e-01)
+75 169 R SNcn  Log r22 ............  2.629 ( 8.21e+00  9.48e-02)  8.74e+00 ( 7.38e+00  4.80e-01)
+64 158 R SNcn  Log r11 ............  2.603 ( 8.33e+00  8.19e-02)  7.67e+00 ( 7.70e+00  3.48e-01)
+35 129 R SNcn  Log b36 ............  2.548 ( 8.72e+00  1.39e-01)  2.28e+00 ( 8.40e+00  1.41e-01)
+65 159 R SNcn  Log r12 ............  2.535 ( 8.32e+00  8.20e-02)  7.76e+00 ( 7.68e+00  3.65e-01)
+76 170 R SNcn  Log r23 ............  2.520 ( 8.20e+00  1.22e-01)  7.03e+00 ( 7.34e+00  4.75e-01)
+74 168 R SNcn  Log r21 ............  2.369 ( 8.20e+00  1.12e-01)  7.01e+00 ( 7.41e+00  4.68e-01)
+67 161 R SNcn  Log r14 ............  2.352 ( 8.26e+00  8.91e-02)  7.15e+00 ( 7.63e+00  3.87e-01)
+71 165 R SNcn  Log r18 ............  2.319 ( 8.21e+00  1.00e-01)  7.11e+00 ( 7.50e+00  4.38e-01)
+68 162 R SNcn  Log r15 ............  2.266 ( 8.25e+00  9.62e-02)  6.74e+00 ( 7.60e+00  4.00e-01)
+73 167 R SNcn  Log r20 ............  2.235 ( 8.18e+00  1.11e-01)  6.64e+00 ( 7.44e+00  4.59e-01)
+69 163 R SNcn  Log r16 ............  2.231 ( 8.22e+00  9.85e-02)  6.74e+00 ( 7.56e+00  4.18e-01)
+14 108 R SNcn  Log b15 ............  2.215 ( 7.55e+00  8.13e-01)  1.86e+00 ( 9.07e+00  7.21e-01)
+87 181 R SNcn  Log r34 ............  2.194 ( 8.20e+00  1.76e-01)  6.82e+00 ( 7.00e+00  7.84e-01)
+34 128 R SNcn  Log b35 ............  2.145 ( 8.71e+00  1.67e-01)  1.67e+00 ( 8.43e+00  1.36e-01)
+70 164 R SNcn  Log r17 ............  2.113 ( 8.22e+00  1.17e-01)  5.84e+00 ( 7.54e+00  4.26e-01)
+72 166 R SNcn  Log r19 ............  2.111 ( 8.20e+00  1.21e-01)  5.93e+00 ( 7.48e+00  4.53e-01)
+47 141 R SNcn  Log r44 ............  2.107 ( 8.47e+00  2.20e-01)  1.13e+00 ( 8.72e+00  1.33e-01)
+66 160 R SNcn  Log r13 ............  2.083 ( 8.28e+00  1.20e-01)  5.17e+00 ( 7.65e+00  3.71e-01)
+49 143 R SNcn  Log r46 ............  1.552 ( 8.70e+00  1.21e-01)  1.78e+00 ( 8.48e+00  1.23e-01)
+07 101 R SNcn  Log b08 ............  1.517 ( 8.73e+00  2.95e-01)  1.61e+00 ( 9.21e+00  2.73e-01)
+28 122 R SNcn  Log b29 ............  1.488 ( 8.48e+00  1.95e-01)  1.12e+00 ( 8.70e+00  1.35e-01)
+33 127 R SNcn  Log b34 ............  1.431 ( 8.70e+00  1.22e-01)  1.80e+00 ( 8.48e+00  1.30e-01)
+32 126 R SNcn  Log b33 ............  0.766 ( 8.67e+00  1.19e-01)  1.24e+00 ( 8.52e+00  1.18e-01)
+29 123 R SNcn  Log b30 ............  0.701 ( 8.53e+00  1.68e-01)  7.93e-01 ( 8.67e+00  1.24e-01)
+30 124 R SNcn  Log b31 ............  0.690 ( 8.56e+00  2.18e-01)  2.72e-01 ( 8.62e+00  1.20e-01)
+06 100 R SNcn  Log b07 ............  0.445 ( 8.95e+00  3.02e-01)  8.91e-01 ( 9.22e+00  2.86e-01)
+31 125 R SNcn  Log b32 ............  0.232 ( 8.66e+00  1.19e-01)  6.79e-01 ( 8.57e+00  1.19e-01)
+00 94 R SNcn  Log b01 ............  0.192 ( 9.57e+00  4.51e-01)  4.31e-01 ( 9.37e+00  7.08e-01)
+02 96 R SNcn  Log b03 ............  0.131 ( 9.53e+00  4.52e-01)  4.48e-01 ( 9.32e+00  4.11e-01)
+01 95 R SNcn  Log b02 ............  0.114 ( 9.55e+00  4.76e-01)  4.64e-01 ( 9.33e+00  4.64e-01)
+48 142 R SNcn  Log r45 ............  0.091 ( 8.60e+00  1.42e-01)  2.95e-02 ( 8.60e+00  1.08e-01)
+03 97 R SNcn  Log b04 ............  0.068 ( 9.44e+00  4.06e-01)  3.59e-01 ( 9.29e+00  3.97e-01)
+05 99 R SNcn  Log b06 ............  0.052 ( 9.15e+00  3.04e-01)  3.30e-01 ( 9.25e+00  3.17e-01)
+04 98 R SNcn  Log b05 ............  0.010 ( 9.31e+00  3.47e-01)  1.37e-01 ( 9.26e+00  3.58e-01)
+
+
+CLASS 11 - weight  12   normalized weight 0.028   relative strength  0.00e+00 *******
+                            class cross entropy w.r.t. global class  2.78e+02 *******
+
+   Model file:   /home/clr/cos472/cos472-final-project/spectrometer/lrs.model  -  index = 0 
+   Numbers: numb/t = model term number; numb/a = attribute number 
+   Model term types (mtt): (single_normal_cn SNcn)
+
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+00 94 R SNcn  Log b01 ............  9.343 ( 7.96e+00  3.06e+00)  4.63e-01 ( 9.37e+00  7.08e-01)
+14 108 R SNcn  Log b15 ............  9.134 ( 7.20e+00  2.82e+00)  6.62e-01 ( 9.07e+00  7.21e-01)
+11 105 R SNcn  Log b12 ............  5.693 ( 7.76e+00  1.19e+00)  1.15e+00 ( 9.13e+00  4.82e-01)
+08 102 R SNcn  Log b09 ............  5.098 ( 8.30e+00  4.85e-01)  1.84e+00 ( 9.19e+00  2.90e-01)
+07 101 R SNcn  Log b08 ............  5.053 ( 8.38e+00  4.84e-01)  1.70e+00 ( 9.21e+00  2.73e-01)
+85 179 R SNcn  Log r32 ............  4.867 ( 8.70e+00  2.34e-01)  7.12e+00 ( 7.03e+00  5.62e-01)
+83 177 R SNcn  Log r30 ............  4.866 ( 8.74e+00  2.21e-01)  7.27e+00 ( 7.13e+00  5.43e-01)
+82 176 R SNcn  Log r29 ............  4.862 ( 8.70e+00  2.10e-01)  7.52e+00 ( 7.12e+00  5.35e-01)
+88 182 R SNcn  Log r35 ............  4.819 ( 8.72e+00  2.74e-01)  6.38e+00 ( 6.97e+00  5.85e-01)
+90 184 R SNcn  Log r37 ............  4.804 ( 8.70e+00  2.70e-01)  6.64e+00 ( 6.91e+00  6.04e-01)
+84 178 R SNcn  Log r31 ............  4.762 ( 8.74e+00  2.40e-01)  6.80e+00 ( 7.11e+00  5.55e-01)
+89 183 R SNcn  Log r36 ............  4.741 ( 8.67e+00  2.85e-01)  6.11e+00 ( 6.93e+00  5.87e-01)
+86 180 R SNcn  Log r33 ............  4.713 ( 8.68e+00  2.53e-01)  6.68e+00 ( 6.99e+00  5.78e-01)
+79 173 R SNcn  Log r26 ............  4.690 ( 8.67e+00  1.87e-01)  7.73e+00 ( 7.22e+00  5.03e-01)
+91 185 R SNcn  Log r38 ............  4.679 ( 8.64e+00  2.96e-01)  6.05e+00 ( 6.86e+00  6.07e-01)
+78 172 R SNcn  Log r25 ............  4.669 ( 8.68e+00  1.68e-01)  8.36e+00 ( 7.28e+00  4.94e-01)
+92 186 R SNcn  Log r39 ............  4.591 ( 8.51e+00  2.62e-01)  6.71e+00 ( 6.75e+00  6.09e-01)
+81 175 R SNcn  Log r28 ............  4.568 ( 8.70e+00  2.18e-01)  6.97e+00 ( 7.18e+00  5.32e-01)
+77 171 R SNcn  Log r24 ............  4.567 ( 8.68e+00  1.78e-01)  7.62e+00 ( 7.33e+00  4.77e-01)
+80 174 R SNcn  Log r27 ............  4.564 ( 8.71e+00  2.11e-01)  7.06e+00 ( 7.22e+00  5.22e-01)
+76 170 R SNcn  Log r23 ............  4.535 ( 8.68e+00  1.75e-01)  7.66e+00 ( 7.34e+00  4.75e-01)
+75 169 R SNcn  Log r22 ............  4.522 ( 8.70e+00  1.51e-01)  8.81e+00 ( 7.38e+00  4.80e-01)
+29 123 R SNcn  Log b30 ............  4.510 ( 8.34e+00  2.67e-01)  1.22e+00 ( 8.67e+00  1.24e-01)
+73 167 R SNcn  Log r20 ............  4.446 ( 8.71e+00  1.59e-01)  7.99e+00 ( 7.44e+00  4.59e-01)
+72 166 R SNcn  Log r19 ............  4.426 ( 8.72e+00  1.51e-01)  8.25e+00 ( 7.48e+00  4.53e-01)
+71 165 R SNcn  Log r18 ............  4.396 ( 8.70e+00  1.48e-01)  8.11e+00 ( 7.50e+00  4.38e-01)
+74 168 R SNcn  Log r21 ............  4.393 ( 8.70e+00  1.68e-01)  7.69e+00 ( 7.41e+00  4.68e-01)
+69 163 R SNcn  Log r16 ............  4.335 ( 8.65e+00  1.02e-01)  1.07e+01 ( 7.56e+00  4.18e-01)
+68 162 R SNcn  Log r15 ............  4.325 ( 8.64e+00  9.52e-02)  1.09e+01 ( 7.60e+00  4.00e-01)
+66 160 R SNcn  Log r13 ............  4.296 ( 8.63e+00  9.98e-02)  9.77e+00 ( 7.65e+00  3.71e-01)
+70 164 R SNcn  Log r17 ............  4.287 ( 8.68e+00  1.38e-01)  8.27e+00 ( 7.54e+00  4.26e-01)
+30 124 R SNcn  Log b31 ............  4.255 ( 8.32e+00  2.63e-01)  1.13e+00 ( 8.62e+00  1.20e-01)
+28 122 R SNcn  Log b29 ............  4.155 ( 8.34e+00  2.38e-01)  1.53e+00 ( 8.70e+00  1.35e-01)
+67 161 R SNcn  Log r14 ............  4.137 ( 8.62e+00  1.04e-01)  9.52e+00 ( 7.63e+00  3.87e-01)
+65 159 R SNcn  Log r12 ............  3.957 ( 8.60e+00  1.04e-01)  8.83e+00 ( 7.68e+00  3.65e-01)
+09 103 R SNcn  Log b10 ............  3.955 ( 8.22e+00  4.55e-01)  2.09e+00 ( 9.17e+00  3.42e-01)
+64 158 R SNcn  Log r11 ............  3.922 ( 8.58e+00  1.04e-01)  8.41e+00 ( 7.70e+00  3.48e-01)
+47 141 R SNcn  Log r44 ............  3.856 ( 8.37e+00  2.27e-01)  1.54e+00 ( 8.72e+00  1.33e-01)
+63 157 R SNcn  Log r10 ............  3.775 ( 8.57e+00  1.21e-01)  6.97e+00 ( 7.73e+00  3.34e-01)
+62 156 R SNcn  Log r09 ............  3.731 ( 8.56e+00  1.33e-01)  6.15e+00 ( 7.74e+00  3.20e-01)
+06 100 R SNcn  Log b07 ............  3.719 ( 8.48e+00  4.70e-01)  1.58e+00 ( 9.22e+00  2.86e-01)
+31 125 R SNcn  Log b32 ............  3.559 ( 8.30e+00  2.40e-01)  1.15e+00 ( 8.57e+00  1.19e-01)
+12 106 R SNcn  Log b13 ............  3.505 ( 7.88e+00  7.74e-01)  1.61e+00 ( 9.12e+00  4.90e-01)
+61 155 R SNcn  Log r08 ............  3.390 ( 8.54e+00  1.58e-01)  4.82e+00 ( 7.77e+00  3.07e-01)
+46 140 R SNcn  Log r43 ............  3.225 ( 8.30e+00  2.75e-01)  1.82e+00 ( 8.80e+00  2.01e-01)
+10 104 R SNcn  Log b11 ............  3.205 ( 8.10e+00  5.59e-01)  1.86e+00 ( 9.14e+00  4.17e-01)
+27 121 R SNcn  Log b28 ............  3.038 ( 8.38e+00  2.57e-01)  1.43e+00 ( 8.74e+00  1.58e-01)
+87 181 R SNcn  Log r34 ............  3.034 ( 8.72e+00  2.75e-01)  6.29e+00 ( 7.00e+00  7.84e-01)
+05 99 R SNcn  Log b06 ............  3.019 ( 8.52e+00  5.37e-01)  1.35e+00 ( 9.25e+00  3.17e-01)
+01 95 R SNcn  Log b02 ............  3.004 ( 8.59e+00  1.16e+00)  6.40e-01 ( 9.33e+00  4.64e-01)
+59 153 R SNcn  Log r06 ............  3.000 ( 8.51e+00  2.38e-01)  2.87e+00 ( 7.83e+00  2.79e-01)
+60 154 R SNcn  Log r07 ............  2.984 ( 8.50e+00  2.06e-01)  3.42e+00 ( 7.80e+00  2.92e-01)
+45 139 R SNcn  Log r42 ............  2.934 ( 8.24e+00  2.51e-01)  2.54e+00 ( 8.88e+00  2.64e-01)
+
+REAL ATTRIBUTE  (t = R)                                        |Mean-jk -
+ numb t mtt   description           I-jk      Mean     StDev    Mean-*k|/     Mean      StDev
+ t  a                                         -jk      -jk       StDev-jk     -*k       -*k
+
+58 152 R SNcn  Log r05 ............  2.807 ( 8.48e+00  2.29e-01)  2.78e+00 ( 7.85e+00  2.69e-01)
+26 120 R SNcn  Log b27 ............  2.804 ( 8.38e+00  2.89e-01)  1.34e+00 ( 8.77e+00  1.76e-01)
+04 98 R SNcn  Log b05 ............  2.680 ( 8.50e+00  6.08e-01)  1.25e+00 ( 9.26e+00  3.58e-01)
+17 111 R SNcn  Log b18 ............  2.620 ( 8.00e+00  6.16e-01)  1.62e+00 ( 9.00e+00  4.47e-01)
+03 97 R SNcn  Log b04 ............  2.568 ( 8.53e+00  7.71e-01)  9.88e-01 ( 9.29e+00  3.97e-01)
+32 126 R SNcn  Log b33 ............  2.184 ( 8.31e+00  2.18e-01)  9.72e-01 ( 8.52e+00  1.18e-01)
+48 142 R SNcn  Log r45 ............  2.167 ( 8.39e+00  1.68e-01)  1.25e+00 ( 8.60e+00  1.08e-01)
+57 151 R SNcn  Log r04 ............  2.156 ( 8.43e+00  2.24e-01)  2.37e+00 ( 7.90e+00  2.56e-01)
+23 117 R SNcn  Log b24 ............  1.927 ( 8.33e+00  3.01e-01)  1.79e+00 ( 8.87e+00  2.75e-01)
+20 114 R SNcn  Log b21 ............  1.917 ( 8.18e+00  3.63e-01)  2.11e+00 ( 8.94e+00  3.91e-01)
+21 115 R SNcn  Log b22 ............  1.854 ( 8.20e+00  3.54e-01)  2.01e+00 ( 8.91e+00  3.69e-01)
+25 119 R SNcn  Log b26 ............  1.776 ( 8.43e+00  2.38e-01)  1.63e+00 ( 8.81e+00  2.07e-01)
+56 150 R SNcn  Log r03 ............  1.618 ( 8.38e+00  2.68e-01)  1.66e+00 ( 7.94e+00  2.48e-01)
+02 96 R SNcn  Log b03 ............  1.606 ( 8.67e+00  6.78e-01)  9.58e-01 ( 9.32e+00  4.11e-01)
+55 149 R SNcn  Log r02 ............  1.393 ( 8.40e+00  2.85e-01)  1.42e+00 ( 8.00e+00  2.44e-01)
+15 109 R SNcn  Log b16 ............  1.294 ( 7.96e+00  6.26e-01)  1.76e+00 ( 9.06e+00  6.86e-01)
+33 127 R SNcn  Log b34 ............  1.276 ( 8.30e+00  2.02e-01)  9.16e-01 ( 8.48e+00  1.30e-01)
+13 107 R SNcn  Log b14 ............  1.261 ( 7.93e+00  7.18e-01)  1.62e+00 ( 9.09e+00  7.32e-01)
+54 148 R SNcn  Log r01 ............  1.251 ( 8.41e+00  3.08e-01)  1.15e+00 ( 8.05e+00  2.34e-01)
+16 110 R SNcn  Log b17 ............  1.200 ( 7.99e+00  5.88e-01)  1.78e+00 ( 9.03e+00  6.80e-01)
+44 138 R SNcn  Log r41 ............  1.038 ( 8.23e+00  2.71e-01)  2.54e+00 ( 8.92e+00  6.24e-01)
+53 147 R SNcn  Log r40 ............  0.850 ( 8.40e+00  2.25e-01)  1.25e+00 ( 8.12e+00  2.17e-01)
+18 112 R SNcn  Log b19 ............  0.827 ( 8.33e+00  3.79e-01)  1.88e+00 ( 9.05e+00  6.35e-01)
+24 118 R SNcn  Log b25 ............  0.817 ( 8.50e+00  2.08e-01)  1.85e+00 ( 8.88e+00  5.90e-01)
+19 113 R SNcn  Log b20 ............  0.808 ( 8.22e+00  4.21e-01)  1.76e+00 ( 8.97e+00  6.41e-01)
+22 116 R SNcn  Log b23 ............  0.718 ( 8.26e+00  3.59e-01)  1.73e+00 ( 8.89e+00  6.16e-01)
+34 128 R SNcn  Log b35 ............  0.593 ( 8.31e+00  1.97e-01)  6.29e-01 ( 8.43e+00  1.36e-01)
+37 131 R SNcn  Log b38 ............  0.581 ( 8.53e+00  1.83e-01)  9.95e-01 ( 8.35e+00  1.69e-01)
+38 132 R SNcn  Log b39 ............  0.537 ( 8.50e+00  1.96e-01)  9.66e-01 ( 8.31e+00  1.83e-01)
+52 146 R SNcn  Log r49 ............  0.356 ( 8.36e+00  2.17e-01)  7.62e-01 ( 8.20e+00  1.99e-01)
+51 145 R SNcn  Log r48 ............  0.232 ( 8.41e+00  1.98e-01)  6.20e-01 ( 8.28e+00  1.83e-01)
+43 137 R SNcn  Log b44 ............  0.195 ( 8.10e+00  2.87e-01)  2.15e-01 ( 8.17e+00  2.04e-01)
+41 135 R SNcn  Log b42 ............  0.192 ( 8.18e+00  2.84e-01)  1.47e-01 ( 8.23e+00  1.98e-01)
+36 130 R SNcn  Log b37 ............  0.147 ( 8.44e+00  1.14e-01)  5.12e-01 ( 8.38e+00  1.54e-01)
+49 143 R SNcn  Log r46 ............  0.132 ( 8.43e+00  1.48e-01)  3.59e-01 ( 8.48e+00  1.23e-01)
+39 133 R SNcn  Log b40 ............  0.130 ( 8.38e+00  2.14e-01)  4.24e-01 ( 8.29e+00  1.90e-01)
+50 144 R SNcn  Log r47 ............  0.100 ( 8.44e+00  1.41e-01)  4.70e-01 ( 8.38e+00  1.54e-01)
+40 134 R SNcn  Log b41 ............  0.066 ( 8.29e+00  2.40e-01)  1.53e-01 ( 8.26e+00  1.95e-01)
+42 136 R SNcn  Log b43 ............  0.043 ( 8.17e+00  2.38e-01)  1.17e-01 ( 8.19e+00  2.00e-01)
+35 129 R SNcn  Log b36 ............  0.028 ( 8.37e+00  1.33e-01)  2.36e-01 ( 8.40e+00  1.41e-01)
