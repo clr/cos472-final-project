@@ -24,4 +24,4 @@ force_new_search_p = true
 max_n_tries = 100
 
 ;; set number of clusters expected
-fixed_j = 12
+fixed_j = 100

@@ -1,11 +1,18 @@
-# Add your own tasks in files placed in lib/tasks ending in .rake,
-# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
 
 
 namespace :autoclass do
+
+  desc "Run unsupervised on full data set to observe class counts."
+  task :class_count do
+    ( 36..100 ).to_a.each do |j|
+      gsub_file( './lrs.s-params', /fixed_j = (\d+)/, "fixed_j = #{ j }" )
+      `./autoclass -search lrs.db2 lrs.hd2 lrs.model lrs.s-params`
+      `./asave class_count_j_#{ j }`
+    end
+  end
 
   desc "Run unsupervised on full data set for many fixed_j"
   task :unsupervised do
